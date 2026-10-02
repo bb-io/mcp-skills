@@ -1,0 +1,609 @@
+{
+  "language": "ko",
+  "label": "Korean",
+  "categories": [
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "date-format",
+          "title": "Date format",
+          "options": [
+            {
+              "id": "date-yyyy-mm-dd",
+              "label": "YYYY-MM-DD",
+              "examples": ["2025-04-23"],
+              "rule": "When writing dates, use YYYY-MM-DD. Example: 2025-04-23."
+            },
+            {
+              "id": "date-year-month-day-hangul",
+              "label": "Write out year, month, and day in Hangul",
+              "examples": ["2025년 4월 23일"],
+              "rule": "When writing dates, write out “year,” “month,” and “day” in Hangul, starting with the year. Example: 2025년 4월 23일."
+            },
+            {
+              "id": "date-yyyy-mm-dd-periods",
+              "label": "YYYY. MM. DD.",
+              "examples": ["2025. 4. 25."],
+              "rule": "When writing dates, use YYYY. MM. DD. Example: 2025. 4. 25."
+            },
+            {
+              "id": "date-yyyy-mm-dd-slashes",
+              "label": "YYYY/MM/DD",
+              "examples": ["2025/04/23"],
+              "rule": "When writing dates, use YYYY/MM/DD. Example: 2025/04/23."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "time-12-hour-colon",
+              "label": "Use the 12-hour clock with a colon",
+              "examples": ["오전 06:00", "오후 07:30"],
+              "rule": "When writing about times of the day, use the 12-hour clock and write time with Arabic numerals and a colon. Examples: 오전 06:00; 오후 07:30."
+            },
+            {
+              "id": "time-12-hour-hangul",
+              "label": "Use the 12-hour clock with 시 and 분",
+              "examples": ["오전 6시", "오후 7시 30분"],
+              "rule": "When writing about times of the day, use the 12-hour clock and write “hours” (시) and “minutes” (분) in Hangul. Examples: 오전 6시; 오후 7시 30분."
+            },
+            {
+              "id": "time-24-hour-colon",
+              "label": "Use the 24-hour clock with a colon",
+              "examples": ["06:00", "19:30"],
+              "rule": "When writing about times of the day, use the 24-hour clock and write time with Arabic numerals and a colon. Examples: 06:00; 19:30."
+            },
+            {
+              "id": "time-24-hour-hangul",
+              "label": "Use the 24-hour clock with 시 and 분",
+              "examples": ["6시", "19시 30분"],
+              "rule": "When writing about times of the day, use the 24-hour clock and write “hours” (시) and “minutes” (분) in Hangul. Examples: 6시; 19시 30분."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "currencies",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currency-hangul-unit-after",
+              "label": "Spell out the word in Hangul after the amount",
+              "examples": ["5000원", "100달러"],
+              "rule": "When writing currencies, spell out the word in Hangul after the amount. Examples: 5000원; 100달러."
+            },
+            {
+              "id": "currency-symbol-before",
+              "label": "Use the currency symbol before the amount",
+              "examples": ["₩5000", "$100"],
+              "rule": "When writing currencies, use the currency symbol before the amount. Examples: ₩5000; $100."
+            },
+            {
+              "id": "currency-iso-before",
+              "label": "Use the ISO code before the amount",
+              "examples": ["KRW 5000", "USD 100"],
+              "rule": "When writing currencies, use the ISO code before the amount. Examples: KRW 5000; USD 100."
+            }
+          ]
+        },
+        {
+          "id": "large-numbers",
+          "title": "Large numbers",
+          "options": [
+            {
+              "id": "large-numbers-arabic-only",
+              "label": "Use only Arabic numerals",
+              "examples": ["125000"],
+              "rule": "When writing large numbers, use only Arabic numerals. Example: 125000."
+            },
+            {
+              "id": "large-numbers-hangul-space",
+              "label": "Use 만, 억, 조 with a space",
+              "examples": ["12만 5000"],
+              "rule": "When writing large numbers, use Hangul for “million,” “billion,” and “trillion” (만, 억, 조) with a space. Example: 12만 5000."
+            },
+            {
+              "id": "large-numbers-hangul-no-space",
+              "label": "Use 만, 억, 조 without a space",
+              "examples": ["12만5000"],
+              "rule": "When writing large numbers, use Hangul for “million,” “billion,” and “trillion” without a space. Example: 12만5000."
+            }
+          ]
+        },
+        {
+          "id": "thousands-separators",
+          "title": "Thousands separators",
+          "options": [
+            {
+              "id": "thousands-no-separator",
+              "label": "Don’t use",
+              "examples": ["125000"],
+              "rule": "For thousands separators, don’t use them. Example: 125000."
+            },
+            {
+              "id": "thousands-use-comma",
+              "label": "Use",
+              "examples": ["125,000"],
+              "rule": "For thousands separators, use them. Example: 125,000."
+            }
+          ]
+        },
+        {
+          "id": "percentages",
+          "title": "Percentages",
+          "options": [
+            {
+              "id": "percent-hangul-no-space",
+              "label": "Use Hangul without a space",
+              "examples": ["70퍼센트"],
+              "rule": "When writing percentages, use Hangul for “percent” without a space. Example: 70퍼센트."
+            },
+            {
+              "id": "percent-sign-no-space",
+              "label": "Use % without a space",
+              "examples": ["70%"],
+              "rule": "When writing percentages, use % without a space. Example: 70%."
+            },
+            {
+              "id": "percent-hangul-space",
+              "label": "Use Hangul with a space",
+              "examples": ["70 퍼센트"],
+              "rule": "When writing percentages, use Hangul for “percent” with a space. Example: 70 퍼센트."
+            },
+            {
+              "id": "percent-sign-space",
+              "label": "Use % with a space",
+              "examples": ["70 %"],
+              "rule": "When writing percentages, use % with a space. Example: 70 %."
+            }
+          ]
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units",
+          "options": [
+            {
+              "id": "units-spell-out-korean",
+              "label": "Spell out units in Korean",
+              "examples": ["100 제곱미터"],
+              "rule": "For units of measure, spell out units in Korean instead of using symbols. Example: 100 제곱미터."
+            },
+            {
+              "id": "units-si-symbols",
+              "label": "Use SI symbols",
+              "examples": ["100 ㎡"],
+              "rule": "For units of measure, use SI symbols. Example: 100 ㎡."
+            }
+          ]
+        },
+        {
+          "id": "unit-noun-spacing",
+          "title": "Between unit nouns and numbers",
+          "options": [
+            {
+              "id": "unit-spacing-none",
+              "label": "Don’t use spaces",
+              "examples": ["10명"],
+              "rule": "Between unit nouns and numbers, don’t use spaces. Example: 10명."
+            },
+            {
+              "id": "unit-spacing-use",
+              "label": "Use spaces",
+              "examples": ["10 명"],
+              "rule": "Between unit nouns and numbers, use spaces. Example: 10 명."
+            }
+          ]
+        },
+        {
+          "id": "temperatures",
+          "title": "Temperatures",
+          "options": [
+            {
+              "id": "temperature-full-unit",
+              "label": "Spell out the full unit",
+              "examples": ["섭씨 100도", "화씨 32도", "0캘빈"],
+              "rule": "When writing temperatures, use numerals for the measure but spell out the full unit. Examples: 섭씨 100도; 화씨 32도; 0캘빈."
+            },
+            {
+              "id": "temperature-do",
+              "label": "Use numerals followed by 도",
+              "examples": ["100도"],
+              "rule": "When writing temperatures, use numerals followed by the word “degrees” (도). Example: 100도."
+            },
+            {
+              "id": "temperature-symbol-space",
+              "label": "Use the unit symbol with a space",
+              "examples": ["100 ℃", "32 ℉", "273.16 K"],
+              "rule": "When writing temperatures, use numerals followed by the unit symbol, with a space. Examples: 100 ℃; 32 ℉; 273.16 K."
+            },
+            {
+              "id": "temperature-symbol-no-space",
+              "label": "Use the unit symbol without a space",
+              "examples": ["100℃", "32℉", "273.16K"],
+              "rule": "When writing temperatures, use numerals followed by the unit symbol, without a space. Examples: 100℃; 32℉; 273.16K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "colons",
+          "title": "Colons",
+          "options": [
+            {
+              "id": "colon-no-spaces-time-versus",
+              "label": "Don’t use spaces before or after a colon for time, verses, versus, or to",
+              "examples": ["오전 11:30", "요한복음 3:5", "한국과 일본은 0:0으로 경기를 마쳤다."],
+              "rule": "Don’t use spaces before or after a colon when separating hours and minutes or chapters and verses, or when it is used to mean “versus” or “to.” Examples: 오전 11:30; 요한복음 3:5; 한국과 일본은 0:0으로 경기를 마쳤다."
+            },
+            {
+              "id": "colon-heading-space-after",
+              "label": "Use a space after a colon in a heading",
+              "examples": ["일시: 2025년 10월 10일"],
+              "rule": "Use a space after a colon in a heading but not before it. Example: 일시: 2025년 10월 10일."
+            }
+          ]
+        },
+        {
+          "id": "commas",
+          "title": "Commas",
+          "options": [
+            {
+              "id": "comma-after-conjunctive-adverbs-none",
+              "label": "Don’t use",
+              "examples": ["그런데 나는..."],
+              "rule": "After conjunctive adverbs, don’t use a comma. Example: 그런데 나는...."
+            },
+            {
+              "id": "comma-after-conjunctive-adverbs-use",
+              "label": "Use",
+              "examples": ["그런데, 나는..."],
+              "rule": "After conjunctive adverbs, use a comma. Example: 그런데, 나는...."
+            }
+          ]
+        },
+        {
+          "id": "ellipses",
+          "title": "Ellipses",
+          "options": [
+            {
+              "id": "ellipses-six-bottom",
+              "label": "Use six dots at the bottom",
+              "examples": ["......"],
+              "rule": "When using ellipses, use six dots at the bottom (......)."
+            },
+            {
+              "id": "ellipses-six-center",
+              "label": "Use six dots in the center",
+              "examples": ["⋯⋯"],
+              "rule": "When using ellipses, use six dots in the center (⋯⋯)."
+            },
+            {
+              "id": "ellipses-three-bottom",
+              "label": "Use three dots at the bottom",
+              "examples": ["..."],
+              "rule": "When using ellipses, use three dots at the bottom (...)."
+            },
+            {
+              "id": "ellipses-three-center",
+              "label": "Use three dots in the center",
+              "examples": ["⋯"],
+              "rule": "When using ellipses, use three dots in the center (⋯)."
+            }
+          ]
+        },
+        {
+          "id": "parentheses",
+          "title": "Parentheses",
+          "examples": ["소크라테스(고대 그리스의 철학자)의 말을 빌리면 다음과 같다."],
+          "rule": "When using parentheses to provide supplementary information for a word or phrase, attach them directly to the surrounding words without spaces. Example: 소크라테스(고대 그리스의 철학자)의 말을 빌리면 다음과 같다."
+        },
+        {
+          "id": "periods",
+          "title": "Periods",
+          "options": [
+            {
+              "id": "period-in-quote-none",
+              "label": "Don’t use",
+              "examples": ["그는 “오늘은 정말 좋은 날이야”라고 말했다."],
+              "rule": "For periods in a quote, don’t use them. Example: 그는 “오늘은 정말 좋은 날이야”라고 말했다."
+            },
+            {
+              "id": "period-in-quote-use",
+              "label": "Use",
+              "examples": ["그는 “오늘은 정말 좋은 날이야.”라고 말했다."],
+              "rule": "For periods in a quote, use them. Example: 그는 “오늘은 정말 좋은 날이야.”라고 말했다."
+            }
+          ]
+        },
+        {
+          "id": "quotation-marks",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "quotation-marks-curly",
+              "label": "Curly quotation marks",
+              "rule": "Use curly (“...”) quotation marks."
+            },
+            {
+              "id": "quotation-marks-straight",
+              "label": "Straight quotation marks",
+              "rule": "Use straight (\"...\") quotation marks."
+            },
+            {
+              "id": "quotation-mark-hierarchy",
+              "label": "Use double for primary and single for secondary quotations",
+              "rule": "Use double for primary quotation marks and single for secondary quotation marks."
+            }
+          ]
+        },
+        {
+          "id": "dashes",
+          "title": "Dashes",
+          "options": [
+            {
+              "id": "range-hyphen",
+              "label": "Use a hyphen",
+              "examples": ["9월 15일-9월 25일", "서울-천안 정도는 출퇴근이 가능하다."],
+              "rule": "When indicating a range of numbers or dates, use a hyphen (-). Examples: 9월 15일-9월 25일; 서울-천안 정도는 출퇴근이 가능하다."
+            },
+            {
+              "id": "range-buteo-kkaji",
+              "label": "Use 부터…까지",
+              "examples": ["9월 15일부터 9월 25일까지"],
+              "rule": "When indicating a range of numbers or dates, use “부터…까지” (“from...to”). Example: 9월 15일부터 9월 25일까지."
+            },
+            {
+              "id": "range-tilde",
+              "label": "Use a tilde",
+              "examples": ["9월 15일~9월 25일", "서울~천안 정도는 출퇴근이 가능하다."],
+              "rule": "When indicating a range of numbers or dates, use a tilde (~). Examples: 9월 15일~9월 25일; 서울~천안 정도는 출퇴근이 가능하다."
+            }
+          ]
+        },
+        {
+          "id": "hyphens-commas-middle-dots",
+          "title": "Hyphens, commas, and middle dots",
+          "options": [
+            {
+              "id": "join-related-comma",
+              "label": "Use a comma",
+              "examples": ["한, 일 양국 간의 무역량"],
+              "rule": "When joining closely related words or phrases, use a comma (,). Example: 한, 일 양국 간의 무역량."
+            },
+            {
+              "id": "join-related-hyphen",
+              "label": "Use a hyphen",
+              "examples": ["한-일 양국 간의 무역량"],
+              "rule": "When joining closely related words or phrases, use a hyphen (-). Example: 한-일 양국 간의 무역량."
+            },
+            {
+              "id": "join-related-middle-dot",
+              "label": "Use a middle dot",
+              "examples": ["한·일 양국 간의 무역량"],
+              "rule": "When joining closely related words or phrases, use a middle dot (·). Example: 한·일 양국 간의 무역량."
+            }
+          ]
+        },
+        {
+          "id": "double-title-markers",
+          "title": "Double title markers",
+          "options": [
+            {
+              "id": "double-title-angle-brackets",
+              "label": "Use double angle brackets",
+              "examples": ["《훈민정음》은 1997년..."],
+              "rule": "When writing the titles of books and newspapers, use double angle brackets (《...》). Example: 《훈민정음》은 1997년...."
+            },
+            {
+              "id": "double-title-corner-brackets",
+              "label": "Use double corner brackets",
+              "examples": ["『훈민정음』은 1997년..."],
+              "rule": "When writing the titles of books and newspapers, use double corner brackets (『...』). Example: 『훈민정음』은 1997년...."
+            },
+            {
+              "id": "double-title-straight-quotes",
+              "label": "Use double straight quotation marks",
+              "examples": ["\"훈민정음\"은 1997년..."],
+              "rule": "When writing the titles of books and newspapers, use double straight quotation marks (\"...\"). Example: \"훈민정음\"은 1997년...."
+            }
+          ]
+        },
+        {
+          "id": "single-title-markers",
+          "title": "Single title markers",
+          "options": [
+            {
+              "id": "single-title-angle-brackets",
+              "label": "Use single angle brackets",
+              "examples": ["현행〈국어의 로마자 표기법〉은..."],
+              "rule": "When marking titles of creative works (subheadings, paintings, songs), as well as trade names, laws, and regulations, use single angle brackets (〈...〉). Example: 현행〈국어의 로마자 표기법〉은...."
+            },
+            {
+              "id": "single-title-corner-brackets",
+              "label": "Use single corner brackets",
+              "examples": ["현행 ｢국어의 로마자 표기법｣은..."],
+              "rule": "When marking titles of creative works (subheadings, paintings, songs), as well as trade names, laws, and regulations, use single corner brackets (「...」). Example: 현행 ｢국어의 로마자 표기법｣은...."
+            },
+            {
+              "id": "single-title-straight-quotes",
+              "label": "Use single straight quotation marks",
+              "examples": ["현행 '국어의 로마자 표기법'은..."],
+              "rule": "When marking titles of creative works (subheadings, paintings, songs), as well as trade names, laws, and regulations, use single straight quotation marks ('...'). Example: 현행 '국어의 로마자 표기법'은...."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "abbreviations",
+          "title": "Abbreviations",
+          "options": [
+            {
+              "id": "abbreviations-avoid",
+              "label": "Don’t use abbreviations unless necessary",
+              "examples": ["노동조합(O) → 노조(X)"],
+              "rule": "For abbreviations, don’t use abbreviations unless necessary. Example: 노동조합(O) → 노조(X)."
+            },
+            {
+              "id": "abbreviations-as-needed",
+              "label": "Use abbreviations as needed",
+              "examples": ["노동조합(O) → 노조(O)"],
+              "rule": "For abbreviations, use abbreviations as needed. Example: 노동조합(O) → 노조(O)."
+            }
+          ]
+        },
+        {
+          "id": "active-passive",
+          "title": "Active/passive",
+          "options": [
+            {
+              "id": "active-preferred",
+              "label": "Use active voice; use passive voice only when the agent is unknown or irrelevant",
+              "rule": "For passive voice, use active voice; use passive voice only when the agent is unknown or irrelevant."
+            },
+            {
+              "id": "passive-as-needed",
+              "label": "Use passive voice as needed",
+              "rule": "For passive voice, use passive voice as needed."
+            }
+          ]
+        },
+        {
+          "id": "established-loanwords",
+          "title": "Loanwords",
+          "options": [
+            {
+              "id": "established-loanwords-use",
+              "label": "Use as is",
+              "examples": ["커플", "이벤트", "다이어트 등"],
+              "rule": "For established loanwords, use them as is. Examples: 커플; 이벤트; 다이어트 등."
+            },
+            {
+              "id": "established-loanwords-native-equivalents",
+              "label": "Use native or Sino-Korean equivalents",
+              "examples": ["이슈 → 쟁점", "인프라 → 기반시설"],
+              "rule": "For established loanwords, use native or Sino-Korean equivalents. Examples: 이슈 → 쟁점; 인프라 → 기반시설."
+            }
+          ]
+        },
+        {
+          "id": "unestablished-loanwords",
+          "title": "Unestablished loanwords",
+          "options": [
+            {
+              "id": "unestablished-loanwords-paraphrase",
+              "label": "Paraphrase in Korean",
+              "examples": ["클리셰 전개 → 진부한 전개"],
+              "rule": "For unestablished loanwords, paraphrase in Korean. Example: 클리셰 전개 → 진부한 전개."
+            },
+            {
+              "id": "unestablished-loanwords-use",
+              "label": "Use as is",
+              "examples": ["클리셰 전개 → 클리셰 전개"],
+              "rule": "For unestablished loanwords, use them as is. Example: 클리셰 전개 → 클리셰 전개."
+            },
+            {
+              "id": "unestablished-loanwords-use-with-explanation",
+              "label": "Use as is, with a brief explanation in parentheses",
+              "examples": ["클리셰 전개 → 클리셰(진부한) 전개"],
+              "rule": "For unestablished loanwords, use them as is, with a brief explanation in parentheses. Example: 클리셰 전개 → 클리셰(진부한) 전개."
+            }
+          ]
+        },
+        {
+          "id": "first-person-pronouns",
+          "title": "Pronouns",
+          "options": [
+            {
+              "id": "first-person-none",
+              "label": "Don’t use first-person pronouns",
+              "rule": "For first-person pronouns, don’t use first-person pronouns, for a more impersonal tone."
+            },
+            {
+              "id": "first-person-omit-when-clear",
+              "label": "Omit the first-person subject when clear from context",
+              "rule": "For first-person pronouns, omit the first-person subject when it is clear from context."
+            },
+            {
+              "id": "first-person-use",
+              "label": "Use first-person pronouns as they are",
+              "rule": "For first-person pronouns, use first-person pronouns as they are."
+            }
+          ]
+        },
+        {
+          "id": "second-person-pronouns",
+          "title": "Second-person pronouns",
+          "options": [
+            {
+              "id": "second-person-none",
+              "label": "Don’t use second-person pronouns",
+              "examples": ["독자", "사용자", "고객님", "선생님 등"],
+              "rule": "For second-person pronouns, don’t use second-person pronouns, for a more impersonal tone. Examples: 독자; 사용자; 고객님; 선생님 등."
+            },
+            {
+              "id": "second-person-use",
+              "label": "Use second-person pronouns as they are",
+              "rule": "For second-person pronouns, use second-person pronouns as they are."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "formality-and-sentence-endings",
+          "title": "Formality and sentence endings",
+          "options": [
+            {
+              "id": "endings-mix-hapsho-haeyo",
+              "label": "Mix Hapsho and Haeyo styles appropriately",
+              "examples": ["일정은 아래와 같습니다. 꼭 참여해 보세요."],
+              "rule": "For declarative endings, mix Hapsho and Haeyo styles appropriately. Example: 일정은 아래와 같습니다. 꼭 참여해 보세요."
+            },
+            {
+              "id": "endings-haeyo",
+              "label": "Use the Haeyo style",
+              "examples": ["일정은 아래와 같아요. 꼭 참여해 보세요."],
+              "rule": "For declarative endings, use the Haeyo style (–어요/–해요). Example: 일정은 아래와 같아요. 꼭 참여해 보세요."
+            },
+            {
+              "id": "endings-hapsho",
+              "label": "Use the Hapsho style",
+              "examples": ["일정은 아래와 같습니다. 꼭 참여해 보십시오."],
+              "rule": "For declarative endings, use the Hapsho style (–습니다/–십시오). Example: 일정은 아래와 같습니다. 꼭 참여해 보십시오."
+            },
+            {
+              "id": "endings-hara",
+              "label": "Use the Hara style",
+              "examples": ["일정은 아래와 같다. 꼭 참여해 보길 바린다."],
+              "rule": "For declarative endings, use the Hara style (–하다/–이다). Example: 일정은 아래와 같다. 꼭 참여해 보길 바린다."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

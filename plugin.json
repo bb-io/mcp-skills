@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "blackbird",
+  "version": "0.1.3",
+  "description": "AI orchestration, context, and governance for multilingual content.",
+  "author": {
+    "name": "Blackbird.io"
+  },
+  "keywords": ["multilingual-content", "localization", "governance", "orchestration"],
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "displayName": "Blackbird",
+        "shortDescription": "AI orchestration and governance for multilingual content.",
+        "longDescription": "Blackbird provides the AI orchestration, context, and governance layer around multilingual content, helping teams analyze content and manage strategies, styleguides, and terminology.",
+        "developerName": "Blackbird.io",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "composerIcon": "./bb.png",
+        "logo": "./bb.png",
+        "defaultPrompt": [
+          "Analyze this multilingual content and recommend improvements.",
+          "Review unit changes and suggest a styleguide update.",
+          "Find terminology issues in this multilingual content."
+        ]
+      }
+    }
+  }
+}

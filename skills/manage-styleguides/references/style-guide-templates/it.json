@@ -1,0 +1,607 @@
+{
+  "language": "it",
+  "label": "Italian",
+  "categories": [
+    {
+      "id": "abbreviations",
+      "title": "Abbreviations",
+      "rules": [
+        {
+          "id": "acronyms-periods",
+          "title": "Acronyms",
+          "rule": "Don’t use periods for acronyms. Examples: FIAT; LGBT."
+        },
+        {
+          "id": "uppercase-acronyms-spacing",
+          "title": "When writing uppercase acronyms",
+          "options": [
+            {
+              "id": "uppercase-acronyms-no-spaces",
+              "label": "Don’t use spaces",
+              "examples": ["FIAT", "LGBT"],
+              "rule": "When writing uppercase acronyms, don’t use spaces. Examples: FIAT; LGBT."
+            },
+            {
+              "id": "uppercase-acronyms-use-spaces",
+              "label": "Use spaces",
+              "examples": ["F I A T", "L G B T"],
+              "rule": "When writing uppercase acronyms, use spaces. Examples: F I A T; L G B T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "centuries",
+          "title": "Date format",
+          "options": [
+            {
+              "id": "centuries-words",
+              "label": "Write them in words",
+              "examples": ["Il ventesimo secolo", "il Novecento"],
+              "rule": "When writing centuries, write them in words. Examples: Il ventesimo secolo; il Novecento."
+            },
+            {
+              "id": "centuries-numerals",
+              "label": "Write them in numerals",
+              "examples": ["Il XX secolo", "il ’900"],
+              "rule": "When writing centuries, write them in numerals. Examples: Il XX secolo; il ’900."
+            }
+          ]
+        },
+        {
+          "id": "numerical-dates",
+          "title": "For dates in numerical form",
+          "options": [
+            {
+              "id": "dates-hyphens",
+              "label": "Use hyphens",
+              "examples": ["22-09-1996"],
+              "rule": "For dates in numerical form, use hyphens. Example: 22-09-1996."
+            },
+            {
+              "id": "dates-periods",
+              "label": "Use periods",
+              "examples": ["22.09.1996"],
+              "rule": "For dates in numerical form, use periods. Example: 22.09.1996."
+            },
+            {
+              "id": "dates-slashes",
+              "label": "Use slashes",
+              "examples": ["22/09/1996"],
+              "rule": "For dates in numerical form, use slashes. Example: 22/09/1996."
+            }
+          ]
+        },
+        {
+          "id": "decades",
+          "title": "When writing decades",
+          "options": [
+            {
+              "id": "decades-words",
+              "label": "Write them in words",
+              "examples": ["Gli anni Sessanta"],
+              "rule": "When writing decades, write them in words. Example: Gli anni Sessanta."
+            },
+            {
+              "id": "decades-figures-apostrophe",
+              "label": "Write them in figures with the apostrophe",
+              "examples": ["Gli anni ’60"],
+              "rule": "When writing decades, write them in figures, abbreviated, and with the apostrophe. Example: Gli anni ’60."
+            },
+            {
+              "id": "decades-figures-no-apostrophe",
+              "label": "Write them in figures without the apostrophe",
+              "examples": ["Gli anni 60"],
+              "rule": "When writing decades, write them in figures, abbreviated, and without the apostrophe. Example: Gli anni 60."
+            }
+          ]
+        },
+        {
+          "id": "single-digit-days-and-months",
+          "title": "For single-digit days and months",
+          "options": [
+            {
+              "id": "days-months-no-leading-zero",
+              "label": "Don’t use a leading zero",
+              "examples": ["4/3/95"],
+              "rule": "For single-digit days and months, don’t use a leading zero. Example: 4/3/95."
+            },
+            {
+              "id": "days-months-leading-zero",
+              "label": "Use a leading zero",
+              "examples": ["04/03/95"],
+              "rule": "For single-digit days and months, use a leading zero. Example: 04/03/95."
+            }
+          ]
+        },
+        {
+          "id": "writing-dates",
+          "title": "Writing dates",
+          "rule": "Write dates with days and years in figures and months in letters. Example: 22 settembre 1996."
+        },
+        {
+          "id": "writing-years",
+          "title": "When writing years",
+          "options": [
+            {
+              "id": "years-last-two-with-apostrophe",
+              "label": "Write only the last two figures preceded by an apostrophe",
+              "examples": ["’89"],
+              "rule": "When writing years, write only the last two figures preceded by an apostrophe. Example: ’89."
+            },
+            {
+              "id": "years-full",
+              "label": "Write the year in full",
+              "examples": ["1989"],
+              "rule": "When writing years, write the year in full. Example: 1989."
+            }
+          ]
+        },
+        {
+          "id": "time-separator",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "time-colon",
+              "label": "Use a colon",
+              "examples": ["18:45:37"],
+              "rule": "To separate hours, minutes, and seconds, use a colon. Example: 18:45:37."
+            },
+            {
+              "id": "time-period",
+              "label": "Use a period",
+              "examples": ["18.45.37"],
+              "rule": "To separate hours, minutes, and seconds, use a period. Example: 18.45.37."
+            }
+          ]
+        },
+        {
+          "id": "midnight-in-numerals",
+          "title": "When indicating midnight in numerals",
+          "options": [
+            {
+              "id": "midnight-0000",
+              "label": "Use 00:00",
+              "rule": "When indicating midnight in numerals, use 00:00."
+            },
+            {
+              "id": "midnight-2400",
+              "label": "Use 24:00",
+              "rule": "When indicating midnight in numerals, use 24:00."
+            }
+          ]
+        },
+        {
+          "id": "single-digit-hours",
+          "title": "For single-digit hours",
+          "options": [
+            {
+              "id": "hours-no-leading-zero",
+              "label": "Don’t use a leading zero",
+              "examples": ["5:50"],
+              "rule": "For single-digit hours, don’t use a leading zero. Example: 5:50."
+            },
+            {
+              "id": "hours-leading-zero",
+              "label": "Use a leading zero",
+              "examples": ["05:50"],
+              "rule": "For single-digit hours, use a leading zero. Example: 05:50."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "currencies",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currency-symbol-after-no-space",
+              "label": "Use the currency symbol after the amount, without a space",
+              "examples": ["5€"],
+              "rule": "When writing currencies, use the currency symbol after the amount, without a space. Example: 5€."
+            },
+            {
+              "id": "currency-symbol-after-space",
+              "label": "Use the currency symbol after the amount, with a space",
+              "examples": ["5 €"],
+              "rule": "When writing currencies, use the currency symbol after the amount, with a space. Example: 5 €."
+            },
+            {
+              "id": "currency-iso-after-space",
+              "label": "Use the ISO code after the amount, with a space",
+              "examples": ["5 EUR"],
+              "rule": "When writing currencies, use the ISO code after the amount, with a space. Example: 5 EUR."
+            },
+            {
+              "id": "currency-word-after-lowercase",
+              "label": "Spell out the word after the amount and in lowercase",
+              "examples": ["5 euro"],
+              "rule": "When writing currencies, spell out the word after the amount and in lowercase. Example: 5 euro."
+            },
+            {
+              "id": "currency-symbol-before-no-space",
+              "label": "Use the currency symbol before the amount, without a space",
+              "examples": ["€5"],
+              "rule": "When writing currencies, use the currency symbol before the amount, without a space. Example: €5."
+            },
+            {
+              "id": "currency-symbol-before-space",
+              "label": "Use the currency symbol before the amount, with a space",
+              "examples": ["€ 5"],
+              "rule": "When writing currencies, use the currency symbol before the amount, with a space. Example: € 5."
+            }
+          ]
+        },
+        {
+          "id": "large-sums-of-money",
+          "title": "Writing large sums of money",
+          "options": [
+            {
+              "id": "large-sums-spell-out",
+              "label": "Spell out “milione” and “miliardo”",
+              "examples": ["8 milioni", "15 miliardi"],
+              "rule": "When writing large sums of money, spell out the words “milione” and “miliardo”. Examples: 8 milioni; 15 miliardi."
+            },
+            {
+              "id": "large-sums-mio-mrd",
+              "label": "Use “mio” and “mrd”",
+              "examples": ["8 mio", "15 mrd"],
+              "rule": "When writing large sums of money, use “mio” and “mrd” instead of “milione” and “miliardo”. Examples: 8 mio; 15 mrd."
+            }
+          ]
+        },
+        {
+          "id": "percentages",
+          "title": "Percentages",
+          "options": [
+            {
+              "id": "percent-no-space",
+              "label": "Use % without a space",
+              "examples": ["99%"],
+              "rule": "When writing percentages, use % without a space. Example: 99%."
+            },
+            {
+              "id": "percent-per-cento",
+              "label": "Write “per cento”",
+              "examples": ["99 per cento"],
+              "rule": "When writing percentages, write “per cento”. Example: 99 per cento."
+            },
+            {
+              "id": "percent-percento",
+              "label": "Write “percento”",
+              "examples": ["99 percento"],
+              "rule": "When writing percentages, write “percento”. Example: 99 percento."
+            },
+            {
+              "id": "percent-space",
+              "label": "Use % with a space",
+              "examples": ["99 %"],
+              "rule": "When writing percentages, use % with a space. Example: 99 %."
+            }
+          ]
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units of measure and spacing",
+          "options": [
+            {
+              "id": "units-abbreviate-with-numeral",
+              "label": "Abbreviate with a numeral but spell out without",
+              "examples": ["12 kg", "Ha percorso diversi chilometri a piedi"],
+              "rule": "For units of measure, abbreviate when used with a numeral but spell out when used without. Examples: 12 kg; Ha percorso diversi chilometri a piedi."
+            },
+            {
+              "id": "units-always-abbreviate",
+              "label": "Always abbreviate",
+              "examples": ["Ha percorso diversi km a piedi"],
+              "rule": "For units of measure, always abbreviate, with or without a numeral. Example: Ha percorso diversi km a piedi."
+            },
+            {
+              "id": "units-always-spell-out",
+              "label": "Always spell out",
+              "examples": ["Ha percorso 10 chilometri a piedi"],
+              "rule": "For units of measure, always spell out, with or without a numeral. Example: Ha percorso 10 chilometri a piedi."
+            },
+            {
+              "id": "units-spelled-out-number-rule",
+              "label": "Spell out units with spelled-out numbers, abbreviate with numerals",
+              "examples": ["Pesa due chili", "Pesa 12 kg"],
+              "rule": "When numbers are spelled out, spell out the units; when numbers are written as numerals, abbreviate the units. Examples: Pesa due chili; Pesa 12 kg."
+            }
+          ]
+        },
+        {
+          "id": "units-spacing",
+          "title": "Spacing for units of measure",
+          "options": [
+            {
+              "id": "units-no-space",
+              "label": "Don’t use a space between a numeral and unit",
+              "examples": ["12kg"],
+              "rule": "For units of measure, don’t use a space between a numeral and unit. Example: 12kg."
+            },
+            {
+              "id": "units-use-space",
+              "label": "Use a space between a numeral and unit",
+              "examples": ["12 kg"],
+              "rule": "For units of measure, use a space between a numeral and unit. Example: 12 kg."
+            }
+          ]
+        },
+        {
+          "id": "temperatures",
+          "title": "Temperatures",
+          "options": [
+            {
+              "id": "temperature-unit-full",
+              "label": "Write the name of the unit of measure in full",
+              "examples": ["32 gradi Celsius", "98 gradi Fahrenheit", "37 gradi Kelvin"],
+              "rule": "When writing temperatures, write the name of the unit of measure in full. Examples: 32 gradi Celsius; 98 gradi Fahrenheit; 37 gradi Kelvin."
+            },
+            {
+              "id": "temperature-grado-gradi",
+              "label": "Use “grado” or “gradi” without specifying the scale",
+              "examples": ["Cinque gradi", "25 gradi"],
+              "rule": "When writing temperatures, use the word “grado” or “gradi” without specifying the temperature scale. Examples: Cinque gradi; 25 gradi."
+            },
+            {
+              "id": "temperature-symbol-space",
+              "label": "Use numerals followed by the unit symbol, with a space",
+              "examples": ["32 °C", "98 °F", "37 K"],
+              "rule": "When writing temperatures, use numerals followed by the unit symbol, with a space. Examples: 32 °C; 98 °F; 37 K."
+            },
+            {
+              "id": "temperature-symbol-no-space",
+              "label": "Use numerals followed by the unit symbol, without a space",
+              "examples": ["32°C", "98°F", "37K"],
+              "rule": "When writing temperatures, use numerals followed by the unit symbol, without a space. Examples: 32°C; 98°F; 37K."
+            }
+          ]
+        },
+        {
+          "id": "thousands-separators",
+          "title": "Numbers",
+          "options": [
+            {
+              "id": "thousands-period",
+              "label": "Use a period as the thousands separator",
+              "examples": ["25.000"],
+              "rule": "For thousands separators, use a period as the thousands separator. Example: 25.000."
+            },
+            {
+              "id": "thousands-space",
+              "label": "Use a space as the thousands separator",
+              "examples": ["25 000"],
+              "rule": "For thousands separators, use a space as the thousands separator. Example: 25 000."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "phone-numbers",
+          "title": "Spacing and hyphens",
+          "options": [
+            {
+              "id": "phone-no-spaces",
+              "label": "Don’t use spaces",
+              "examples": ["+3912345678"],
+              "rule": "When writing phone numbers, don’t use spaces. Example: +3912345678."
+            },
+            {
+              "id": "phone-space-after-country-code",
+              "label": "Use a space after the country code",
+              "examples": ["+39 12345678"],
+              "rule": "When writing phone numbers, use a space after the country code. Example: +39 12345678."
+            }
+          ]
+        },
+        {
+          "id": "ranges",
+          "title": "When indicating a range of numbers or dates",
+          "options": [
+            {
+              "id": "range-hyphen-spaces",
+              "label": "Use a hyphen with spaces",
+              "examples": ["2001 - 2003", "lunedì - venerdì"],
+              "rule": "When indicating a range of numbers or dates, use a hyphen (-) with spaces. Examples: 2001 - 2003; lunedì - venerdì."
+            },
+            {
+              "id": "range-hyphen-no-spaces",
+              "label": "Use a hyphen without spaces",
+              "examples": ["2001-2003", "lunedì-venerdì"],
+              "rule": "When indicating a range of numbers or dates, use a hyphen (-) without spaces. Examples: 2001-2003; lunedì-venerdì."
+            },
+            {
+              "id": "range-da-a",
+              "label": "Use “da…a”",
+              "examples": ["Dal 2001 al 2003", "dal lunedì al venerdì"],
+              "rule": "When indicating a range of numbers or dates, use “da…a” (“from...to”). Examples: Dal 2001 al 2003; dal lunedì al venerdì."
+            }
+          ]
+        },
+        {
+          "id": "quotation-marks-and-apostrophes",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "curly-quotes-curly-apostrophe",
+              "label": "Use curly quotation marks and the curly apostrophe",
+              "examples": ["“Sarà per un’altra volta!”"],
+              "rule": "Use double (“...”) and single (‘...’) curly quotation marks and the curly apostrophe (’). Example: “Sarà per un’altra volta!”."
+            },
+            {
+              "id": "straight-quotes-straight-apostrophe",
+              "label": "Use straight quotation marks and the straight apostrophe",
+              "examples": ["\"Sarà per un'altra volta!\""],
+              "rule": "Use double (\"...\") and single ('...') straight quotation marks and the straight apostrophe ('). Example: \"Sarà per un'altra volta!\"."
+            },
+            {
+              "id": "guillemets-curly-apostrophe",
+              "label": "Use guillemets and the curly apostrophe",
+              "examples": ["«Sarà per un’altra volta!»"],
+              "rule": "Use guillemets («…») and the curly apostrophe (’). Example: «Sarà per un’altra volta!»."
+            },
+            {
+              "id": "guillemets-straight-apostrophe",
+              "label": "Use guillemets and the straight apostrophe",
+              "examples": ["«Sarà per un'altra volta!»"],
+              "rule": "Use guillemets («…») and the straight apostrophe ('). Example: «Sarà per un'altra volta!»."
+            }
+          ]
+        },
+        {
+          "id": "quotation-mark-hierarchy",
+          "title": "Quotation mark hierarchy",
+          "options": [
+            {
+              "id": "hierarchy-curly-single",
+              "label": "Use curly double marks and curly single marks inside",
+              "examples": ["“Preferiamo un approccio ‘human-in-the-loop’”"],
+              "rule": "Use double curly quotation marks (“...”) for quotes and single ones (‘...’) for quotes within quotes. Example: “Preferiamo un approccio ‘human-in-the-loop’”."
+            },
+            {
+              "id": "hierarchy-straight-single",
+              "label": "Use straight double marks and straight single marks inside",
+              "examples": ["\"Preferiamo un approccio 'human-in-the-loop'\""],
+              "rule": "Use double straight quotation marks (\"...\") for quotes and single ones ('...') for quotes within quotes. Example: \"Preferiamo un approccio 'human-in-the-loop'\"."
+            },
+            {
+              "id": "hierarchy-guillemets-curly-double",
+              "label": "Use guillemets and curly double marks inside",
+              "examples": ["«Preferiamo un approccio “human-in-the-loop”»"],
+              "rule": "Use guillemets («…») for quotes and double curly quotation marks (“...”) for quotes within quotes. Example: «Preferiamo un approccio “human-in-the-loop”»."
+            },
+            {
+              "id": "hierarchy-guillemets-straight-double",
+              "label": "Use guillemets and straight double marks inside",
+              "examples": ["«Preferiamo un approccio \"human-in-the-loop\"»"],
+              "rule": "Use guillemets («…») for quotes and double straight quotation marks (\"...\") for quotes within quotes. Example: «Preferiamo un approccio \"human-in-the-loop\"»."
+            },
+            {
+              "id": "hierarchy-guillemets-single-guillemets",
+              "label": "Use guillemets and single guillemets inside",
+              "examples": ["«Preferiamo un approccio ‹human-in-the-loop›»"],
+              "rule": "Use guillemets («…») for quotes and single guillemets (‹...›) for quotes within quotes. Example: «Preferiamo un approccio ‹human-in-the-loop›»."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "passive-voice",
+          "title": "Passive voice",
+          "rule": "Use active voice. Use passive voice only when the agent is unknown or irrelevant."
+        },
+        {
+          "id": "capitalization",
+          "title": "Capitalization",
+          "examples": ["CISL, UIL e UGL sono tre confederazioni sindacali italiane"],
+          "rule": "Don’t use all caps, except when writing out an acronym, initialism, or proper noun. Example: CISL, UIL e UGL sono tre confederazioni sindacali italiane."
+        },
+        {
+          "id": "quotations",
+          "title": "Quotations",
+          "options": [
+            {
+              "id": "quotations-dont-edit",
+              "label": "Don’t make changes to quoted material",
+              "rule": "When including quotes, don’t make changes to quoted material, regardless of style rules."
+            },
+            {
+              "id": "quotations-edit",
+              "label": "Edit quoted material to adhere to style rules",
+              "rule": "When including quotes, edit quoted material to adhere to style rules."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "formality",
+          "title": "Formality",
+          "options": [
+            {
+              "id": "formality-lei",
+              "label": "Use the formal “lei”",
+              "rule": "When addressing the reader, use the formal “lei”."
+            },
+            {
+              "id": "formality-tu",
+              "label": "Use the informal “tu”",
+              "rule": "When addressing the reader, use the informal “tu”."
+            }
+          ]
+        },
+        {
+          "id": "inclusive-language",
+          "title": "Inclusive language",
+          "rule": "Replace binary representations of gender with gender-neutral language."
+        },
+        {
+          "id": "gender-unspecified-groups",
+          "title": "When gender is not specified and when referring to a group with people of mixed genders",
+          "options": [
+            {
+              "id": "gender-both-forms",
+              "label": "Use both the feminine and the masculine forms",
+              "examples": ["Gli alunni e le alunne sono rientrati"],
+              "rule": "When gender is not specified and when referring to a group with people of mixed genders, use both the feminine and the masculine forms. Example: Gli alunni e le alunne sono rientrati."
+            },
+            {
+              "id": "gender-universal-feminine",
+              "label": "Use universal feminine form",
+              "examples": ["Ho visto qualcuna passare", "Le alunne sono rientrate"],
+              "rule": "When gender is not specified and when referring to a group with people of mixed genders, use universal feminine form (“femminile sovraesteso”). Examples: Ho visto qualcuna passare; Le alunne sono rientrate."
+            },
+            {
+              "id": "gender-inclusive-nouns",
+              "label": "Use inclusive nouns and adjectives",
+              "examples": ["Ho visto una persona passare", "La classe è rientrata"],
+              "rule": "When gender is not specified and when referring to a group with people of mixed genders, use inclusive nouns and adjectives. Examples: Ho visto una persona passare; La classe è rientrata."
+            },
+            {
+              "id": "gender-universal-masculine",
+              "label": "Use universal masculine form",
+              "examples": ["Ho visto qualcuno passare", "Gli alunni sono rientrati"],
+              "rule": "When gender is not specified and when referring to a group with people of mixed genders, use universal masculine form (“maschile sovraesteso”). Examples: Ho visto qualcuno passare; Gli alunni sono rientrati."
+            }
+          ]
+        },
+        {
+          "id": "non-binary-people",
+          "title": "When referring to non-binary people",
+          "examples": [
+            "Ləi è laureatə",
+            "Loro sono laureatɜ",
+            "Ti presento lə miə amicə",
+            "Loro sono lɜ miɜ amicɜ"
+          ],
+          "rule": "When referring to non-binary people, use the schwa (“ə”) ending for singular forms and the plural schwa (“ɜ”) ending for plural forms. The pronouns are “ləi” for the singular form and “loro” for the plural form. Examples: Ləi è laureatə; Loro sono laureatɜ; Ti presento lə miə amicə; Loro sono lɜ miɜ amicɜ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "language": "ja",
+  "label": "Japanese",
+  "categories": [
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "years",
+          "title": "Years",
+          "options": [
+            {
+              "id": "years-common-era",
+              "label": "Use the Common Era",
+              "examples": ["1922年"],
+              "rule": "For years, use the Common Era. Example: 1922年."
+            },
+            {
+              "id": "years-japanese-imperial-era",
+              "label": "Use the Japanese imperial era",
+              "examples": ["大正11年"],
+              "rule": "For years, use the Japanese imperial era. Example: 大正11年."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "kanji-numbers-approximate",
+          "title": "Kanji numbers",
+          "options": [
+            {
+              "id": "kanji-numbers-approximate-values",
+              "label": "Use kanji numbers for approximate numbers",
+              "examples": ["二十余人", "数十人", "四、五十人"],
+              "rule": "Use kanji numbers for approximate numbers. Examples: 二十余人; 数十人; 四、五十人."
+            },
+            {
+              "id": "kanji-numbers-phrases-and-native-counting",
+              "label": "Use kanji numbers for phrases and native counting",
+              "examples": ["二者択一", "一つ", "二つ", "一人", "二人", "六法全書", "七五三"],
+              "rule": "Use kanji numbers for numbers used in phrases and the counting method based on native Japanese readings in the Standard Kanji Table. Examples: 二者択一; 一つ; 二つ; 一人; 二人; 六法全書; 七五三."
+            }
+          ]
+        },
+        {
+          "id": "currencies",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currencies-japanese-unit-after-number",
+              "label": "Add a currency unit in Japanese after the number",
+              "examples": ["100円", "50ドル", "300ユーロ"],
+              "rule": "For currencies, add a currency unit in Japanese after the number. Examples: 100円; 50ドル; 300ユーロ."
+            },
+            {
+              "id": "currencies-full-width-symbol-no-space",
+              "label": "Add a full-width currency unit symbol without a space",
+              "examples": ["￥100", "＄50"],
+              "rule": "For currencies, add a full-width currency unit symbol without a space in between. Examples: ￥100; ＄50."
+            },
+            {
+              "id": "currencies-half-width-symbol-no-space",
+              "label": "Add a half-width currency unit symbol without a space",
+              "examples": ["¥100", "$50"],
+              "rule": "For currencies, add a half-width currency unit symbol without a space in between. Examples: ¥100; $50."
+            },
+            {
+              "id": "currencies-half-width-symbol-with-space",
+              "label": "Add a half-width currency unit symbol with a half-width space",
+              "examples": ["¥ 100", "$ 50"],
+              "rule": "For currencies, add a half-width currency unit symbol with a half-width space in between. Examples: ¥ 100; $ 50."
+            }
+          ]
+        },
+        {
+          "id": "large-numbers",
+          "title": "Large numbers",
+          "options": [
+            {
+              "id": "large-numbers-comma-every-three-digits",
+              "label": "Add a comma every three digits",
+              "examples": ["5,000", "62,250円", "1,254,372人"],
+              "rule": "For large numbers other than calendar year numbers, add a comma every three digits. Examples: 5,000; 62,250円; 1,254,372人."
+            },
+            {
+              "id": "large-numbers-kanji-units",
+              "label": "Use kanji for trillions, hundred millions, and ten thousands",
+              "examples": ["5兆", "100億", "30万"],
+              "rule": "For large numbers, use kanji for trillions, hundred millions, and ten thousands. Examples: 5兆; 100億; 30万."
+            },
+            {
+              "id": "large-numbers-comma-and-decimal-point",
+              "label": "Use commas and a decimal point",
+              "examples": ["5,000.023"],
+              "rule": "For large numbers other than calendar years, add a half-width “,” for every three digits, and a half-width “.” for a decimal point. Example: 5,000.023."
+            }
+          ]
+        },
+        {
+          "id": "percentages",
+          "title": "Percentages",
+          "options": [
+            {
+              "id": "percentages-full-width-percent-no-space",
+              "label": "Use a full-width percent sign without a space",
+              "examples": ["100％"],
+              "rule": "For percentages, use a full-width “%” without a space between the number and the symbol. Example: 100％."
+            },
+            {
+              "id": "percentages-katakana",
+              "label": "Use katakana",
+              "examples": ["100パーセント"],
+              "rule": "For percentages, use katakana (“パーセント”). Example: 100パーセント."
+            },
+            {
+              "id": "percentages-half-width-percent-with-space",
+              "label": "Use a half-width percent sign with a space",
+              "examples": ["100 %"],
+              "rule": "For percentages, use a half-width “%” with a space between the number and the symbol. Example: 100 %."
+            }
+          ]
+        },
+        {
+          "id": "metric-units",
+          "title": "Metric units",
+          "options": [
+            {
+              "id": "metric-units-katakana",
+              "label": "Spell with katakana or katakana and kanji",
+              "examples": ["メートル", "メートル毎秒"],
+              "rule": "For metric units, spell with katakana or katakana and kanji. Examples: メートル; メートル毎秒."
+            },
+            {
+              "id": "metric-units-symbols",
+              "label": "Use unit symbols",
+              "examples": ["m", "m/s"],
+              "rule": "For metric units, use unit symbols. Examples: m; m/s."
+            }
+          ]
+        },
+        {
+          "id": "temperatures",
+          "title": "Temperatures",
+          "options": [
+            {
+              "id": "temperatures-kanji-do",
+              "label": "Use the kanji unit of 度",
+              "examples": ["20度"],
+              "rule": "For temperatures, use the kanji unit of “度”. Example: 20度."
+            },
+            {
+              "id": "temperatures-celsius-space",
+              "label": "Use ℃ with a space",
+              "examples": ["20 ℃"],
+              "rule": "For temperatures, use °C as a unit with a space between the number and the unit. Example: 20 ℃."
+            },
+            {
+              "id": "temperatures-celsius-no-space",
+              "label": "Use ℃ without a space",
+              "examples": ["20℃"],
+              "rule": "For temperatures, use °C as a unit without a space between the number and the unit. Example: 20℃."
+            }
+          ]
+        },
+        {
+          "id": "hiragana-and-kanji",
+          "title": "Use of hiragana and kanji",
+          "examples": ["３か所", "７か月", "三箇所", "七箇月"],
+          "rule": "When using Arabic numerals in horizontal writing, use “○か所” or “○か月,” but when using kanji numbers, use “○箇所” or “○箇月.” Examples: ３か所; ７か月; 三箇所; 七箇月."
+        },
+        {
+          "id": "writing-numbers",
+          "title": "Numbers",
+          "options": [
+            {
+              "id": "numbers-kanji",
+              "label": "Use kanji numbers",
+              "rule": "When writing numbers, use kanji numbers."
+            },
+            {
+              "id": "numbers-full-width-arabic",
+              "label": "Use full-width Arabic numerals",
+              "examples": ["１", "２", "３", "第一歩", "一生"],
+              "rule": "When writing numbers, use full-width Arabic numerals and use Kanji numbers only where it would otherwise sound unnatural. Examples: １; ２; ３; 第一歩; 一生."
+            },
+            {
+              "id": "numbers-half-width-arabic",
+              "label": "Use half-width Arabic numerals",
+              "examples": ["1", "2", "3", "第一歩", "一生"],
+              "rule": "When writing numbers, use half-width Arabic numerals and use kanji numbers only where it would otherwise sound unnatural. Examples: 1; 2; 3; 第一歩; 一生."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "corner-brackets-and-periods",
+          "title": "Corner brackets and periods",
+          "rule": "When inserting a sentence using corner brackets (「...」), follow the preferred Japanese punctuation pattern consistently."
+        },
+        {
+          "id": "ellipses",
+          "title": "Ellipses",
+          "options": [
+            {
+              "id": "ellipses-one",
+              "label": "Use one ellipsis",
+              "examples": ["…"],
+              "rule": "When omitting a part of a sentence or leaving a lingering impression, use one ellipsis (“…”)."
+            },
+            {
+              "id": "ellipses-three",
+              "label": "Use three ellipses",
+              "examples": ["………"],
+              "rule": "When omitting a part of a sentence or leaving a lingering impression, use three ellipses (“………”)."
+            },
+            {
+              "id": "ellipses-two",
+              "label": "Use two ellipses",
+              "examples": ["……"],
+              "rule": "When omitting a part of a sentence or leaving a lingering impression, use two ellipses (“……” )."
+            }
+          ]
+        },
+        {
+          "id": "double-corner-brackets",
+          "title": "Double corner brackets",
+          "rule": "Use double corner brackets to emphasize words, for reference material written in Japanese, and for nested corner brackets."
+        },
+        {
+          "id": "round-brackets-and-periods-complete-sentence",
+          "title": "Round brackets and periods",
+          "examples": ["今年の生産量は10tだった。（昨年は8tだった。）"],
+          "rule": "When the round brackets enclose a complete sentence, add a Japanese period to that sentence as well. Example: 今年の生産量は10tだった。（昨年は8tだった。）."
+        },
+        {
+          "id": "round-brackets-modify-entire-sentence",
+          "title": "The text in round brackets modifies the entire sentence",
+          "options": [
+            {
+              "id": "round-brackets-period-after-closing",
+              "label": "Add a period after the closing round bracket",
+              "examples": ["今日は歩いて出かけた（昨日は走って出かけた）。"],
+              "rule": "When the text in round brackets modifies the entire sentence, add a period after the closing round bracket. Example: 今日は歩いて出かけた（昨日は走って出かけた）。"
+            },
+            {
+              "id": "round-brackets-period-before-closing",
+              "label": "Add a period before the closing round bracket",
+              "examples": ["今日は歩いて出かけた。（昨日は走って出かけた。）"],
+              "rule": "When the text in round brackets modifies the entire sentence, add a period before the closing round bracket. Example: 今日は歩いて出かけた。（昨日は走って出かけた。）."
+            }
+          ]
+        },
+        {
+          "id": "round-brackets-supplement-preceding-text",
+          "title": "When the text in round brackets supplements the preceding text",
+          "examples": ["今日は歩いて出かけた（兄と）。"],
+          "rule": "When the text in round brackets supplements the preceding text, add a Japanese period after the closing round bracket. Example: 今日は歩いて出かけた（兄と）。"
+        },
+        {
+          "id": "double-dashes",
+          "title": "Double dashes",
+          "examples": ["5分——10分——15分", "電車が、静岡——浜松——名古屋と進んでいった"],
+          "rule": "When indicating the passage of time or movement between locations, use a double em dash. Examples: 5分——10分——15分; 電車が、静岡——浜松——名古屋と進んでいった."
+        },
+        {
+          "id": "periods-and-commas",
+          "title": "Periods and commas",
+          "options": [
+            {
+              "id": "periods-commas-japanese",
+              "label": "Use full-width 。 and 、",
+              "rule": "Use full-width “。” and full-width “、”."
+            },
+            {
+              "id": "periods-japanese-commas-western",
+              "label": "Use full-width 。 and ，",
+              "rule": "Use full-width “。” and full-width “,”."
+            },
+            {
+              "id": "periods-western-commas-japanese",
+              "label": "Use full-width ． and 、",
+              "rule": "Use full-width “.” and full-width “、”."
+            },
+            {
+              "id": "periods-commas-western",
+              "label": "Use full-width ． and ，",
+              "rule": "Use full-width “.” and full-width “,”."
+            }
+          ]
+        },
+        {
+          "id": "dashes",
+          "title": "Dashes",
+          "options": [
+            {
+              "id": "dashes-full-width-long-vowel",
+              "label": "Use a full-width dash",
+              "rule": "To indicate a range, use a full-width dash (ー)."
+            },
+            {
+              "id": "dashes-wave-dash",
+              "label": "Use a full-width wave dash",
+              "rule": "To indicate a range, use a full-width wave dash (〜)."
+            },
+            {
+              "id": "dashes-half-width-hyphen",
+              "label": "Use a half-width dash",
+              "rule": "To indicate a range, use a half-width dash (-)."
+            },
+            {
+              "id": "dashes-kara",
+              "label": "Use から",
+              "rule": "To indicate a range, use “から”."
+            }
+          ]
+        },
+        {
+          "id": "round-brackets",
+          "title": "Round brackets",
+          "options": [
+            {
+              "id": "round-brackets-full-width",
+              "label": "Use full-width round brackets",
+              "examples": ["データ通信（送信のみ）"],
+              "rule": "Use full-width round brackets. Example: データ通信（送信のみ）."
+            },
+            {
+              "id": "round-brackets-half-width",
+              "label": "Use half-width round brackets",
+              "examples": ["データ通信(送信のみ)"],
+              "rule": "Use half-width round brackets. Example: データ通信(送信のみ)."
+            }
+          ]
+        },
+        {
+          "id": "quotation-marks",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "quotation-marks-full-width",
+              "label": "Use full-width quotation marks",
+              "rule": "To indicate a set-off phrase other than a quote, use full-width quotation marks."
+            },
+            {
+              "id": "quotation-marks-half-width",
+              "label": "Use half-width quotation marks",
+              "rule": "To indicate a set-off phrase other than a quote, use half-width quotation marks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "active-passive-voice",
+          "title": "Active voice and passive voice",
+          "options": [
+            {
+              "id": "active-voice-user-subject",
+              "label": "Use the active voice with the user as the subject",
+              "examples": ["サイドパネルのボタンをクリックする"],
+              "rule": "When describing operation, use the active voice with the user as the subject to unify the viewpoint. Example: サイドパネルのボタンをクリックする."
+            },
+            {
+              "id": "passive-voice-automatic-operations",
+              "label": "Use the passive voice for automatic operations",
+              "examples": ["データが送信される"],
+              "rule": "When operations are automatically performed from the user’s point of view, use the passive voice. Example: データが送信される."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "tone-consistency",
+          "title": "Tone",
+          "rule": "Don’t mix “desu/masu” style and “dearu” style."
+        },
+        {
+          "id": "tone-style",
+          "title": "Tone",
+          "options": [
+            {
+              "id": "tone-dearu",
+              "label": "Use the dearu style",
+              "rule": "Use the “dearu” style when you want to give the impression that the content is accurate and rigorous, or when you want to convey a sense of confidence and reliability."
+            },
+            {
+              "id": "tone-desu-masu",
+              "label": "Use the desu/masu style",
+              "rule": "Use the “desu/masu” style when you want to give the impression that the content is plain and straightforward, or when you want to give the reader a reassuring or soft impression."
+            }
+          ]
+        },
+        {
+          "id": "abbreviations",
+          "title": "Abbreviations",
+          "examples": ["クオリティー・オブ・ライフ（Quality of Life 。 以下「ＱＯＬ」という。）"],
+          "rule": "Write the original term, then add its abbreviation and, where necessary, add an explanation. Example: クオリティー・オブ・ライフ（Quality of Life 。 以下「ＱＯＬ」という。）."
+        },
+        {
+          "id": "loanwords",
+          "title": "Loanwords",
+          "options": [
+            {
+              "id": "loanwords-add-explanation",
+              "label": "Add an explanation if plain-language rephrasing is difficult",
+              "examples": [
+                "インクルージョン（多様性を受容し互いに作用し合う共生社会を目指す考え）",
+                "多様な人々を受け入れ共に関わって生きる社会を目指す「インクルージョン」は…"
+              ],
+              "rule": "For loanwords, if it is difficult to rephrase in plain language, add an explanation. Examples: インクルージョン（多様性を受容し互いに作用し合う共生社会を目指す考え）; 多様な人々を受け入れ共に関わって生きる社会を目指す「インクルージョン」は…. "
+            },
+            {
+              "id": "loanwords-rephrase-daily-japanese",
+              "label": "Rephrase with daily-use Chinese or Japanese words",
+              "examples": [
+                "アジェンダ → 議題",
+                "インキュベーション → 起業支援",
+                "インタラクティブ → 双方向的",
+                "サプライヤー → 仕入先",
+                "供給業者"
+              ],
+              "rule": "For loanwords, if it can be rephrased in daily-use Chinese or Japanese words, rephrase it. Examples: アジェンダ → 議題; インキュベーション → 起業支援; インタラクティブ → 双方向的; サプライヤー → 仕入先; 供給業者."
+            },
+            {
+              "id": "loanwords-rephrase-not-established",
+              "label": "Rephrase with another expression if not established in Japanese",
+              "examples": ["リスクを取る → あえて困難な道を行く", "覚悟を決めて進む", "賭ける"],
+              "rule": "For loanwords, if it is not yet established in Japanese, rephrase it with another expression. Examples: リスクを取る → あえて困難な道を行く; 覚悟を決めて進む; 賭ける."
+            },
+            {
+              "id": "loanwords-use-established",
+              "label": "Use it as is if it is well established in Japanese",
+              "examples": ["ストレス", "ボランティア", "リサイクル"],
+              "rule": "For loanwords, if it is well established in Japanese, use it as is. Examples: ストレス; ボランティア; リサイクル."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

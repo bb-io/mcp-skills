@@ -1,0 +1,814 @@
+{
+  "language": "en",
+  "label": "English",
+  "categories": [
+    {
+      "id": "abbreviations",
+      "title": "Abbreviations",
+      "rules": [
+        {
+          "id": "academic-degrees",
+          "title": "For academic degrees",
+          "options": [
+            {
+              "id": "no-periods",
+              "label": "Don't use periods",
+              "examples": ["PhD", "MS"],
+              "rule": "Don't use periods for academic degrees. Examples: PhD; MS."
+            },
+            {
+              "id": "use-periods",
+              "label": "Use periods",
+              "examples": ["Ph.D.", "M.S."],
+              "rule": "Use periods for academic degrees. Examples: Ph.D.; M.S."
+            }
+          ]
+        },
+        {
+          "id": "uppercase-abbreviations",
+          "title": "Uppercase abbreviations",
+          "rule": "Don't use periods for uppercase abbreviations. Examples: USA; LGBT."
+        },
+        {
+          "id": "latin-abbreviations",
+          "title": "Latin abbreviations",
+          "rule": "Don't use Latin abbreviations such as i.e., ibid., or etc."
+        }
+      ]
+    },
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "year-notations",
+          "title": "Year notations, when specified",
+          "options": [
+            {
+              "id": "bc-ad",
+              "label": "BC and AD",
+              "examples": ["400 BC", "AD 2025"],
+              "rule": "Use BC and AD for year notations when specified. Examples: 400 BC; AD 2025."
+            },
+            {
+              "id": "bce-ce",
+              "label": "BCE and CE",
+              "examples": ["400 BCE", "2025 CE"],
+              "rule": "Use BCE and CE for year notations when specified. Examples: 400 BCE; 2025 CE."
+            }
+          ]
+        },
+        {
+          "id": "writing-dates",
+          "title": "Writing dates",
+          "options": [
+            {
+              "id": "dd-mm-yyyy",
+              "label": "DD/MM/YYYY",
+              "description": "Include zeros for single-digit days and months.",
+              "rule": "Write dates as DD/MM/YYYY, including zeros for single-digit days and months."
+            },
+            {
+              "id": "write-out-date-first",
+              "label": "Write out, starting with date",
+              "examples": ["13 December 2024"],
+              "rule": "Write out dates starting with the day. Example: 13 December 2024."
+            },
+            {
+              "id": "mm-dd-yyyy",
+              "label": "MM/DD/YYYY",
+              "description": "Include zeros for single-digit days and months.",
+              "rule": "Write dates as MM/DD/YYYY, including zeros for single-digit days and months."
+            },
+            {
+              "id": "write-out-month-first",
+              "label": "Write out, starting with month",
+              "examples": ["December 13, 2024"],
+              "rule": "Write out dates starting with the month. Example: December 13, 2024."
+            },
+            {
+              "id": "yyyy-mm-dd",
+              "label": "YYYY-MM-DD",
+              "description": "Include zeros for single-digit days and months.",
+              "rule": "Write dates as YYYY-MM-DD, including zeros for single-digit days and months."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "12h-am-pm-periods",
+              "label": "12-hour with a.m./p.m.",
+              "rule": "When writing about times of the day, use the 12-hour clock and a.m./p.m."
+            },
+            {
+              "id": "12h-am-pm-periods-noon-midnight",
+              "label": "12-hour with a.m./p.m. and noon/midnight",
+              "rule": "When writing about times of the day, use the 12-hour clock and a.m./p.m. Use the words noon and midnight rather than 12:00 p.m. and 12:00 a.m. respectively."
+            },
+            {
+              "id": "12h-am-pm-lowercase",
+              "label": "12-hour with am/pm",
+              "rule": "When writing about times of the day, use the 12-hour clock and am/pm."
+            },
+            {
+              "id": "12h-am-pm-lowercase-noon-midnight",
+              "label": "12-hour with am/pm and noon/midnight",
+              "rule": "When writing about times of the day, use the 12-hour clock and am/pm. Use the words noon and midnight rather than 12:00 pm and 12:00 am respectively."
+            },
+            {
+              "id": "12h-am-pm-uppercase-periods",
+              "label": "12-hour with A.M./P.M.",
+              "rule": "When writing about times of the day, use the 12-hour clock and A.M./P.M."
+            },
+            {
+              "id": "12h-am-pm-uppercase-periods-noon-midnight",
+              "label": "12-hour with A.M./P.M. and noon/midnight",
+              "rule": "When writing about times of the day, use the 12-hour clock and A.M./P.M. Use the words noon and midnight rather than 12:00 P.M. and 12:00 A.M. respectively."
+            },
+            {
+              "id": "12h-am-pm-uppercase",
+              "label": "12-hour with AM/PM",
+              "rule": "When writing about times of the day, use the 12-hour clock and AM/PM."
+            },
+            {
+              "id": "12h-am-pm-uppercase-noon-midnight",
+              "label": "12-hour with AM/PM and \"noon\"/\"midnight\"",
+              "rule": "When writing about times of the day, use the 12-hour clock and AM/PM. Use the words \"noon\" and \"midnight\" rather than 12:00 PM and 12:00 AM respectively."
+            },
+            {
+              "id": "24h",
+              "label": "24-hour clock",
+              "rule": "When writing about times of the day, use the 24-hour clock."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formatting",
+      "title": "Formatting",
+      "rules": [
+        {
+          "id": "writing-email-addresses",
+          "title": "Writing email addresses",
+          "options": [
+            {
+              "id": "domain-in-parentheses",
+              "label": "Place the domain in parentheses",
+              "examples": ["username@(domain.com)"],
+              "rule": "When writing email addresses, place the domain in parentheses. Example: username@(domain.com)."
+            },
+            {
+              "id": "bracketed-at-and-dot",
+              "label": "Replace @ with [at] and periods with [dot]",
+              "examples": ["firstname[dot]lastname[at]domain[dot]com"],
+              "rule": "When writing email addresses, replace @ with \"at\" in brackets and periods with \"dot\" in brackets. Example: firstname[dot]lastname[at]domain[dot]com."
+            },
+            {
+              "id": "bracketed-at-with-spaces",
+              "label": "Replace @ with [at] and spaces",
+              "examples": ["username [at] domain.com"],
+              "rule": "When writing email addresses, replace @ with \"at\" in brackets with a space on either side. Example: username [at] domain.com."
+            },
+            {
+              "id": "at-with-spaces",
+              "label": "Replace @ with at and spaces",
+              "examples": ["username at domain.com"],
+              "rule": "When writing email addresses, replace @ with \"at\" with a space on either side. Example: username at domain.com."
+            },
+            {
+              "id": "standard-email-format",
+              "label": "Use the standard format",
+              "examples": ["username@domain.com"],
+              "rule": "When writing email addresses, use the standard format. Example: username@domain.com."
+            }
+          ]
+        },
+        {
+          "id": "country-codes-in-phone-numbers",
+          "title": "Country codes in phone numbers",
+          "options": [
+            {
+              "id": "country-code-00",
+              "label": "Use 00 for the country code",
+              "examples": ["0044", "001"],
+              "rule": "For country codes in phone numbers, use 00 for the country code. Examples: 0044; 001."
+            },
+            {
+              "id": "country-code-plus",
+              "label": "Use + for the country code",
+              "examples": ["+44", "+1"],
+              "rule": "For country codes in phone numbers, use + for the country code. Examples: +44; +1."
+            }
+          ]
+        },
+        {
+          "id": "writing-nanp-phone-numbers",
+          "title": "Writing phone numbers that use the North American Numbering Plan (NANP)",
+          "options": [
+            {
+              "id": "nanp-no-separators",
+              "label": "No spaces or special characters",
+              "examples": ["+11234567890"],
+              "rule": "When writing phone numbers that use the North American Numbering Plan (NANP), do not use any spaces or special characters between the digits. Example: +11234567890."
+            },
+            {
+              "id": "nanp-hyphens",
+              "label": "Use hyphens",
+              "examples": ["+1-123-456-7890"],
+              "rule": "When writing phone numbers that use the North American Numbering Plan (NANP), use hyphens to separate the country code, the area code, the local prefix, and the last four digits. Example: +1-123-456-7890."
+            },
+            {
+              "id": "nanp-periods",
+              "label": "Use periods",
+              "examples": ["+1.123.456.7890"],
+              "rule": "When writing phone numbers that use the North American Numbering Plan (NANP), use periods to separate the country code, the area code, the local prefix, and the last four digits. Example: +1.123.456.7890."
+            },
+            {
+              "id": "nanp-spaces",
+              "label": "Use spaces",
+              "examples": ["+1 123 456 7890"],
+              "rule": "When writing phone numbers that use the North American Numbering Plan (NANP), use spaces to separate the country code, the area code, the local prefix, and the last four digits. Example: +1 123 456 7890."
+            },
+            {
+              "id": "nanp-parentheses-no-country-code",
+              "label": "Area code in parentheses, no country code",
+              "examples": ["(123) 456-7890"],
+              "rule": "When writing phone numbers that use the North American Numbering Plan (NANP), do not include the country code, place the area code in parentheses followed by a space, and use a hyphen between the local prefix and the last four digits. Example: (123) 456-7890."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "decimal-numbers-less-than-one",
+          "title": "Decimal numbers of less than 1",
+          "rule": "For decimal numbers of less than 1, always use a 0 before the decimal point."
+        },
+        {
+          "id": "two-dimensional-and-three-dimensional-measurements",
+          "title": "Two-dimensional and three-dimensional measurements",
+          "options": [
+            {
+              "id": "multiplication-sign-with-spaces",
+              "label": "Use a multiplication sign, with spaces",
+              "examples": ["1200 × 1800", "13 × 7.5 × 4"],
+              "rule": "For two-dimensional and three-dimensional measurements, use a multiplication sign between the numerals, with spaces. Examples: 1200 × 1800; 13 × 7.5 × 4."
+            },
+            {
+              "id": "multiplication-sign-without-spaces",
+              "label": "Use a multiplication sign, without spaces",
+              "examples": ["1200×1800", "13×7.5×4"],
+              "rule": "For two-dimensional and three-dimensional measurements, use a multiplication sign between the numerals, without spaces. Examples: 1200×1800; 13×7.5×4."
+            },
+            {
+              "id": "lowercase-x-with-spaces",
+              "label": "Use a lowercase x, with spaces",
+              "examples": ["1200 x 1800", "13 x 7.5 x 4"],
+              "rule": "For two-dimensional and three-dimensional measurements, use a lowercase letter \"x,\" with spaces. Examples: 1200 x 1800; 13 x 7.5 x 4."
+            },
+            {
+              "id": "lowercase-x-without-spaces",
+              "label": "Use a lowercase x, without spaces",
+              "examples": ["1200x1800", "13x7.5x4"],
+              "rule": "For two-dimensional and three-dimensional measurements, use a lowercase letter \"x,\" without spaces. Examples: 1200x1800; 13x7.5x4."
+            }
+          ]
+        },
+        {
+          "id": "spacing-in-mathematical-expressions",
+          "title": "Spacing in mathematical expressions or equations",
+          "rule": "Between elements in a mathematical expression or equation, use spaces. Examples: 7x − 5; a + b = c."
+        },
+        {
+          "id": "referring-to-symbols",
+          "title": "When referring to a symbol",
+          "rule": "When referring to a symbol, spell out the name, followed by the symbol in parentheses. Examples: The equal sign (=) is used in mathematical equations; a period (.) is also called a full stop (.)."
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units of measure",
+          "options": [
+            {
+              "id": "abbreviate-with-numeral-spell-out-without",
+              "label": "Abbreviate with a numeral, spell out without",
+              "examples": ["Several kilometers away", "7 km"],
+              "rule": "For units of measure, abbreviate when used with a numeral but spell out when used without. Examples: Several kilometers away; 7 km."
+            },
+            {
+              "id": "always-abbreviate-units",
+              "label": "Always abbreviate",
+              "rule": "For units of measure, always abbreviate, with or without a numeral."
+            },
+            {
+              "id": "always-spell-out-units",
+              "label": "Always spell out",
+              "examples": ["Several kilometers away", "7 kilometers"],
+              "rule": "For units of measure, always spell out, with or without a numeral. Examples: Several kilometers away; 7 kilometers."
+            }
+          ]
+        },
+        {
+          "id": "thousands-separators",
+          "title": "Thousands separators",
+          "options": [
+            {
+              "id": "commas-thousands-separators",
+              "label": "Use commas",
+              "examples": ["10,000,000"],
+              "rule": "Use commas to separate large numbers into units of three. Example: 10,000,000."
+            },
+            {
+              "id": "spaces-thousands-separators",
+              "label": "Use spaces",
+              "examples": ["10 000 000"],
+              "rule": "Use spaces to separate large numbers into units of three. Example: 10 000 000."
+            }
+          ]
+        },
+        {
+          "id": "spacing-for-measurements",
+          "title": "Spacing for measurements",
+          "options": [
+            {
+              "id": "no-space-between-number-and-unit",
+              "label": "Don't use a space",
+              "examples": ["10MB", "5kg"],
+              "rule": "For measurements, do not use a space between a numeral and unit. Examples: 10MB; 5kg."
+            },
+            {
+              "id": "space-between-number-and-unit",
+              "label": "Use a space",
+              "examples": ["10 MB", "5 kg"],
+              "rule": "For measurements, use a space between a numeral and unit. Examples: 10 MB; 5 kg."
+            }
+          ]
+        },
+        {
+          "id": "ampersands-in-common-abbreviations",
+          "title": "When ampersands are part of a common abbreviation",
+          "options": [
+            {
+              "id": "ampersand-no-spaces",
+              "label": "Don't use spaces",
+              "examples": ["R&D", "M&A"],
+              "rule": "When ampersands are part of a common abbreviation, do not use spaces. Examples: R&D; M&A."
+            },
+            {
+              "id": "ampersand-with-spaces",
+              "label": "Use spaces",
+              "examples": ["R & D", "M & A"],
+              "rule": "When ampersands are part of a common abbreviation, use spaces. Examples: R & D; M & A."
+            }
+          ]
+        },
+        {
+          "id": "replace-ampersand-with-and",
+          "title": "Replacing ampersands in running text",
+          "rule": "Replace & with \"and,\" except in company names, common abbreviations, titles, software code, and mathematical equations. Example: We’re increasing the budget for multiple departments, including R&D and Sales."
+        },
+        {
+          "id": "writing-currencies",
+          "title": "Writing currencies",
+          "options": [
+            {
+              "id": "spell-out-currency-word",
+              "label": "Spell out the word after the amount",
+              "examples": ["100 dollars", "100 euros"],
+              "rule": "When writing currencies, spell out the word after the amount. Examples: 100 dollars; 100 euros."
+            },
+            {
+              "id": "currency-symbol-before-no-space",
+              "label": "Use the symbol before the amount, no space",
+              "examples": ["$100", "€100"],
+              "rule": "When writing currencies, use the currency symbol before the amount, without a space. Examples: $100; €100."
+            },
+            {
+              "id": "currency-symbol-before-with-space",
+              "label": "Use the symbol before the amount, with a space",
+              "examples": ["$ 100", "€ 100"],
+              "rule": "When writing currencies, use the currency symbol before the amount, with a space. Examples: $ 100; € 100."
+            },
+            {
+              "id": "iso-code-before-with-space",
+              "label": "Use the ISO code before the amount",
+              "examples": ["USD 100", "EUR 100"],
+              "rule": "When writing currencies, use the ISO code before the amount, with a space. Examples: USD 100; EUR 100."
+            }
+          ]
+        },
+        {
+          "id": "writing-large-sums-of-money",
+          "title": "Writing large sums of money",
+          "options": [
+            {
+              "id": "m-and-bn-no-space",
+              "label": "Use m and bn, without a space",
+              "examples": ["EUR 100m", "USD 500bn"],
+              "rule": "When writing large sums of money, use \"m\" and \"bn\" instead of \"million\" and \"billion,\" without a space. Examples: EUR 100m; USD 500bn."
+            },
+            {
+              "id": "mn-and-bn-with-space",
+              "label": "Use mn and bn, with a space",
+              "examples": ["EUR 100 mn", "USD 500 bn"],
+              "rule": "When writing large sums of money, use \"mn\" and \"bn\" instead of \"million\" and \"billion,\" with a space. Examples: EUR 100 mn; USD 500 bn."
+            },
+            {
+              "id": "spell-out-million-and-billion",
+              "label": "Spell out million and billion",
+              "examples": ["EUR 100 million", "USD 500 billion"],
+              "rule": "When writing large sums of money, spell out the words \"million\" and \"billion.\" Examples: EUR 100 million; USD 500 billion."
+            }
+          ]
+        },
+        {
+          "id": "writing-percentages",
+          "title": "Writing percentages",
+          "options": [
+            {
+              "id": "percent-symbol-no-space",
+              "label": "Use % without a space",
+              "examples": ["99%"],
+              "rule": "When writing percentages, use % without a space. Example: 99%."
+            },
+            {
+              "id": "percent-symbol-with-space",
+              "label": "Use % with a space",
+              "examples": ["99 %"],
+              "rule": "When writing percentages, use % with a space. Example: 99 %."
+            },
+            {
+              "id": "per-cent",
+              "label": "Use per cent",
+              "examples": ["99 per cent"],
+              "rule": "When writing percentages, use \"per cent.\" Example: 99 per cent."
+            },
+            {
+              "id": "percent-word",
+              "label": "Use percent",
+              "examples": ["99 percent"],
+              "rule": "When writing percentages, use \"percent.\" Example: 99 percent."
+            }
+          ]
+        },
+        {
+          "id": "writing-temperatures",
+          "title": "Writing temperatures",
+          "options": [
+            {
+              "id": "temperature-spell-out-unit",
+              "label": "Use numerals and spell out the unit",
+              "examples": ["32 degrees Celsius", "273.16 kelvins"],
+              "rule": "When writing temperatures, use numerals for the measurement, but spell out the full unit. Examples: 32 degrees Celsius; 273.16 kelvins."
+            },
+            {
+              "id": "temperature-symbol-with-space",
+              "label": "Use the unit symbol, with a space",
+              "examples": ["32 ºC", "273.16 K"],
+              "rule": "When writing temperatures, use numerals followed by the unit symbol, with a space. Examples: 32 ºC; 273.16 K."
+            },
+            {
+              "id": "temperature-symbol-without-space",
+              "label": "Use the unit symbol, without a space",
+              "examples": ["32ºC", "273.16K"],
+              "rule": "When writing temperatures, use numerals followed by the unit symbol, without a space. Examples: 32ºC; 273.16K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "comma-after-ie-and-eg",
+          "title": "Comma after i.e. and e.g. in text",
+          "options": [
+            {
+              "id": "no-comma-after-ie-eg",
+              "label": "Don't use",
+              "examples": ["All attendees (i.e. registered participants) will receive a badge."],
+              "rule": "Do not use a comma after i.e. and e.g. in text. Example: All attendees (i.e. registered participants) will receive a badge."
+            },
+            {
+              "id": "use-comma-after-ie-eg",
+              "label": "Use",
+              "examples": ["All attendees (i.e., registered participants) will receive a badge."],
+              "rule": "Use a comma after i.e. and e.g. in text. Example: All attendees (i.e., registered participants) will receive a badge."
+            }
+          ]
+        },
+        {
+          "id": "comma-after-short-introductory-phrase",
+          "title": "Comma after a short introductory phrase",
+          "options": [
+            {
+              "id": "no-comma-after-short-intro",
+              "label": "Don't use a comma",
+              "examples": ["At work employees are required to wear safety gear."],
+              "rule": "Do not use a comma after a short introductory phrase. Example: At work employees are required to wear safety gear."
+            },
+            {
+              "id": "use-comma-after-short-intro",
+              "label": "Use a comma",
+              "examples": ["At work, employees are required to wear safety gear."],
+              "rule": "Use a comma after a short introductory phrase. Example: At work, employees are required to wear safety gear."
+            }
+          ]
+        },
+        {
+          "id": "serial-commas",
+          "title": "Serial commas",
+          "options": [
+            {
+              "id": "no-serial-comma",
+              "label": "Don't use",
+              "examples": ["Apples, oranges and bananas"],
+              "rule": "Do not use serial commas. Example: Apples, oranges and bananas."
+            },
+            {
+              "id": "use-serial-comma",
+              "label": "Use",
+              "examples": ["Apples, oranges, and bananas"],
+              "rule": "Use serial commas. Example: Apples, oranges, and bananas."
+            }
+          ]
+        },
+        {
+          "id": "ellipsis-style",
+          "title": "For an ellipsis",
+          "options": [
+            {
+              "id": "ellipsis-character",
+              "label": "Use the ellipsis character",
+              "examples": ["…"],
+              "rule": "For an ellipsis, use the ellipsis character. Example: …"
+            },
+            {
+              "id": "three-spaced-periods",
+              "label": "Use three spaced periods",
+              "examples": [". . ."],
+              "rule": "For an ellipsis, use three spaced periods. Example: . . ."
+            }
+          ]
+        },
+        {
+          "id": "exclamation-marks",
+          "title": "Exclamation marks",
+          "rule": "Do not use exclamation marks."
+        },
+        {
+          "id": "plus-sign-for-and",
+          "title": "Using the plus sign to mean and",
+          "rule": "Do not use the plus sign to mean \"and,\" unless it is part of a proper noun."
+        },
+        {
+          "id": "punctuation-after-salutation",
+          "title": "After a salutation",
+          "options": [
+            {
+              "id": "salutation-colon-formal",
+              "label": "Use a colon (formal)",
+              "examples": ["Dear Mr. Smith:"],
+              "rule": "After a salutation, use a colon in formal contexts. Example: Dear Mr. Smith:"
+            },
+            {
+              "id": "salutation-comma-informal",
+              "label": "Use a comma (informal)",
+              "examples": ["Dear John,"],
+              "rule": "After a salutation, use a comma in informal contexts. Example: Dear John,"
+            }
+          ]
+        },
+        {
+          "id": "slash-for-or",
+          "title": "Using a slash to mean or",
+          "rule": "Do not use a slash to mean \"or.\""
+        },
+        {
+          "id": "curly-or-straight-quotation-marks",
+          "title": "Curly or straight quotation marks and apostrophes",
+          "options": [
+            {
+              "id": "curly-quotes",
+              "label": "Curly",
+              "examples": ["“The king’s hat”"],
+              "rule": "Use curly quotation marks and apostrophes. Example: “The king’s hat”."
+            },
+            {
+              "id": "straight-quotes",
+              "label": "Straight",
+              "examples": ["\"The king's hat\""],
+              "rule": "Use straight quotation marks and apostrophes. Example: \"The king's hat\"."
+            }
+          ]
+        },
+        {
+          "id": "double-or-single-quotation-marks",
+          "title": "Double or single quotation marks",
+          "options": [
+            {
+              "id": "double-primary-single-secondary",
+              "label": "Double primary, single secondary (American English)",
+              "examples": ["“The first chapter of the UN Charter ‘Purposes and Principles’ is crucial,” said the professor."],
+              "rule": "Use double quotation marks for primary quotations and single quotation marks for secondary quotations, following American English style. Example: “The first chapter of the UN Charter ‘Purposes and Principles’ is crucial,” said the professor."
+            },
+            {
+              "id": "single-primary-double-secondary",
+              "label": "Single primary, double secondary (British English)",
+              "examples": ["‘The first chapter of the UN Charter “Purposes and Principles” is crucial’, said the professor."],
+              "rule": "Use single quotation marks for primary quotations and double quotation marks for secondary quotations, following British English style. Example: ‘The first chapter of the UN Charter “Purposes and Principles” is crucial’, said the professor."
+            }
+          ]
+        },
+        {
+          "id": "ranges-of-numbers-or-dates",
+          "title": "When indicating a range of numbers or dates",
+          "options": [
+            {
+              "id": "en-dash-no-spaces",
+              "label": "En dash without spaces",
+              "examples": ["Monday–Saturday", "2001–2003"],
+              "rule": "When indicating a range of numbers or dates, use an en dash without spaces. Examples: Monday–Saturday; 2001–2003."
+            },
+            {
+              "id": "word-to",
+              "label": "Use the word to",
+              "examples": ["Monday to Saturday", "2001 to 2003"],
+              "rule": "When indicating a range of numbers or dates, use the word \"to.\" Examples: Monday to Saturday; 2001 to 2003."
+            },
+            {
+              "id": "hyphen-with-spaces",
+              "label": "Hyphen with spaces",
+              "examples": ["Monday - Saturday", "2001 - 2003"],
+              "rule": "When indicating a range of numbers or dates, use a hyphen with spaces. Examples: Monday - Saturday; 2001 - 2003."
+            },
+            {
+              "id": "hyphen-no-spaces",
+              "label": "Hyphen without spaces",
+              "examples": ["Monday-Saturday", "2001-2003"],
+              "rule": "When indicating a range of numbers or dates, use a hyphen without spaces. Examples: Monday-Saturday; 2001-2003."
+            }
+          ]
+        },
+        {
+          "id": "em-dashes-or-en-dashes",
+          "title": "Em dashes (—) or en dashes (–)",
+          "options": [
+            {
+              "id": "em-dash-with-spaces",
+              "label": "Em dash with spaces",
+              "examples": ["I’m here — finally."],
+              "rule": "Use an em dash with spaces. Example: I’m here — finally."
+            },
+            {
+              "id": "em-dash-without-spaces",
+              "label": "Em dash without spaces",
+              "examples": ["I’m here—finally."],
+              "rule": "Use an em dash without spaces. Example: I’m here—finally."
+            },
+            {
+              "id": "en-dash-with-spaces",
+              "label": "En dash with spaces",
+              "examples": ["I’m here – finally."],
+              "rule": "Use an en dash with spaces. Example: I’m here – finally."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "active-voice",
+          "title": "Active and passive voice",
+          "rule": "Use active voice. Use passive voice only when the subject is unknown or irrelevant."
+        },
+        {
+          "id": "contractions",
+          "title": "Contractions",
+          "options": [
+            {
+              "id": "no-contractions",
+              "label": "Don't use",
+              "examples": ["We will do our best to get back to you, but we cannot guarantee a response."],
+              "rule": "Do not use contractions. Example: We will do our best to get back to you, but we cannot guarantee a response."
+            },
+            {
+              "id": "use-contractions",
+              "label": "Use",
+              "examples": ["We’ll do our best to get back to you, but we can’t guarantee a response."],
+              "rule": "Use contractions. Example: We’ll do our best to get back to you, but we can’t guarantee a response."
+            },
+            {
+              "id": "use-contractions-avoid-negative",
+              "label": "Use, but avoid negative contractions",
+              "examples": ["We’ll do our best to get back to you, but we cannot guarantee a response."],
+              "rule": "Use contractions, but avoid negative contractions. Example: We’ll do our best to get back to you, but we cannot guarantee a response."
+            }
+          ]
+        },
+        {
+          "id": "quotations-editing",
+          "title": "Quotations",
+          "options": [
+            {
+              "id": "preserve-quoted-material",
+              "label": "Don't make changes to quoted material",
+              "rule": "Do not make changes to quoted material, regardless of style rules."
+            },
+            {
+              "id": "edit-quoted-material",
+              "label": "Edit quoted material to adhere to style rules",
+              "rule": "Edit quoted material to adhere to style rules."
+            }
+          ]
+        },
+        {
+          "id": "capitalization",
+          "title": "Capitalization",
+          "rule": "Do not use all caps, except when writing out an acronym, initialism, or proper noun. Example: NASA is a US government agency."
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "inclusive-language",
+          "title": "Inclusive language",
+          "rule": "Replace binary representations of gender with gender-neutral language."
+        },
+        {
+          "id": "directional-language",
+          "title": "Directional language and visual cues",
+          "rule": "Do not use directional language, or words that depend on visual cues, such as \"here\" or \"below.\""
+        },
+        {
+          "id": "idioms-and-colloquialisms",
+          "title": "Idioms, colloquialisms, and culture-specific phrases",
+          "rule": "Do not use idioms, colloquialisms, or words or phrases specific to a particular culture."
+        },
+        {
+          "id": "imperative-mood",
+          "title": "Imperative mood in instructions",
+          "rule": "When writing instructions, use the imperative mood."
+        },
+        {
+          "id": "personal-or-impersonal-tone",
+          "title": "Personal or impersonal tone",
+          "options": [
+            {
+              "id": "impersonal-tone",
+              "label": "Don't use first- and second-person pronouns",
+              "examples": ["The talent acquisition specialist will contact candidates by Friday."],
+              "rule": "Do not use first- and second-person pronouns, for a more impersonal tone. Example: The talent acquisition specialist will contact candidates by Friday."
+            },
+            {
+              "id": "personal-tone",
+              "label": "Use first- and second-person pronouns where appropriate",
+              "examples": ["We'll contact you by Friday."],
+              "rule": "Use first- and second-person pronouns where appropriate, for a more personal tone. Example: We'll contact you by Friday."
+            }
+          ]
+        },
+        {
+          "id": "positive-language",
+          "title": "Positive language",
+          "rule": "Use positive language."
+        },
+        {
+          "id": "must-for-required-actions",
+          "title": "Required actions",
+          "rule": "Use \"must\" when an action is required, rather than \"have to,\" \"should,\" or other alternatives. Example: You must log in to view this page."
+        },
+        {
+          "id": "references-to-existing-text",
+          "title": "References to the existing text",
+          "rule": "Do not use phrases that refer to the existing text when using them would be redundant."
+        },
+        {
+          "id": "redundant-phrases",
+          "title": "Redundant phrases",
+          "rule": "Do not use redundant phrases where the same meaning is repeated in a single phrase. Examples: Added bonus; basic fundamentals."
+        },
+        {
+          "id": "shorter-words",
+          "title": "Shorter words",
+          "rule": "When there is a shorter word available, use it over the longer word when appropriate."
+        }
+      ]
+    }
+  ]
+}

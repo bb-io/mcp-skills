@@ -1,0 +1,494 @@
+{
+  "language": "hu",
+  "label": "Hungarian",
+  "categories": [
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "writing-dates",
+          "title": "Writing dates",
+          "options": [
+            {
+              "id": "year-month-day-words",
+              "label": "Year first, month in words",
+              "examples": ["2025. április 23.", "1990. november 1."],
+              "rule": "Write dates with the year first, the month in words, and the day in numerals with a closing period. Examples: 2025. április 23.; 1990. november 1.."
+            },
+            {
+              "id": "year-month-day-numeric-dots",
+              "label": "YYYY. MM. DD.",
+              "examples": ["2025. 04. 23.", "1990. 11. 01."],
+              "rule": "Write dates in numeric form as YYYY. MM. DD., including periods after the year, month, and day. Examples: 2025. 04. 23.; 1990. 11. 01.."
+            },
+            {
+              "id": "year-month-day-hyphens",
+              "label": "YYYY-MM-DD",
+              "examples": ["2025-04-23", "1990-11-01"],
+              "rule": "Write dates in numeric form as YYYY-MM-DD. Examples: 2025-04-23; 1990-11-01."
+            },
+            {
+              "id": "day-month-year-dots",
+              "label": "DD.MM.YYYY",
+              "examples": ["23.04.2025", "01.11.1990"],
+              "rule": "Write dates in numeric form as DD.MM.YYYY. Examples: 23.04.2025; 01.11.1990."
+            }
+          ]
+        },
+        {
+          "id": "writing-years",
+          "title": "Writing years",
+          "options": [
+            {
+              "id": "years-full",
+              "label": "Write years in full",
+              "examples": ["1989", "2025"],
+              "rule": "Write years in full. Examples: 1989; 2025."
+            },
+            {
+              "id": "years-abbreviated-apostrophe",
+              "label": "Abbreviate years with an apostrophe",
+              "examples": ["'89", "'25"],
+              "rule": "When an abbreviated year is acceptable, write only the last two digits and precede them with an apostrophe. Examples: '89; '25."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "time-24h-colon",
+              "label": "24-hour clock with colon",
+              "examples": ["08:30", "17:00", "22:15"],
+              "rule": "Use the 24-hour clock with a colon as separator. Examples: 08:30; 17:00; 22:15."
+            },
+            {
+              "id": "time-24h-period",
+              "label": "24-hour clock with period",
+              "examples": ["8.30", "17.00", "22.15"],
+              "rule": "Use the 24-hour clock with a period as separator. Examples: 8.30; 17.00; 22.15."
+            },
+            {
+              "id": "time-words",
+              "label": "Write times in words",
+              "examples": ["fél kilenc", "negyed három", "háromnegyed hat"],
+              "rule": "When the context is informal or idiomatic, write times in words using standard Hungarian expressions. Examples: fél kilenc; negyed három; háromnegyed hat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "currencies",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currency-symbol-after-space",
+              "label": "Use the symbol after the amount, with a space",
+              "examples": ["5 Ft", "10 €"],
+              "rule": "Write currency amounts with the symbol or abbreviated unit after the amount, separated by a space. Examples: 5 Ft; 10 €."
+            },
+            {
+              "id": "currency-code-before-space",
+              "label": "Use the ISO code before the amount",
+              "examples": ["HUF 5000", "EUR 10"],
+              "rule": "Write currency amounts with the ISO currency code before the amount, separated by a space. Examples: HUF 5000; EUR 10."
+            },
+            {
+              "id": "currency-name-after",
+              "label": "Write the currency name after the amount",
+              "examples": ["5000 forint", "10 euró"],
+              "rule": "Write the amount first and the currency name after it. Examples: 5000 forint; 10 euró."
+            },
+            {
+              "id": "currency-symbol-before-no-space",
+              "label": "Use the symbol before the amount, without a space",
+              "examples": ["€10", "$5"],
+              "rule": "Write currency amounts with the currency symbol before the amount, without a space. Examples: €10; $5."
+            }
+          ]
+        },
+        {
+          "id": "punctuation-in-numbers",
+          "title": "Punctuation in numbers",
+          "options": [
+            {
+              "id": "decimal-comma-thousands-space",
+              "label": "Use a decimal comma and spaces for thousands",
+              "examples": ["5,90", "1 250", "15 870,33"],
+              "rule": "Use a comma as the decimal separator and spaces as thousands separators. Examples: 5,90; 1 250; 15 870,33."
+            },
+            {
+              "id": "decimal-comma-thousands-period",
+              "label": "Use a decimal comma and periods for thousands",
+              "examples": ["5,90", "1.250", "15.870,33"],
+              "rule": "Use a comma as the decimal separator and periods as thousands separators. Examples: 5,90; 1.250; 15.870,33."
+            },
+            {
+              "id": "decimal-period-thousands-comma",
+              "label": "Use a decimal period and commas for thousands",
+              "examples": ["5.90", "1,250", "15,870.33"],
+              "rule": "Use a period as the decimal separator and commas as thousands separators. Examples: 5.90; 1,250; 15,870.33."
+            }
+          ]
+        },
+        {
+          "id": "percentages",
+          "title": "Percentages",
+          "options": [
+            {
+              "id": "percent-sign-no-space",
+              "label": "Use % without a space",
+              "examples": ["99%"],
+              "rule": "Write percentages with the percent sign directly after the number, without a space. Example: 99%."
+            },
+            {
+              "id": "percent-sign-space",
+              "label": "Use % with a space",
+              "examples": ["99 %"],
+              "rule": "Write percentages with a space between the number and the percent sign. Example: 99 %."
+            },
+            {
+              "id": "percent-word",
+              "label": "Write százalék in words",
+              "examples": ["99 százalék", "tíz százalék"],
+              "rule": "Write percentages with the word “százalék”. Examples: 99 százalék; tíz százalék."
+            }
+          ]
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units of measure",
+          "options": [
+            {
+              "id": "units-abbreviate-with-numeral",
+              "label": "Abbreviate with numerals, spell out without",
+              "examples": ["4 kg", "néhány kilogramm"],
+              "rule": "Abbreviate units when used with numerals, but spell them out when no numeral is used. Examples: 4 kg; néhány kilogramm."
+            },
+            {
+              "id": "units-always-abbreviate",
+              "label": "Always abbreviate",
+              "examples": ["4 kg", "néhány kg"],
+              "rule": "Always abbreviate units, whether or not a numeral is used. Examples: 4 kg; néhány kg."
+            },
+            {
+              "id": "units-always-spell-out",
+              "label": "Always spell out",
+              "examples": ["4 kilogramm", "néhány kilogramm"],
+              "rule": "Always spell out units, whether or not a numeral is used. Examples: 4 kilogramm; néhány kilogramm."
+            }
+          ]
+        },
+        {
+          "id": "unit-spacing",
+          "title": "Spacing for units of measure",
+          "options": [
+            {
+              "id": "unit-spacing-use",
+              "label": "Use a space between numeral and unit",
+              "examples": ["4 kg"],
+              "rule": "Use a space between a numeral and the unit. Example: 4 kg."
+            },
+            {
+              "id": "unit-spacing-none",
+              "label": "Do not use a space between numeral and unit",
+              "examples": ["4kg"],
+              "rule": "Do not use a space between a numeral and the unit. Example: 4kg."
+            }
+          ]
+        },
+        {
+          "id": "temperatures",
+          "title": "Temperatures",
+          "options": [
+            {
+              "id": "temperature-symbol-space",
+              "label": "Use the unit symbol with a space",
+              "examples": ["32 °C", "98 °F", "273 K"],
+              "rule": "Write temperatures with the unit symbol after the number and a space in between. Examples: 32 °C; 98 °F; 273 K."
+            },
+            {
+              "id": "temperature-symbol-no-space",
+              "label": "Use the unit symbol without a space",
+              "examples": ["32°C", "98°F", "273K"],
+              "rule": "Write temperatures with the unit symbol directly after the number, without a space. Examples: 32°C; 98°F; 273K."
+            },
+            {
+              "id": "temperature-words",
+              "label": "Write the unit in words",
+              "examples": ["32 Celsius-fok", "98 Fahrenheit-fok"],
+              "rule": "Write temperatures with the unit in words. Examples: 32 Celsius-fok; 98 Fahrenheit-fok."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "quotation-marks",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "hungarian-low-high",
+              "label": "Use low-high Hungarian quotation marks",
+              "examples": ["„Ez jó hír” – mondta."],
+              "rule": "Use Hungarian low-high quotation marks for quotations. Example: „Ez jó hír” – mondta."
+            },
+            {
+              "id": "double-curly-quotes",
+              "label": "Use double curly quotation marks",
+              "examples": ["“Ez jó hír” – mondta."],
+              "rule": "Use double curly quotation marks for quotations. Example: “Ez jó hír” – mondta."
+            },
+            {
+              "id": "double-straight-quotes",
+              "label": "Use double straight quotation marks",
+              "examples": ["\"Ez jó hír\" – mondta."],
+              "rule": "Use double straight quotation marks for quotations. Example: \"Ez jó hír\" – mondta."
+            }
+          ]
+        },
+        {
+          "id": "quotation-mark-hierarchy",
+          "title": "Quotation mark hierarchy",
+          "options": [
+            {
+              "id": "hungarian-primary-secondary",
+              "label": "Use low-high quotation marks first and guillemets for nested quotes",
+              "examples": ["„Azt mondta: »Holnap jövök.«”"],
+              "rule": "Use Hungarian low-high quotation marks for primary quotations and guillemets for nested quotations. Example: „Azt mondta: »Holnap jövök.«”"
+            },
+            {
+              "id": "double-then-single",
+              "label": "Use double quotation marks first and single quotation marks for nested quotes",
+              "examples": ["“Azt mondta: ‘Holnap jövök.’”"],
+              "rule": "Use double quotation marks for primary quotations and single quotation marks for nested quotations. Example: “Azt mondta: ‘Holnap jövök.’”"
+            }
+          ]
+        },
+        {
+          "id": "hyphens-and-dashes",
+          "title": "Hyphens and dashes",
+          "options": [
+            {
+              "id": "range-en-dash",
+              "label": "Use an en dash for ranges",
+              "examples": ["hétfő–péntek", "2001–2003"],
+              "rule": "Use an en dash for ranges. Examples: hétfő–péntek; 2001–2003."
+            },
+            {
+              "id": "range-hyphen",
+              "label": "Use a hyphen for ranges",
+              "examples": ["hétfő-péntek", "2001-2003"],
+              "rule": "Use a hyphen for ranges. Examples: hétfő-péntek; 2001-2003."
+            },
+            {
+              "id": "range-tol-ig",
+              "label": "Use -tól ... -ig constructions",
+              "examples": ["hétfőtől péntekig", "2001-től 2003-ig"],
+              "rule": "Write ranges using the Hungarian -tól ... -ig construction. Examples: hétfőtől péntekig; 2001-től 2003-ig."
+            }
+          ]
+        },
+        {
+          "id": "ellipses",
+          "title": "Ellipses",
+          "options": [
+            {
+              "id": "ellipsis-character",
+              "label": "Use the ellipsis character",
+              "examples": ["Még várunk…"],
+              "rule": "Use the single ellipsis character. Example: Még várunk…."
+            },
+            {
+              "id": "three-periods",
+              "label": "Use three periods",
+              "examples": ["Még várunk..."],
+              "rule": "Use three periods for an ellipsis. Example: Még várunk...."
+            }
+          ]
+        },
+        {
+          "id": "telephone-numbers",
+          "title": "Telephone numbers",
+          "options": [
+            {
+              "id": "keep-original-format",
+              "label": "Keep the original format",
+              "rule": "Keep telephone numbers in the original or official format."
+            },
+            {
+              "id": "group-with-spaces",
+              "label": "Group digits with spaces",
+              "examples": ["+36 30 123 4567"],
+              "rule": "Group telephone numbers into readable blocks using spaces. Example: +36 30 123 4567."
+            },
+            {
+              "id": "no-spaces",
+              "label": "Do not use spaces",
+              "examples": ["+36301234567"],
+              "rule": "Write telephone numbers without spaces. Example: +36301234567."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "abbreviations",
+          "title": "Abbreviations",
+          "options": [
+            {
+              "id": "abbreviations-limited",
+              "label": "Use abbreviations sparingly",
+              "examples": ["például a pl. helyett, ha a szövegformátum engedi"],
+              "rule": "Use abbreviations sparingly and prefer fully written words where clarity benefits. Example: például a pl. helyett, ha a szövegformátum engedi."
+            },
+            {
+              "id": "abbreviations-allowed",
+              "label": "Use common abbreviations",
+              "examples": ["pl.", "ill.", "kb."],
+              "rule": "Use common abbreviations where they are standard and unambiguous. Examples: pl.; ill.; kb.."
+            }
+          ]
+        },
+        {
+          "id": "capitalization",
+          "title": "Capitalization",
+          "rule": "Avoid writing entire words or sentences in capitals, except for acronyms, initialisms, and official names."
+        },
+        {
+          "id": "passive-voice",
+          "title": "Passive voice",
+          "options": [
+            {
+              "id": "active-preferred",
+              "label": "Prefer active voice",
+              "rule": "Prefer active voice and use passive constructions only when the actor is unknown, irrelevant, or intentionally omitted."
+            },
+            {
+              "id": "passive-allowed",
+              "label": "Allow passive constructions where they improve focus",
+              "rule": "Use passive constructions where they improve focus on the action or result rather than the actor."
+            }
+          ]
+        },
+        {
+          "id": "loanwords",
+          "title": "Loanwords",
+          "options": [
+            {
+              "id": "prefer-hungarian-equivalents",
+              "label": "Prefer Hungarian equivalents",
+              "examples": ["határidő a deadline helyett", "visszajelzés a feedback helyett"],
+              "rule": "Prefer established Hungarian equivalents over English loanwords where a natural Hungarian alternative exists. Examples: határidő a deadline helyett; visszajelzés a feedback helyett."
+            },
+            {
+              "id": "allow-established-loanwords",
+              "label": "Allow established loanwords",
+              "examples": ["marketing", "online", "projekt"],
+              "rule": "Use established loanwords where they are common and clear in Hungarian usage. Examples: marketing; online; projekt."
+            }
+          ]
+        },
+        {
+          "id": "spelled-out-numbers",
+          "title": "Spelled-out numbers",
+          "options": [
+            {
+              "id": "spell-out-low-numbers",
+              "label": "Spell out low numbers",
+              "examples": ["két résztvevő", "nyolc nap"],
+              "rule": "Spell out low numbers in running text where this improves readability. Examples: két résztvevő; nyolc nap."
+            },
+            {
+              "id": "prefer-numerals",
+              "label": "Prefer numerals",
+              "examples": ["2 résztvevő", "8 nap"],
+              "rule": "Prefer numerals for most numbers, including low numbers, for consistency and scannability. Examples: 2 résztvevő; 8 nap."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "formality",
+          "title": "Formality",
+          "options": [
+            {
+              "id": "formal-magazas",
+              "label": "Use formal address",
+              "rule": "Address the reader formally using magázás or önözés."
+            },
+            {
+              "id": "informal-tegezes",
+              "label": "Use informal address",
+              "rule": "Address the reader informally using tegezés."
+            }
+          ]
+        },
+        {
+          "id": "inclusive-language",
+          "title": "Inclusive language",
+          "options": [
+            {
+              "id": "neutral-terms",
+              "label": "Prefer neutral words and role names",
+              "examples": ["munkatárs", "ügyfél", "hallgató"],
+              "rule": "Prefer gender-neutral words and role names where possible. Examples: munkatárs; ügyfél; hallgató."
+            },
+            {
+              "id": "double-forms",
+              "label": "Use explicitly paired feminine and masculine forms",
+              "examples": ["tanárnők és tanárok", "munkatársnők és munkatársak"],
+              "rule": "Use explicitly paired feminine and masculine forms where naming both is preferred. Examples: tanárnők és tanárok; munkatársnők és munkatársak."
+            }
+          ]
+        },
+        {
+          "id": "tone",
+          "title": "Tone",
+          "options": [
+            {
+              "id": "direct-and-concise",
+              "label": "Use a direct and concise tone",
+              "rule": "Use a direct, concise, and practical tone."
+            },
+            {
+              "id": "warm-and-accessible",
+              "label": "Use a warm and accessible tone",
+              "rule": "Use a warm, friendly, and accessible tone."
+            },
+            {
+              "id": "formal-and-neutral",
+              "label": "Use a formal and neutral tone",
+              "rule": "Use a formal, neutral, and precise tone."
+            }
+          ]
+        },
+        {
+          "id": "anglicisms",
+          "title": "Anglicisms",
+          "rule": "Avoid unnecessary anglicisms when a natural and widely understood Hungarian equivalent exists."
+        }
+      ]
+    }
+  ]
+}

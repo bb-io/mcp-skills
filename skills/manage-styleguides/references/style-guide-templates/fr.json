@@ -1,0 +1,683 @@
+{
+  "language": "fr",
+  "label": "French",
+  "categories": [
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "centuries",
+          "title": "Centuries",
+          "options": [
+            {
+              "id": "centuries-spell-out",
+              "label": "Spell them out",
+              "examples": ["le dix-neuvième siècle"],
+              "rule": "When writing centuries, spell them out. Example: le dix-neuvième siècle."
+            },
+            {
+              "id": "centuries-arabic-numerals",
+              "label": "Use Arabic numerals",
+              "examples": ["le 19e siècle"],
+              "rule": "When writing centuries, use Arabic numerals. Example: le 19e siècle."
+            },
+            {
+              "id": "centuries-roman-numerals",
+              "label": "Use Roman numerals",
+              "examples": ["le XIXe siècle"],
+              "rule": "When writing centuries, use Roman numerals. Example: le XIXe siècle."
+            }
+          ]
+        },
+        {
+          "id": "dates",
+          "title": "Dates",
+          "options": [
+            {
+              "id": "date-dd-mm-yyyy-dots",
+              "label": "DD.MM.YYYY",
+              "examples": ["29.02.2004"],
+              "rule": "Use the date format DD.MM.YYYY. Example: 29.02.2004."
+            },
+            {
+              "id": "date-dd-mm-yyyy-slashes",
+              "label": "DD/MM/YYYY",
+              "examples": ["29/02/2004"],
+              "rule": "Use the date format DD/MM/YYYY. Example: 29/02/2004."
+            },
+            {
+              "id": "date-dd-month-yyyy",
+              "label": "DD month YYYY",
+              "examples": ["29 février 2004"],
+              "rule": "Use the date format DD month YYYY. Example: 29 février 2004."
+            },
+            {
+              "id": "date-yyyy-mm-dd-dots",
+              "label": "YYYY.MM.DD",
+              "examples": ["2004.02.29"],
+              "rule": "Use the date format YYYY.MM.DD. Example: 2004.02.29."
+            },
+            {
+              "id": "date-yyyy-mm-dd-slashes",
+              "label": "YYYY/MM/DD",
+              "examples": ["2004/02/29"],
+              "rule": "Use the date format YYYY/MM/DD. Example: 2004/02/29."
+            }
+          ]
+        },
+        {
+          "id": "decades",
+          "title": "Decades",
+          "options": [
+            {
+              "id": "decades-spell-out",
+              "label": "Spell them out",
+              "examples": ["les années soixante", "les années deux mille dix"],
+              "rule": "When writing decades, spell them out. Examples: les années soixante; les années deux mille dix."
+            },
+            {
+              "id": "decades-mixed-abbreviation",
+              "label": "Two digits for the 20th century, four digits otherwise",
+              "examples": ["les années 60", "les années 2010"],
+              "rule": "When writing decades, abbreviate them to two digits for the 20th century but write them in four digits for other centuries. Examples: les années 60; les années 2010."
+            },
+            {
+              "id": "decades-four-digits",
+              "label": "Write in four digits",
+              "examples": ["les années 1960", "les années 2010"],
+              "rule": "When writing decades, use four digits. Examples: les années 1960; les années 2010."
+            }
+          ]
+        },
+        {
+          "id": "time-hour-format-and-separator",
+          "title": "Time",
+          "options": [
+            {
+              "id": "time-colon-no-spaces",
+              "label": "Use colons without spaces",
+              "examples": ["10:16"],
+              "rule": "For hours and minutes, use numbers with colons without spaces. Example: 10:16."
+            },
+            {
+              "id": "time-h-with-spaces",
+              "label": "Use h with regular spaces",
+              "examples": ["10 h 16"],
+              "rule": "For hours and minutes, use numbers with the letter “h” surrounded by regular spaces. Example: 10 h 16."
+            },
+            {
+              "id": "time-h-no-spaces",
+              "label": "Use h without spaces",
+              "examples": ["10h16"],
+              "rule": "For hours and minutes, use numbers with the letter “h” without spaces. Example: 10h16."
+            }
+          ]
+        },
+        {
+          "id": "single-digit-hours",
+          "title": "Single-digit hours",
+          "options": [
+            {
+              "id": "single-digit-hours-no-leading-zero",
+              "label": "Do not use a leading zero",
+              "examples": ["7 h 5"],
+              "rule": "For single-digit hours, do not use a leading zero. Example: 7 h 5."
+            },
+            {
+              "id": "single-digit-hours-leading-zero",
+              "label": "Use a leading zero",
+              "examples": ["07 h 05"],
+              "rule": "For single-digit hours, use a leading zero. Example: 07 h 05."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "time-12-hour-no-period",
+              "label": "Use the 12-hour clock without morning or evening markers",
+              "examples": ["8 h 15", "9 h 30"],
+              "rule": "Use the 12-hour clock, without specifying whether it is morning or evening. Examples: 8 h 15; 9 h 30."
+            },
+            {
+              "id": "time-12-hour-with-period",
+              "label": "Use the 12-hour clock with morning or evening markers",
+              "examples": ["8 h 15 du matin", "9 h 30 du soir"],
+              "rule": "Use the 12-hour clock, specifying whether it is morning or evening. Examples: 8 h 15 du matin; 9 h 30 du soir."
+            },
+            {
+              "id": "time-24-hour",
+              "label": "Use the 24-hour clock",
+              "examples": ["8 h 15", "21 h 30"],
+              "rule": "Use the 24-hour clock. Examples: 8 h 15; 21 h 30."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "currencies",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currencies-spell-out-word",
+              "label": "Spell out the word after the amount",
+              "examples": ["100 euros", "100 francs suisses"],
+              "rule": "When writing currencies, spell out the word after the amount. Examples: 100 euros; 100 francs suisses."
+            },
+            {
+              "id": "currencies-symbol-or-word",
+              "label": "Use the currency symbol after the amount, otherwise spell out the word",
+              "examples": ["100 €", "100 francs suisses"],
+              "rule": "Use the currency symbol after the amount, but spell out the word if no symbol exists. Examples: 100 €; 100 francs suisses."
+            },
+            {
+              "id": "currencies-symbol-or-iso",
+              "label": "Use the currency symbol after the amount, otherwise use the ISO code",
+              "examples": ["100 €", "100 CHF"],
+              "rule": "Use the currency symbol after the amount, but use the ISO 4217 code if no symbol exists. Examples: 100 €; 100 CHF."
+            },
+            {
+              "id": "currencies-iso-after-amount",
+              "label": "Use the ISO 4217 code after the amount",
+              "examples": ["100 EUR", "100 CHF"],
+              "rule": "Use the ISO 4217 code after the amount. Examples: 100 EUR; 100 CHF."
+            }
+          ]
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units of measure",
+          "options": [
+            {
+              "id": "units-abbreviate-with-numeral-spell-out-without",
+              "label": "Abbreviate with a numeral, spell out without",
+              "examples": ["15 kg", "quelques grammes"],
+              "rule": "For units of measure, abbreviate when used with a numeral but spell out when used without. Examples: 15 kg; quelques grammes."
+            },
+            {
+              "id": "units-always-abbreviate",
+              "label": "Always abbreviate",
+              "examples": ["15 kg", "quelques g"],
+              "rule": "For units of measure, always abbreviate, with or without a numeral. Examples: 15 kg; quelques g."
+            },
+            {
+              "id": "units-always-spell-out",
+              "label": "Always spell out",
+              "examples": ["15 kilogrammes", "quelques grammes"],
+              "rule": "For units of measure, always spell out, with or without a numeral. Examples: 15 kilogrammes; quelques grammes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "apostrophes",
+          "title": "Apostrophes",
+          "options": [
+            {
+              "id": "apostrophes-curly",
+              "label": "Use curly apostrophes",
+              "examples": ["J’arrive"],
+              "rule": "Use curly apostrophes (’). Example: J’arrive."
+            },
+            {
+              "id": "apostrophes-straight",
+              "label": "Use straight apostrophes",
+              "examples": ["J'arrive"],
+              "rule": "Use straight apostrophes ('). Example: J'arrive."
+            }
+          ]
+        },
+        {
+          "id": "ellipsis",
+          "title": "Ellipsis",
+          "options": [
+            {
+              "id": "ellipsis-character",
+              "label": "Use the ellipsis character",
+              "examples": ["À suivre…"],
+              "rule": "Use the ellipsis character (…). Example: À suivre…."
+            },
+            {
+              "id": "ellipsis-three-periods",
+              "label": "Use three periods",
+              "examples": ["À suivre..."],
+              "rule": "Use three periods (...). Example: À suivre...."
+            }
+          ]
+        },
+        {
+          "id": "quotation-marks",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "quotation-marks-curly",
+              "label": "Use curly quotation marks",
+              "examples": ["“Bonjour !”"],
+              "rule": "Use curly quotation marks (“...”). Example: “Bonjour !”."
+            },
+            {
+              "id": "quotation-marks-straight",
+              "label": "Use straight quotation marks",
+              "examples": ["\"Bonjour !\""],
+              "rule": "Use straight quotation marks (\"...\"). Example: \"Bonjour !\"."
+            },
+            {
+              "id": "quotation-marks-guillemets",
+              "label": "Use guillemets",
+              "examples": ["« Bonjour ! »"],
+              "rule": "Use guillemets («...»). Example: « Bonjour ! »."
+            }
+          ]
+        },
+        {
+          "id": "spacing-and-slashes",
+          "title": "Spacing and slashes",
+          "options": [
+            {
+              "id": "slashes-no-spaces",
+              "label": "Do not use spaces",
+              "examples": ["et/ou", "immeuble neuf/maison ancienne"],
+              "rule": "On each side of the slash (/), do not use spaces. Examples: et/ou; immeuble neuf/maison ancienne."
+            },
+            {
+              "id": "slashes-use-spaces",
+              "label": "Use spaces",
+              "examples": ["et / ou", "immeuble neuf / maison ancienne"],
+              "rule": "On each side of the slash (/), use spaces. Examples: et / ou; immeuble neuf / maison ancienne."
+            },
+            {
+              "id": "slashes-spaces-only-for-multiword-elements",
+              "label": "Do not use spaces unless one side has more than one word",
+              "examples": ["et/ou", "immeuble neuf / maison ancienne"],
+              "rule": "On each side of the slash (/), do not use spaces unless at least one of the elements it divides contains more than one word. Examples: et/ou; immeuble neuf / maison ancienne."
+            }
+          ]
+        },
+        {
+          "id": "spacing-and-punctuation",
+          "title": "Spacing and punctuation",
+          "options": [
+            {
+              "id": "punctuation-no-space",
+              "label": "Do not use a space",
+              "examples": ["«Au choix: eau plate ou eau pétillante?»"],
+              "rule": "With specific punctuation marks (?, !, :, ;, «, and »), do not use a space. Example: «Au choix: eau plate ou eau pétillante?»."
+            },
+            {
+              "id": "punctuation-non-breaking-space",
+              "label": "Use a non-breaking space",
+              "examples": ["« Au choix : eau plate ou eau pétillante ? »"],
+              "rule": "With specific punctuation marks (?, !, :, ;, «, and »), use a non-breaking space. Example: « Au choix : eau plate ou eau pétillante ? »."
+            },
+            {
+              "id": "punctuation-regular-space",
+              "label": "Use a regular space",
+              "examples": ["« Au choix : eau plate ou eau pétillante ? »"],
+              "rule": "With specific punctuation marks (?, !, :, ;, «, and »), use a regular space. Example: « Au choix : eau plate ou eau pétillante ? »."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "abbreviations-number",
+          "title": "Abbreviations",
+          "options": [
+            {
+              "id": "number-degree-symbol",
+              "label": "Use the degree symbol",
+              "examples": ["n° 2"],
+              "rule": "When abbreviating “number”, use the degree symbol (°). Example: n° 2."
+            },
+            {
+              "id": "number-superscript-o",
+              "label": "Use the letter o in superscript",
+              "examples": ["nᵒ 2"],
+              "rule": "When abbreviating “number”, use the letter “o” in superscript. Example: nᵒ 2."
+            },
+            {
+              "id": "number-no",
+              "label": "Use no",
+              "examples": ["no 2"],
+              "rule": "When abbreviating “number”, use “no”. Example: no 2."
+            }
+          ]
+        },
+        {
+          "id": "personal-titles",
+          "title": "Writing personal titles",
+          "options": [
+            {
+              "id": "titles-abbreviate",
+              "label": "Abbreviate personal titles",
+              "examples": ["M. Chirac"],
+              "rule": "Abbreviate personal titles. Example: M. Chirac."
+            },
+            {
+              "id": "titles-spell-out",
+              "label": "Spell out personal titles",
+              "examples": ["Monsieur Chirac"],
+              "rule": "Spell out personal titles. Example: Monsieur Chirac."
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Diacritics",
+          "options": [
+            {
+              "id": "diacritics-no-capitals",
+              "label": "Use accents and cedillas, except on capital letters",
+              "examples": ["Etats-Unis", "Ca va ?", "Façonné"],
+              "rule": "Use accents and cedillas, except on capital letters. Examples: Etats-Unis; Ca va ?; Façonné."
+            },
+            {
+              "id": "diacritics-never",
+              "label": "Never use accents or cedillas",
+              "examples": ["Etats-Unis", "Ca va ?", "Faconne"],
+              "rule": "Never use accents or cedillas. Examples: Etats-Unis; Ca va ?; Faconne."
+            },
+            {
+              "id": "diacritics-always",
+              "label": "Use accents and cedillas, even on capital letters",
+              "examples": ["États-Unis", "Ça va ?", "Façonné"],
+              "rule": "Use accents and cedillas, even on capital letters. Examples: États-Unis; Ça va ?; Façonné."
+            }
+          ]
+        },
+        {
+          "id": "future-and-conditional-verb-forms",
+          "title": "Future and conditional verb forms",
+          "options": [
+            {
+              "id": "future-conditional-acute-accent",
+              "label": "Use an acute accent",
+              "examples": ["je considérerai"],
+              "rule": "For verbs that conjugate like “céder” in the future tense and conditional mood, use an acute accent (traditional spelling). Example: je considérerai."
+            },
+            {
+              "id": "future-conditional-grave-accent",
+              "label": "Use a grave accent",
+              "examples": ["je considèrerai"],
+              "rule": "For verbs that conjugate like “céder” in the future tense and conditional mood, use a grave accent (reformed spelling). Example: je considèrerai."
+            }
+          ]
+        },
+        {
+          "id": "inversions",
+          "title": "Inversions",
+          "options": [
+            {
+              "id": "inversions-acute-accent",
+              "label": "Use an acute accent",
+              "examples": ["aimé-je"],
+              "rule": "When the subject and the verb are inverted, use an acute accent (traditional spelling). Example: aimé-je."
+            },
+            {
+              "id": "inversions-grave-accent",
+              "label": "Use a grave accent",
+              "examples": ["aimè-je"],
+              "rule": "When the subject and the verb are inverted, use a grave accent (reformed spelling). Example: aimè-je."
+            }
+          ]
+        },
+        {
+          "id": "complete-sentences",
+          "title": "Complete sentences",
+          "rule": "Write the text in complete sentences."
+        },
+        {
+          "id": "compound-nouns",
+          "title": "Compound nouns",
+          "options": [
+            {
+              "id": "compound-nouns-one-word",
+              "label": "Write as one word",
+              "examples": ["un portemonnaie"],
+              "rule": "Write compound nouns as one word (reformed spelling). Example: un portemonnaie."
+            },
+            {
+              "id": "compound-nouns-hyphen",
+              "label": "Write with a hyphen",
+              "examples": ["un porte-monnaie"],
+              "rule": "Write compound nouns with a hyphen (traditional spelling). Example: un porte-monnaie."
+            }
+          ]
+        },
+        {
+          "id": "conjunctions",
+          "title": "Conjunctions",
+          "rule": "Never start a sentence with a coordinating conjunction."
+        },
+        {
+          "id": "verbs-ending-eler-eter",
+          "title": "Verbs ending in “-eler” and “-eter”",
+          "options": [
+            {
+              "id": "eler-eter-double-consonant",
+              "label": "Double the following consonant",
+              "examples": ["elle ruisselle"],
+              "rule": "For verbs ending in “-eler” and “-eter”, transcribe the “è” (or [ɛ] sound) by doubling the following consonant (traditional spelling). Example: elle ruisselle."
+            },
+            {
+              "id": "eler-eter-grave-accent",
+              "label": "Use a grave accent",
+              "examples": ["elle ruissèle"],
+              "rule": "For verbs ending in “-eler” and “-eter”, transcribe the “è” (or [ɛ] sound) with a grave accent (reformed spelling). Example: elle ruissèle."
+            }
+          ]
+        },
+        {
+          "id": "circumflexes",
+          "title": "Circumflexes",
+          "options": [
+            {
+              "id": "circumflexes-reformed",
+              "label": "Do not use circumflex accents except in verbs and homophones",
+              "examples": ["piqure", "il a dû partir"],
+              "rule": "For “i” and “u”, do not use circumflex accents, except in verbs and to distinguish homophones (reformed spelling). Examples: piqure; il a dû partir."
+            },
+            {
+              "id": "circumflexes-traditional",
+              "label": "Use circumflex accents",
+              "examples": ["piqûre", "il a dû partir"],
+              "rule": "For “i” and “u”, use circumflex accents (traditional spelling). Examples: piqûre; il a dû partir."
+            }
+          ]
+        },
+        {
+          "id": "passive-voice",
+          "title": "Passive voice",
+          "rule": "Avoid the passive voice when the agent is known."
+        },
+        {
+          "id": "past-participle-of-laisser",
+          "title": "Past participle of “laisser”",
+          "options": [
+            {
+              "id": "laisser-agree",
+              "label": "Make “laissé” agree with the direct object",
+              "examples": ["je les ai laissés partir"],
+              "rule": "When writing the past participle “laissé” followed by an infinitive, make “laissé” agree with the direct object complement if it appears before the verb (traditional spelling). Example: je les ai laissés partir."
+            },
+            {
+              "id": "laisser-invariable",
+              "label": "Use the invariable form",
+              "examples": ["je les ai laissé partir"],
+              "rule": "When writing the past participle “laissé” followed by an infinitive, use the invariable form “laissé” (reformed spelling). Example: je les ai laissé partir."
+            }
+          ]
+        },
+        {
+          "id": "foreign-words",
+          "title": "Foreign words",
+          "options": [
+            {
+              "id": "foreign-words-french-plurals",
+              "label": "Use French singular and plural forms",
+              "examples": ["un spaghetti", "des spaghettis"],
+              "rule": "For foreign words, use French spelling rules for the singular and plural forms of the word (reformed spelling). Examples: un spaghetti; des spaghettis."
+            },
+            {
+              "id": "foreign-words-original-plurals",
+              "label": "Use the original singular and plural forms",
+              "examples": ["un spaghetto", "des spaghetti"],
+              "rule": "For foreign words, use the singular and plural forms of the original language (traditional spelling). Examples: un spaghetto; des spaghetti."
+            }
+          ]
+        },
+        {
+          "id": "special-characters",
+          "title": "Special characters",
+          "rule": "Never use symbols."
+        },
+        {
+          "id": "spelled-out-numbers",
+          "title": "Spelled-out numbers",
+          "options": [
+            {
+              "id": "spelled-out-numbers-hyphens",
+              "label": "Use hyphens",
+              "examples": ["deux-mille-cent-trente-et-un", "quatre-vingt-deux"],
+              "rule": "When writing numbers in words, use hyphens (reformed spelling). Examples: deux-mille-cent-trente-et-un; quatre-vingt-deux."
+            },
+            {
+              "id": "spelled-out-numbers-traditional",
+              "label": "Use traditional spacing and hyphenation",
+              "examples": ["deux mille cent trente et un", "quatre-vingt-deux"],
+              "rule": "When writing numbers in words, use hyphens between elements of a compound number that are below one hundred and not separated by “et”; otherwise, use spaces (traditional spelling). Examples: deux mille cent trente et un; quatre-vingt-deux."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "formality",
+          "title": "Formality",
+          "options": [
+            {
+              "id": "formality-vous",
+              "label": "Use “vous”",
+              "rule": "When addressing the reader, use “vous”."
+            },
+            {
+              "id": "formality-tu",
+              "label": "Use “tu”",
+              "rule": "When addressing the reader, use “tu”."
+            }
+          ]
+        },
+        {
+          "id": "anglicisms",
+          "title": "Anglicisms",
+          "rule": "Avoid using anglicisms when there is a commonly used French equivalent."
+        },
+        {
+          "id": "country-names",
+          "title": "Country names",
+          "options": [
+            {
+              "id": "country-names-long-form",
+              "label": "Use the long form",
+              "examples": ["la Confédération suisse"],
+              "rule": "When writing country names, use the long form. Example: la Confédération suisse."
+            },
+            {
+              "id": "country-names-short-form",
+              "label": "Use the short form",
+              "examples": ["la Suisse"],
+              "rule": "When writing country names, use the short form. Example: la Suisse."
+            }
+          ]
+        },
+        {
+          "id": "inclusive-writing-unspecified-gender",
+          "title": "Inclusive writing",
+          "options": [
+            {
+              "id": "inclusive-both-masculine-and-feminine",
+              "label": "Use both masculine and feminine forms",
+              "examples": ["les enseignants et les enseignantes"],
+              "rule": "When the gender of one or more individuals is unspecified, use both masculine and feminine forms. Example: les enseignants et les enseignantes."
+            },
+            {
+              "id": "inclusive-gender-neutral-terms",
+              "label": "Use gender-neutral terms and expressions",
+              "examples": ["le corps enseignant"],
+              "rule": "When the gender of one or more individuals is unspecified, use gender-neutral terms and expressions. Example: le corps enseignant."
+            },
+            {
+              "id": "inclusive-masculine-only",
+              "label": "Use the masculine form only",
+              "examples": ["les enseignants"],
+              "rule": "When the gender of one or more individuals is unspecified, use the masculine form only. Example: les enseignants."
+            },
+            {
+              "id": "inclusive-middle-dots",
+              "label": "Use middle dots",
+              "examples": ["les enseignant·e·s"],
+              "rule": "When the gender of one or more individuals is unspecified, use middle dots. Example: les enseignant·e·s."
+            },
+            {
+              "id": "inclusive-parentheses",
+              "label": "Use parentheses",
+              "examples": ["les enseignant(e)s"],
+              "rule": "When the gender of one or more individuals is unspecified, use parentheses. Example: les enseignant(e)s."
+            },
+            {
+              "id": "inclusive-periods",
+              "label": "Use periods",
+              "examples": ["les enseignant.e.s"],
+              "rule": "When the gender of one or more individuals is unspecified, use periods. Example: les enseignant.e.s."
+            }
+          ]
+        },
+        {
+          "id": "inclusive-writing-word-order",
+          "title": "Inclusive writing word order",
+          "options": [
+            {
+              "id": "inclusive-masculine-near-agreeing-words",
+              "label": "Place masculine nouns close to agreeing words",
+              "examples": [
+                "de nombreux participants et participantes",
+                "des participantes et participants qui sont venus nombreux"
+              ],
+              "rule": "When referring to people, arrange words so that the masculine nouns are as close as possible to the words inflected to agree with them. Examples: de nombreux participants et participantes; des participantes et participants qui sont venus nombreux."
+            },
+            {
+              "id": "inclusive-proximity-agreement",
+              "label": "Use proximity agreement",
+              "examples": [
+                "de nombreux participants et participantes",
+                "des participants et participantes qui sont venues nombreuses"
+              ],
+              "rule": "When referring to people, use the proximity agreement. Examples: de nombreux participants et participantes; des participants et participantes qui sont venues nombreuses."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

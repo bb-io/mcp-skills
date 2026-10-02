@@ -1,0 +1,654 @@
+{
+  "language": "es",
+  "label": "Spanish",
+  "categories": [
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "date-format",
+          "title": "Date format",
+          "options": [
+            {
+              "id": "date-day-month-year-septiembre",
+              "label": "Day first, month in words, year in numbers, using “septiembre”",
+              "examples": ["6 de abril de 2009", "15 de septiembre de 2024", "1 de noviembre de 1990"],
+              "rule": "When writing dates, write the day first in numbers, then the month in words, and the year in numbers; use the spelling “septiembre” for the ninth month. Examples: 6 de abril de 2009; 15 de septiembre de 2024; 1 de noviembre de 1990."
+            },
+            {
+              "id": "date-day-month-year-setiembre",
+              "label": "Day first, month in words, year in numbers, using “setiembre”",
+              "examples": ["6 de abril de 2009", "15 de setiembre de 2024", "1 de noviembre de 1990"],
+              "rule": "When writing dates, write the day first in numbers, then the month in words, and the year in numbers; use the spelling “setiembre” for the ninth month. Examples: 6 de abril de 2009; 15 de setiembre de 2024; 1 de noviembre de 1990."
+            },
+            {
+              "id": "date-numeric-leading-zero",
+              "label": "Use only numbers with leading zeros",
+              "examples": ["02.05.1997", "30.06.2000"],
+              "rule": "When writing dates, use only numbers, with a leading zero for values less than 10. Examples: 02.05.1997; 30.06.2000."
+            },
+            {
+              "id": "date-numeric-no-leading-zero",
+              "label": "Use only numbers without leading zeros",
+              "examples": ["2.5.1997", "30.6.2000"],
+              "rule": "When writing dates, use only numbers, without a leading zero for values less than 10. Examples: 2.5.1997; 30.6.2000."
+            },
+            {
+              "id": "date-month-day-year-septiembre",
+              "label": "Month first, day in numbers, using “septiembre”",
+              "examples": ["abril 6, 2009", "septiembre 15, 2024", "noviembre 1, 1990"],
+              "rule": "When writing dates, write the month first in words, then the day in numbers, a comma, and the year in numbers; use the spelling “septiembre” for the ninth month. Examples: abril 6, 2009; septiembre 15, 2024; noviembre 1, 1990."
+            }
+          ]
+        },
+        {
+          "id": "numerical-dates",
+          "title": "For dates in numerical form",
+          "options": [
+            {
+              "id": "numerical-dates-hyphens",
+              "label": "Use hyphens",
+              "examples": ["6-4-2009", "01-11-1990"],
+              "rule": "For dates in numerical form, use hyphens. Examples: 6-4-2009; 01-11-1990."
+            },
+            {
+              "id": "numerical-dates-periods",
+              "label": "Use periods",
+              "examples": ["6.4.2009", "01.11.1990"],
+              "rule": "For dates in numerical form, use periods. Examples: 6.4.2009; 01.11.1990."
+            },
+            {
+              "id": "numerical-dates-slashes",
+              "label": "Use slashes",
+              "examples": ["6/4/2009", "01/11/1990"],
+              "rule": "For dates in numerical form, use slashes. Examples: 6/4/2009; 01/11/1990."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "time-in-words-with-part-of-day",
+              "label": "Write the time in words with the part of the day in parentheses",
+              "examples": [
+                "las doce y cuarto (de la noche)",
+                "la una (de la madrugada)",
+                "las ocho y media (de la mañana)",
+                "las doce (del mediodía)",
+                "las cinco (de la tarde)"
+              ],
+              "rule": "When writing the time, write the time in words indicating the part of the day in parentheses. Examples: las doce y cuarto (de la noche); la una (de la madrugada); las ocho y media (de la mañana); las doce (del mediodía); las cinco (de la tarde)."
+            },
+            {
+              "id": "time-12h-colon-am-pm",
+              "label": "Use 12-hour clock with am/pm",
+              "examples": ["0 am", "0:15 am", "1 am", "2:45 am", "8:30 am", "12 pm", "5 pm", "10 pm"],
+              "rule": "When writing the time, use the 12-hour clock without a leading zero for single-digit hours; use a colon as a separator; indicate the part of the day with “am” or “pm”; do not use minutes for full hours. Examples: 0 am; 0:15 am; 1 am; 2:45 am; 8:30 am; 12 pm; 5 pm; 10 pm."
+            },
+            {
+              "id": "time-12h-colon-am-pm-uppercase",
+              "label": "Use 12-hour clock with AM/PM",
+              "examples": ["0 AM", "0:15 AM", "1 AM", "2:45 AM", "8:30 AM", "12 PM", "5 PM", "10 PM"],
+              "rule": "When writing the time, use the 12-hour clock without a leading zero for single-digit hours; use a colon as a separator; indicate the part of the day with “AM” or “PM”; do not use minutes for full hours. Examples: 0 AM; 0:15 AM; 1 AM; 2:45 AM; 8:30 AM; 12 PM; 5 PM; 10 PM."
+            },
+            {
+              "id": "time-12h-period-a-m-p-m",
+              "label": "Use 12-hour clock with a. m. / p. m.",
+              "examples": ["0.00 a. m.", "0.15 a. m.", "1.00 a. m.", "2.45 a. m.", "8.30 a. m.", "12.00 p. m.", "5.00 p. m.", "10.00 p. m."],
+              "rule": "When writing the time, use the 12-hour clock without a leading zero for single-digit hours; use a period as a separator; indicate the part of day with “a. m.” or “p. m.” Examples: 0.00 a. m.; 0.15 a. m.; 1.00 a. m.; 2.45 a. m.; 8.30 a. m.; 12.00 p. m.; 5.00 p. m.; 10.00 p. m."
+            },
+            {
+              "id": "time-24h-colon",
+              "label": "Use the 24-hour clock with a colon",
+              "examples": ["00:00", "00:15", "01:00", "02:45", "08:30", "12:00", "17:00", "22:00"],
+              "rule": "When writing the time, use the 24-hour clock with a colon as separator. Examples: 00:00; 00:15; 01:00; 02:45; 08:30; 12:00; 17:00; 22:00."
+            },
+            {
+              "id": "time-24h-period",
+              "label": "Use the 24-hour clock with a period",
+              "examples": ["00.00", "00.15", "01.00", "02.45", "08.30", "12.00", "17.00", "22.00"],
+              "rule": "When writing the time, use the 24-hour clock with a period as a separator. Examples: 00.00; 00.15; 01.00; 02.45; 08.30; 12.00; 17.00; 22.00."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "currencies",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currency-symbol-after-space",
+              "label": "Use the currency symbol after the amount, with a space",
+              "examples": ["3 €", "5 $"],
+              "rule": "When writing amounts, use the currency symbol after the amount, with a space. Examples: 3 €; 5 $."
+            },
+            {
+              "id": "currency-iso-after-space",
+              "label": "Use the ISO currency code after the amount, with a space",
+              "examples": ["3 EUR", "5 USD"],
+              "rule": "When writing amounts, use the ISO currency code after the amount, with a space. Examples: 3 EUR; 5 USD."
+            },
+            {
+              "id": "currency-name-words",
+              "label": "Write the currency name in words",
+              "examples": ["75 euros", "cien dólares estadounidenses", "cinco céntimos"],
+              "rule": "When writing amounts, write the currency name in words. Examples: 75 euros; cien dólares estadounidenses; cinco céntimos."
+            },
+            {
+              "id": "currency-symbol-before-no-space",
+              "label": "Use the currency symbol before the amount, without a space",
+              "examples": ["€3", "$5"],
+              "rule": "When writing amounts, use the currency symbol before the amount, without a space. Examples: €3; $5."
+            },
+            {
+              "id": "currency-symbol-before-space",
+              "label": "Use the currency symbol before the amount, with a space",
+              "examples": ["€ 3", "$ 5"],
+              "rule": "When writing amounts, use the currency symbol before the amount, with a space. Examples: € 3; $ 5."
+            },
+            {
+              "id": "currency-iso-before-space",
+              "label": "Use the ISO currency code before the amount, with a space",
+              "examples": ["EUR 3", "USD 5"],
+              "rule": "When writing amounts, use the ISO currency code before the amount, with a space. Examples: EUR 3; USD 5."
+            }
+          ]
+        },
+        {
+          "id": "decimals-no-thousand-separators",
+          "title": "Punctuation in numbers",
+          "options": [
+            {
+              "id": "decimals-comma",
+              "label": "Use commas for decimals, with no thousands separators",
+              "examples": ["5,90", "18,37", "799,99", "5870,33", "15870,33", "315262,99", "6234568,32"],
+              "rule": "To separate decimals, always use commas, with no separators for thousands, millions, etc. Examples: 5,90; 18,37; 799,99; 5870,33; 15870,33; 315262,99; 6234568,32."
+            },
+            {
+              "id": "decimals-comma-radio-period",
+              "label": "Use commas for decimals, with periods only for radio stations",
+              "examples": ["5,90", "18,37", "799,99", "5870,33", "15870,33", "315262,99", "6234568,32", "98.5 Todo Música"],
+              "rule": "To separate decimals, always use commas, with no separators for thousands, millions, etc., and periods only when referring to radio stations. Examples: 5,90; 18,37; 799,99; 5870,33; 15870,33; 315262,99; 6234568,32; 98.5 Todo Música."
+            },
+            {
+              "id": "decimals-period",
+              "label": "Use periods for decimals, with no thousands separators",
+              "examples": ["5.90", "18.37", "799.99", "5870.33", "15870.33", "315262.99", "6234568.32"],
+              "rule": "To separate decimals, always use periods, with no separators for thousands, millions, etc. Examples: 5.90; 18.37; 799.99; 5870.33; 15870.33; 315262.99; 6234568.32."
+            }
+          ]
+        },
+        {
+          "id": "numbers-5-digits-or-more",
+          "title": "When writing numbers of 5 digits or more",
+          "options": [
+            {
+              "id": "numbers-5plus-comma-decimals-period-thousands",
+              "label": "Use commas for decimals and periods for thousands",
+              "examples": ["15.870,33", "315.262,99", "6.234.568,32"],
+              "rule": "When writing numbers of 5 digits or more, use commas for separating decimals and periods for separating thousands, millions, etc. Examples: 15.870,33; 315.262,99; 6.234.568,32."
+            },
+            {
+              "id": "numbers-5plus-comma-decimals-space-thousands",
+              "label": "Use commas for decimals and spaces for thousands",
+              "examples": ["15 870,33", "315 262,99", "6 234 568,32"],
+              "rule": "When writing numbers of 5 digits or more, use commas for separating decimals and spaces for separating thousands, millions, etc. Examples: 15 870,33; 315 262,99; 6 234 568,32."
+            },
+            {
+              "id": "numbers-5plus-comma-decimals-period-thousands-radio",
+              "label": "Use commas for decimals, periods for thousands, and periods for radio stations",
+              "examples": ["15.870,33", "315.262,99", "6.234.568,32", "98.5 Todo Música"],
+              "rule": "When writing numbers of 5 digits or more, use commas for separating decimals and periods for separating thousands, millions, etc., and when referring to radio stations. Examples: 15.870,33; 315.262,99; 6.234.568,32; 98.5 Todo Música."
+            },
+            {
+              "id": "numbers-5plus-comma-decimals-space-thousands-radio",
+              "label": "Use commas for decimals, spaces for thousands, and periods for radio stations",
+              "examples": ["15 870,33", "315 262,99", "6 234 568,32", "98.5 Todo Música"],
+              "rule": "When writing numbers of 5 digits or more, use commas for separating decimals, spaces for separating thousands, millions, etc., and periods when referring to radio stations. Examples: 15 870,33; 315 262,99; 6 234 568,32; 98.5 Todo Música."
+            },
+            {
+              "id": "numbers-5plus-period-decimals-comma-thousands",
+              "label": "Use periods for decimals and commas for thousands",
+              "examples": ["15,870.33", "315,262.99", "6,234,568.32"],
+              "rule": "When writing numbers of 5 digits or more, use periods for separating decimals and commas for separating thousands, millions, etc. Examples: 15,870.33; 315,262.99; 6,234,568.32."
+            },
+            {
+              "id": "numbers-5plus-period-decimals-space-thousands",
+              "label": "Use periods for decimals and spaces for thousands",
+              "examples": ["15 870.33", "315 262.99", "6 234 568.32"],
+              "rule": "When writing numbers of 5 digits or more, use periods for separating decimals and spaces for separating thousands, millions, etc. Examples: 15 870.33; 315 262.99; 6 234 568.32."
+            }
+          ]
+        },
+        {
+          "id": "numbers-up-to-four-digits",
+          "title": "When writing numbers up to four digits",
+          "options": [
+            {
+              "id": "numbers-4-comma-decimals-period-thousands",
+              "label": "Use commas for decimals and periods for thousands",
+              "examples": ["5,90", "18,37", "799,99", "5.870,33"],
+              "rule": "When writing numbers up to four digits, use commas for separating decimals and periods for separating thousands. Examples: 5,90; 18,37; 799,99; 5.870,33."
+            },
+            {
+              "id": "numbers-4-comma-decimals-space-thousands",
+              "label": "Use commas for decimals and spaces for thousands",
+              "examples": ["5,90", "18,37", "799,99", "5 870,33"],
+              "rule": "When writing numbers up to four digits, use commas for separating decimals and spaces for separating thousands. Examples: 5,90; 18,37; 799,99; 5 870,33."
+            },
+            {
+              "id": "numbers-4-comma-decimals-period-thousands-radio",
+              "label": "Use commas for decimals, periods for thousands, and periods for radio stations",
+              "examples": ["5,90", "18,37", "799,99", "5.870,33", "98.5 Todo Música"],
+              "rule": "When writing numbers up to four digits, use commas for separating decimals and periods for separating thousands and when making reference to radio stations. Examples: 5,90; 18,37; 799,99; 5.870,33; 98.5 Todo Música."
+            },
+            {
+              "id": "numbers-4-comma-decimals-space-thousands-radio",
+              "label": "Use commas for decimals, spaces for thousands, and periods for radio stations",
+              "examples": ["5,90", "18,37", "799,99", "5 870,33", "98.5 Todo Música"],
+              "rule": "When writing numbers up to four digits, use commas for separating decimals, spaces for separating thousands, and periods when referring to radio stations. Examples: 5,90; 18,37; 799,99; 5 870,33; 98.5 Todo Música."
+            },
+            {
+              "id": "numbers-4-period-decimals-comma-thousands",
+              "label": "Use periods for decimals and commas for thousands",
+              "examples": ["5.90", "18.37", "799.99", "5,870.33"],
+              "rule": "When writing numbers up to four digits, use periods for separating decimals and commas for separating thousands. Examples: 5.90; 18.37; 799.99; 5,870.33."
+            },
+            {
+              "id": "numbers-4-period-decimals-space-thousands",
+              "label": "Use periods for decimals and spaces for thousands",
+              "examples": ["5.90", "18.37", "799.99", "5 870.33"],
+              "rule": "When writing numbers up to four digits, use periods for separating decimals and spaces for separating thousands. Examples: 5.90; 18.37; 799.99; 5 870.33."
+            }
+          ]
+        },
+        {
+          "id": "percentages",
+          "title": "Percentages",
+          "options": [
+            {
+              "id": "percent-symbol-no-space",
+              "label": "Write the symbol after the number, without space",
+              "examples": ["99%"],
+              "rule": "When writing percentages, write the symbol after the number, without space. Example: 99%."
+            },
+            {
+              "id": "percent-symbol-space",
+              "label": "Write the symbol after the number, with a space",
+              "examples": ["99 %"],
+              "rule": "When writing percentages, write the symbol after the number, with a space. Example: 99 %."
+            },
+            {
+              "id": "percent-por-cien",
+              "label": "Write “por cien” in words",
+              "examples": ["99 por cien", "diez por cien"],
+              "rule": "When writing percentages, write “por cien” in words. Examples: 99 por cien; diez por cien."
+            },
+            {
+              "id": "percent-por-ciento",
+              "label": "Write “por ciento” in words",
+              "examples": ["99 por ciento", "diez por ciento"],
+              "rule": "When writing percentages, write “por ciento” in words. Examples: 99 por ciento; diez por ciento."
+            }
+          ]
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units of measure and spacing",
+          "options": [
+            {
+              "id": "units-abbreviate-with-numeral",
+              "label": "Abbreviate when used with a numeral but spell out when used without",
+              "examples": ["4 kg", "algunos kilos"],
+              "rule": "When writing units of measure, abbreviate when used with a numeral but spell out when used without. Examples: 4 kg; algunos kilos."
+            },
+            {
+              "id": "units-always-abbreviate",
+              "label": "Always abbreviate, with or without a numeral",
+              "examples": ["4 kg", "algunos kg"],
+              "rule": "When writing units of measure, always abbreviate, with or without a numeral. Examples: 4 kg; algunos kg."
+            },
+            {
+              "id": "units-always-spell-out",
+              "label": "Always spell out, with or without a numeral",
+              "examples": ["4 kilos", "algunos kilos"],
+              "rule": "When writing units of measure, always spell out, with or without a numeral. Example: 4 kilos; algunos kilos."
+            },
+            {
+              "id": "units-spelled-out-number-rule",
+              "label": "Spell out units with spelled-out numbers and abbreviate with numerals",
+              "examples": ["4 kg", "cuatro kilos"],
+              "rule": "When writing units of measure, when numbers are spelled out, spell out the units; when numbers are written as numerals, abbreviate the units. Examples: 4 kg; cuatro kilos."
+            }
+          ]
+        },
+        {
+          "id": "unit-spacing",
+          "title": "Spacing for units of measure",
+          "options": [
+            {
+              "id": "unit-spacing-none",
+              "label": "Don’t use a space between a numeral and unit",
+              "examples": ["4kg"],
+              "rule": "For spacing for units of measure, don’t use a space between a numeral and unit. Example: 4kg."
+            },
+            {
+              "id": "unit-spacing-use",
+              "label": "Use a space between a numeral and unit",
+              "examples": ["4 kg"],
+              "rule": "For spacing for units of measure, use a space between a numeral and unit. Example: 4 kg."
+            }
+          ]
+        },
+        {
+          "id": "temperatures",
+          "title": "Temperatures",
+          "options": [
+            {
+              "id": "temperature-words",
+              "label": "Write out the unit in words",
+              "examples": ["32 grados Celsius", "98 grados Fahrenheit"],
+              "rule": "When writing temperatures, write out the unit in words. Examples: 32 grados Celsius; 98 grados Fahrenheit."
+            },
+            {
+              "id": "temperature-symbol-space",
+              "label": "Put the unit symbol after the number, with a space",
+              "examples": ["32 ºC", "98 ºF", "5 K"],
+              "rule": "When writing temperatures, put the unit symbol after the number, with a space. Examples: 32 ºC; 98 ºF; 5 K."
+            },
+            {
+              "id": "temperature-symbol-no-space",
+              "label": "Put the unit symbol after the number, without a space",
+              "examples": ["32ºC", "98ºF", "5K"],
+              "rule": "When writing temperatures, put the unit symbol after the number, without a space. Examples: 32ºC; 98ºF; 5K."
+            },
+            {
+              "id": "temperature-grado-informal",
+              "label": "Use “grado” or “grados” without specifying the scale",
+              "examples": ["cinco grados", "25 grados"],
+              "rule": "When writing temperatures, use the word “grado” or “grados” without specifying the temperature scale (informal tone). Examples: cinco grados; 25 grados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "telephone-numbers",
+          "title": "Hyphens, dashes, and spacing",
+          "options": [
+            {
+              "id": "telephone-no-spaces",
+              "label": "Don’t put spaces between digits",
+              "examples": ["968476578", "+491677896576"],
+              "rule": "When writing telephone numbers, don’t put spaces between digits. Examples: 968476578; +491677896576."
+            },
+            {
+              "id": "telephone-keep-original",
+              "label": "Keep the format of the original",
+              "rule": "When writing telephone numbers, keep the format of the original."
+            }
+          ]
+        },
+        {
+          "id": "ranges",
+          "title": "To indicate a range",
+          "options": [
+            {
+              "id": "range-en-dash-spaces",
+              "label": "Use an en dash with spaces",
+              "examples": ["lunes – sábado", "2001 – 2003"],
+              "rule": "To indicate a range, use an en dash (–) with spaces. Examples: lunes – sábado; 2001 – 2003."
+            },
+            {
+              "id": "range-en-dash-no-spaces",
+              "label": "Use an en dash without spaces",
+              "examples": ["lunes–sábado", "2001–2003"],
+              "rule": "To indicate a range, use an en dash (–) without spaces. Examples: lunes–sábado; 2001–2003."
+            },
+            {
+              "id": "range-hyphen-spaces",
+              "label": "Use a hyphen with spaces",
+              "examples": ["lunes - sábado", "2001 - 2003"],
+              "rule": "To indicate a range, use a hyphen (-) with spaces. Examples: lunes - sábado; 2001 - 2003."
+            },
+            {
+              "id": "range-hyphen-no-spaces",
+              "label": "Use a hyphen without spaces",
+              "examples": ["lunes-sábado", "2001-2003"],
+              "rule": "To indicate a range, use a hyphen (-) without spaces. Examples: lunes-sábado; 2001-2003."
+            },
+            {
+              "id": "range-de-a",
+              "label": "Use “de…a”",
+              "examples": ["de lunes a sábado", "de 2001 a 2003"],
+              "rule": "To indicate a range, use “de…a” (“from...to”). Examples: de lunes a sábado; de 2001 a 2003."
+            }
+          ]
+        },
+        {
+          "id": "periods-in-abbreviations",
+          "title": "Periods in abbreviations",
+          "options": [
+            {
+              "id": "abbreviations-no-separation",
+              "label": "Don’t separate abbreviated words",
+              "examples": ["EEUU"],
+              "rule": "When writing abbreviations, don’t separate abbreviated words. Example: EEUU."
+            },
+            {
+              "id": "abbreviations-period-space",
+              "label": "Separate each abbreviated word with a period and a space",
+              "examples": ["EE. UU."],
+              "rule": "When writing abbreviations, separate each abbreviated word with a period and a space. Example: EE. UU."
+            },
+            {
+              "id": "abbreviations-period-no-space",
+              "label": "Separate each abbreviated word with a period without a space",
+              "examples": ["EE.UU."],
+              "rule": "When writing abbreviations, separate each abbreviated word with a period without a space. Example: EE.UU."
+            },
+            {
+              "id": "abbreviations-space-no-period",
+              "label": "Separate each abbreviated word with a space, without a period",
+              "examples": ["EE UU"],
+              "rule": "When writing abbreviations, separate each abbreviated word with a space, without a period. Example: EE UU."
+            }
+          ]
+        },
+        {
+          "id": "quotation-marks-highlight",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "highlight-single-curly",
+              "label": "Use single curly quotation marks",
+              "examples": ["Me ha dado el ‘ok’ para venir mañana", "Los eventos más ‘random’ de la semana"],
+              "rule": "To highlight a specific word or expression in a text, use single curly quotation marks (‘...’). Examples: Me ha dado el ‘ok’ para venir mañana; Los eventos más ‘random’ de la semana."
+            },
+            {
+              "id": "highlight-single-straight",
+              "label": "Use single straight quotation marks",
+              "examples": ["Me ha dado el 'ok' para venir mañana", "Los eventos más 'random' de la semana"],
+              "rule": "To highlight a specific word or expression in a text, use single straight quotation marks ('...'). Examples: Me ha dado el 'ok' para venir mañana; Los eventos más 'random' de la semana."
+            }
+          ]
+        },
+        {
+          "id": "quotation-marks-general",
+          "title": "When using quotation marks",
+          "options": [
+            {
+              "id": "quotes-double-curly",
+              "label": "Use double curly quotation marks",
+              "rule": "When using quotation marks, use double curly quotation marks (“…”)."
+            },
+            {
+              "id": "quotes-double-straight",
+              "label": "Use double straight quotation marks",
+              "rule": "When using quotation marks, use double straight quotation marks (\"…\")."
+            },
+            {
+              "id": "quotes-guillemets",
+              "label": "Use guillemets",
+              "rule": "When using quotation marks, use guillemets («…»)."
+            }
+          ]
+        },
+        {
+          "id": "quotation-mark-hierarchy",
+          "title": "Quotation mark hierarchy",
+          "options": [
+            {
+              "id": "hierarchy-double-curly-single-curly",
+              "label": "Use double curly quotation marks and alternate with single curly quotation marks",
+              "rule": "Use double curly quotation marks for quotes and alternate with single curly quotation marks for nested quotations (“ ‘ “ ” ’ ”)."
+            },
+            {
+              "id": "hierarchy-double-straight-single-straight",
+              "label": "Use double straight quotation marks and alternate with single straight quotation marks",
+              "rule": "Use double straight quotation marks for quotes and alternate with single straight quotation marks for nested quotations (\" ' \" \" ' \")."
+            },
+            {
+              "id": "hierarchy-guillemets-curly",
+              "label": "Use guillemets, double curly quotation marks, and single curly quotation marks",
+              "rule": "Use guillemets («…») for quotes, double curly quotation marks (“…”) for quotes within quotes, and single curly quotation marks (‘...’) for further nested quotations."
+            }
+          ]
+        },
+        {
+          "id": "punctuation-in-salutations",
+          "title": "Punctuation in salutations",
+          "options": [
+            {
+              "id": "salutation-colon",
+              "label": "Use a colon",
+              "examples": ["Buenos días:"],
+              "rule": "After a salutation, use a colon (recommended standard). Example: Buenos días:."
+            },
+            {
+              "id": "salutation-comma",
+              "label": "Use a comma",
+              "examples": ["Buenos días,"],
+              "rule": "After a salutation, use a comma. Example: Buenos días,."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "passive-voice",
+          "title": "Use of the passive voice",
+          "rule": "Use the active voice and avoid the passive voice whenever possible."
+        },
+        {
+          "id": "capitalization",
+          "title": "Capitalization",
+          "examples": ["ONU", "AVE"],
+          "rule": "Don’t write words or complete texts in capital letters, except for acronyms or certain brand names. Examples: ONU; AVE."
+        },
+        {
+          "id": "textual-quotations",
+          "title": "Textual quotations",
+          "options": [
+            {
+              "id": "quotations-dont-change",
+              "label": "Don’t make changes to quoted material",
+              "rule": "When writing textual quotations, don’t make changes to quoted material."
+            },
+            {
+              "id": "quotations-edit-to-standard",
+              "label": "Edit quoted material to adhere to linguistic standards",
+              "rule": "When writing textual quotations, edit quoted material to adhere to linguistic standards."
+            }
+          ]
+        },
+        {
+          "id": "solo-tilde",
+          "title": "Adverb “solo” with or without tilde",
+          "options": [
+            {
+              "id": "solo-no-tilde",
+              "label": "Never use an acute accent",
+              "examples": ["Solo faltan dos horas", "ha venido solo"],
+              "rule": "When writing “solo”, never use an acute accent. Examples: Solo faltan dos horas; ha venido solo."
+            },
+            {
+              "id": "solo-with-tilde",
+              "label": "Put acute accent on the adverb to differentiate it from the adjective",
+              "examples": ["Sólo faltan dos horas", "ha venido solo"],
+              "rule": "When writing “solo”, put an acute accent on the adverb to differentiate it from the adjective. Examples: Sólo faltan dos horas; ha venido solo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "inclusive-language-non-binary",
+          "title": "Inclusive language",
+          "options": [
+            {
+              "id": "inclusive-elles",
+              "label": "Use the inclusive form “elle(s)”",
+              "examples": ["elle es licenciade", "elles son mis amigues", "le amigue de mi compañera vive cerca"],
+              "rule": "When referring to a person of non-binary gender, use the inclusive form “elle(s)”. Examples: elle es licenciade; elles son mis amigues; le amigue de mi compañera vive cerca."
+            },
+            {
+              "id": "inclusive-ellxs",
+              "label": "Use the inclusive form “ellx(s)”",
+              "examples": ["ellx es licenciadx", "ellxs son mis amigxs", "lx amigx de mi compañera vive cerca"],
+              "rule": "When referring to a person of non-binary gender, use the inclusive form “ellx(s)”. Examples: ellx es licenciadx; ellxs son mis amigxs; lx amigx de mi compañera vive cerca."
+            }
+          ]
+        },
+        {
+          "id": "inclusive-language-groups",
+          "title": "If the gender of a group is not specified or is mixed",
+          "options": [
+            {
+              "id": "inclusive-double-expressions",
+              "label": "Use double expressions to indicate both masculine and feminine genders",
+              "examples": [
+                "los alumnos y alumnas",
+                "te has registrado como usuario/a premium",
+                "los/las participantes se reunirán esta tarde"
+              ],
+              "rule": "If the gender of a group is not specified or is mixed, use double expressions to indicate both masculine and feminine genders. Examples: los alumnos y alumnas; te has registrado como usuario/a premium; los/las participantes se reunirán esta tarde."
+            },
+            {
+              "id": "inclusive-masculine-plural",
+              "label": "Use the standard masculine plural",
+              "examples": ["Los médicos se ocuparon del tratamiento"],
+              "rule": "If the gender of a group is not specified or is mixed, use the standard masculine plural. Example: Los médicos se ocuparon del tratamiento."
+            },
+            {
+              "id": "inclusive-neutral-nouns",
+              "label": "Always opt for neutral nouns and adjectives",
+              "examples": ["la(s) persona(s)", "la ciudadanía"],
+              "rule": "If the gender of a group is not specified or is mixed, always opt for neutral nouns and adjectives. Examples: la(s) persona(s); la ciudadanía."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "language": "zh",
+  "label": "Chinese",
+  "categories": [
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "date-format",
+          "title": "Date format",
+          "options": [
+            {
+              "id": "historical-era-chinese-numerals-gregorian-annotation",
+              "label": "Historical eras with Gregorian annotation",
+              "examples": ["秦文公四十四年（公元前 722 年）"],
+              "rule": "Use Chinese numerals to represent historical eras and add Arabic numeral annotations for the Gregorian date. Example: 秦文公四十四年（公元前 722 年）."
+            },
+            {
+              "id": "traditional-calendar-chinese-numerals",
+              "label": "Traditional calendar with Chinese numerals",
+              "examples": ["甲子年十月十五日"],
+              "rule": "Use the traditional calendar system with Chinese numerals to represent the date. Example: 甲子年十月十五日."
+            },
+            {
+              "id": "gregorian-chinese-numerals",
+              "label": "Gregorian with Chinese numerals",
+              "examples": ["二〇〇七年二月六日"],
+              "rule": "Use year (\"年\"), month (\"月\"), and day (\"日\") with Chinese numerals to represent the Gregorian date. Example: 二〇〇七年二月六日."
+            },
+            {
+              "id": "gregorian-arabic-numerals-with-characters",
+              "label": "Gregorian with Arabic numerals and 年月日",
+              "examples": ["2022年2月6日"],
+              "rule": "Use year (\"年\"), month (\"月\"), and day (\"日\") with Arabic numerals to represent the Gregorian date. Example: 2022年2月6日."
+            },
+            {
+              "id": "gregorian-iso-hyphen",
+              "label": "Gregorian with hyphens",
+              "examples": ["1997-12-06"],
+              "rule": "Use hyphens and Arabic numerals to represent the Gregorian date. Example: 1997-12-06."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "12h-arabic-am-pm-colon",
+              "label": "12-hour with 上午/下午 and colon",
+              "examples": ["上午6:00", "下午3:45"],
+              "rule": "Use the 12-hour clock and specify a.m./p.m. (\"上午\"/\"下午\") or morning/evening (\"早上\"/\"晚上\"), with numbers in Arabic numerals. Examples: 上午6:00; 下午3:45."
+            },
+            {
+              "id": "12h-arabic-am-pm-dian",
+              "label": "12-hour with 点",
+              "examples": ["上午6点", "下午3点45"],
+              "rule": "Use the 12-hour clock and specify a.m./p.m. (\"上午\"/\"下午\") or morning/evening (\"早上\"/\"晚上\"); write out \"hours\" (\"点\") and write numbers in Arabic numerals. Examples: 上午6点; 下午3点45."
+            },
+            {
+              "id": "12h-arabic-am-pm-shi-fen",
+              "label": "12-hour with 时/分 in Arabic numerals",
+              "examples": ["上午6时", "下午3时45分"],
+              "rule": "Use the 12-hour clock and specify a.m./p.m. (\"上午\"/\"下午\") or morning/evening (\"早上\"/\"晚上\"); write out \"hours\" (\"时\") and \"minutes\" (\"分\") and write numbers in Arabic numerals. Examples: 上午6时; 下午3时45分."
+            },
+            {
+              "id": "12h-chinese-am-pm-shi-fen",
+              "label": "12-hour with 时/分 in Chinese numerals",
+              "examples": ["上午六时", "下午三时四十五分"],
+              "rule": "Use the 12-hour clock and specify a.m./p.m. (\"上午\"/\"下午\") or morning/evening (\"早上\"/\"晚上\"); write out \"hours\" (\"时\") and \"minutes\" (\"分\"), and write numbers in Chinese numerals. Examples: 上午六时; 下午三时四十五分."
+            },
+            {
+              "id": "24h-arabic",
+              "label": "24-hour with Arabic numerals",
+              "examples": ["13:45"],
+              "rule": "Use the 24-hour clock with Arabic numerals. Example: 13:45."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "currencies-expressing-amounts",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currency-name-arabic-no-space",
+              "label": "Currency names with Arabic numerals",
+              "examples": ["合同总价人民币1500万元。"],
+              "rule": "Use currency names and Arabic numerals to indicate the specific amounts; no space is needed between the numbers and units. Example: 合同总价人民币1500万元。"
+            },
+            {
+              "id": "currency-name-chinese-numerals",
+              "label": "Currency names with Chinese numerals",
+              "examples": ["捐款金额人民币壹佰万元整。"],
+              "rule": "Use currency names and Chinese numerals. Example: 捐款金额人民币壹佰万元整。"
+            },
+            {
+              "id": "currency-symbol-arabic-no-space",
+              "label": "Currency symbols without space",
+              "examples": ["售价￥1999，限时优惠。"],
+              "rule": "Use currency symbols and Arabic numerals to indicate the specific amounts, without adding a space between the number and the unit. Example: 售价￥1999，限时优惠。"
+            },
+            {
+              "id": "currency-symbol-arabic-half-width-space",
+              "label": "Currency symbols with half-width space",
+              "examples": ["支付金额 $ 99.99。"],
+              "rule": "Use currency symbols and Arabic numerals to indicate the specific amounts, with a half-width space between the number and the unit. Example: 支付金额 $ 99.99。"
+            },
+            {
+              "id": "currency-iso-code-arabic-half-width-space",
+              "label": "ISO currency codes with half-width space",
+              "examples": ["转账金额 EUR 1000.00。"],
+              "rule": "Use ISO currency codes and Arabic numerals to indicate the specific amounts; a half-width space between the currency code and the number is needed. Example: 转账金额 EUR 1000.00。"
+            }
+          ]
+        },
+        {
+          "id": "large-numbers-and-units-in-chinese",
+          "title": "Large numbers and units in Chinese",
+          "rule": "For large numbers, write the units “万” (ten thousand) and “亿” (hundred million) in Chinese characters and use Arabic numerals for the rest. Example: 10亿零817万人."
+        },
+        {
+          "id": "numerals-and-chinese-commas",
+          "title": "Numerals and Chinese commas",
+          "options": [
+            {
+              "id": "approximate-no-comma",
+              "label": "No comma for approximate values",
+              "examples": ["前方一二十公里范围内"],
+              "rule": "When two adjacent numbers are used together to indicate an approximate value, don’t use a Chinese comma (、) between them. Example: 前方一二十公里范围内."
+            },
+            {
+              "id": "abbreviated-forms-use-comma",
+              "label": "Use comma for abbreviated forms",
+              "examples": ["二、三产业的基础"],
+              "rule": "Use a Chinese comma (、) if adjacent numbers are used as abbreviated forms. Example: 二、三产业的基础."
+            }
+          ]
+        },
+        {
+          "id": "percentages-expressing-percentages",
+          "title": "Percentages",
+          "options": [
+            {
+              "id": "percent-sign-arabic",
+              "label": "Arabic numerals with %",
+              "examples": ["99%"],
+              "rule": "Use Arabic numerals followed by the percent sign. Example: 99%."
+            },
+            {
+              "id": "baifenzhi-chinese-numerals",
+              "label": "百分之 with Chinese numerals",
+              "examples": ["百分之九十九"],
+              "rule": "Use Chinese numerals preceded by the word “percent” (“百分之”). Example: 百分之九十九."
+            }
+          ]
+        },
+        {
+          "id": "temperatures-expressing-temperatures",
+          "title": "Temperatures",
+          "options": [
+            {
+              "id": "arabic-unit-name-half-width-space",
+              "label": "Arabic numerals with unit name and half-width space",
+              "examples": ["-3 摄氏度", "200 华氏度。"],
+              "rule": "Use Arabic numerals and write the name of the unit, with a half-width space between the number and the name of the unit. Examples: -3 摄氏度; 200 华氏度。"
+            },
+            {
+              "id": "arabic-unit-symbols",
+              "label": "Arabic numerals with unit symbols",
+              "examples": ["32°C", "98°F"],
+              "rule": "Use Arabic numerals and unit symbols. Examples: 32°C; 98°F."
+            },
+            {
+              "id": "arabic-unit-name-no-space",
+              "label": "Arabic numerals with unit name and no space",
+              "examples": ["-3摄氏度", "200华氏度。"],
+              "rule": "Use Arabic numerals and write out the unit name, with no space between the number and the unit name. Examples: -3摄氏度; 200华氏度。"
+            },
+            {
+              "id": "chinese-numerals-unit-name",
+              "label": "Chinese numerals with unit name",
+              "examples": ["三十二摄氏度", "九十八华氏度"],
+              "rule": "Use numbers in Chinese characters and write out the unit name. Examples: 三十二摄氏度; 九十八华氏度."
+            }
+          ]
+        },
+        {
+          "id": "numbers-to-express-numbers",
+          "title": "Numbers",
+          "options": [
+            {
+              "id": "use-arabic-numerals",
+              "label": "Use Arabic numerals",
+              "examples": ["实验样本共 150 份", "有效回收率为 92.6%。"],
+              "rule": "To express numbers, use Arabic numerals. Examples: 实验样本共 150 份; 有效回收率为 92.6%。"
+            },
+            {
+              "id": "use-chinese-characters",
+              "label": "Use Chinese characters",
+              "examples": ["这座古庙建于一九三七年", "距今已有八十余年历史。"],
+              "rule": "To express numbers, use Chinese characters. Examples: 这座古庙建于一九三七年; 距今已有八十余年历史。"
+            },
+            {
+              "id": "match-surrounding-text-format",
+              "label": "Match surrounding text",
+              "examples": ["首批志愿者二十人; 第二批增至五十人; 第三批预计招募一百人。"],
+              "rule": "When both Arabic numerals and Chinese numerals are acceptable, choose the same format used in the surrounding text. Example: 首批志愿者二十人; 第二批增至五十人; 第三批预计招募一百人。"
+            }
+          ]
+        },
+        {
+          "id": "zero-and-ling",
+          "title": "“Zero” and “〇”",
+          "options": [
+            {
+              "id": "numbering-use-ling-circle",
+              "label": "Use 〇 for numbering",
+              "examples": ["一九九〇年"],
+              "rule": "When a number is used for numbering, write zero as “〇”. Example: 一九九〇年."
+            },
+            {
+              "id": "measurement-use-ling",
+              "label": "Use 零 for measurement",
+              "examples": ["本次考试平均分为九十五点零五分。"],
+              "rule": "When a number is used as a measurement, write zero as “零”. Example: 本次考试平均分为九十五点零五分。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "brackets",
+          "title": "Brackets",
+          "options": [
+            {
+              "id": "hexagonal-brackets-official-documents",
+              "label": "Use 〔...〕 for official document years",
+              "examples": ["国发〔2011〕3号文件"],
+              "rule": "Use hexagonal brackets “〔...〕” when indicating the year of issuance in official documents. Example: 国发〔2011〕3号文件."
+            },
+            {
+              "id": "lenticular-brackets-news",
+              "label": "Use 【...】 for newspaper news leads",
+              "examples": ["【新华社南京消息】"],
+              "rule": "Use lenticular brackets “【...】” for marking the beginning of news articles or reports in newspapers. Example: 【新华社南京消息】."
+            },
+            {
+              "id": "parentheses-annotations",
+              "label": "Use （...） for annotations",
+              "examples": ["我校拥有特级教师（含已退休的）17人。"],
+              "rule": "Use parentheses “（...）” to indicate annotations or supplementary explanations. Example: 我校拥有特级教师（含已退休的）17人。"
+            },
+            {
+              "id": "square-or-hexagonal-author-nationality-period",
+              "label": "Use [...] or 〔...〕 for nationality or period",
+              "examples": ["〔唐〕杜甫著", "[英]赫胥黎《进化论与伦理学》"],
+              "rule": "Use square brackets “[...]” or hexagonal brackets “〔...〕” when indicating the author’s nationality or historical period. Examples: 〔唐〕杜甫著; [英]赫胥黎《进化论与伦理学》."
+            }
+          ]
+        },
+        {
+          "id": "quotation-marks",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "english-no-quotation-marks",
+              "label": "Do not quote embedded English",
+              "examples": ["这个项目的 deadline 是下周五，我们需要抓紧时间了。"],
+              "rule": "When Chinese is mixed with English, don’t place English words or phrases in quotation marks. Example: 这个项目的 deadline 是下周五，我们需要抓紧时间了。"
+            },
+            {
+              "id": "english-in-quotation-marks",
+              "label": "Quote embedded English",
+              "examples": ["他总把“think outside the box”挂在嘴边，鼓励我们要有创新思维。"],
+              "rule": "When Chinese is mixed with English, place English words or phrases in quotation marks. Example: 他总把“think outside the box”挂在嘴边，鼓励我们要有创新思维。"
+            },
+            {
+              "id": "double-primary-single-secondary",
+              "label": "Double for primary, single for secondary",
+              "rule": "Use double curly quotation marks for primary quotations and single curly quotation marks for secondary quotations."
+            }
+          ]
+        },
+        {
+          "id": "colons",
+          "title": "Colons",
+          "options": [
+            {
+              "id": "full-width-colon-general-phrases",
+              "label": "Use full-width colon after indicative phrases",
+              "examples": ["北京紫禁城有四座城门：午门、神武门、东华门和西华门。"],
+              "rule": "Use a full-width colon (：) after general or indicative phrases (such as “说,” “例如,” or “证明”) that signal the following content. Example: 北京紫禁城有四座城门：午门、神武门、东华门和西华门。"
+            },
+            {
+              "id": "half-width-colon-time",
+              "label": "Use half-width colon for time",
+              "examples": ["早上8:00"],
+              "rule": "When indicating time, use a half-width colon. Example: 早上8:00."
+            }
+          ]
+        },
+        {
+          "id": "commas-and-semicolons",
+          "title": "Commas and semicolons",
+          "options": [
+            {
+              "id": "comma-for-simple-compound-sentences",
+              "label": "Use commas for simpler compound clauses",
+              "examples": ["天色渐暗，路灯亮起，行人加快了脚步。"],
+              "rule": "Use a comma between the clauses when a compound sentence is not complex and the connected clauses are relatively concise, without using commas for pauses within the clauses. Example: 天色渐暗，路灯亮起，行人加快了脚步。"
+            },
+            {
+              "id": "semicolon-for-complex-compound-sentences",
+              "label": "Use semicolons for more complex clause levels",
+              "examples": ["窗外雨声淅沥，偶尔夹杂雷声；屋内，孩子们围坐火炉，听老人讲故事。"],
+              "rule": "Use a semicolon to indicate a pause when it is difficult to distinguish the levels within a compound sentence using commas (for example, if there are already commas within the clauses), and using a period may disrupt the relationship between the preceding and following parts. Example: 窗外雨声淅沥，偶尔夹杂雷声；屋内，孩子们围坐火炉，听老人讲故事。"
+            }
+          ]
+        },
+        {
+          "id": "different-dashes",
+          "title": "Different dashes",
+          "options": [
+            {
+              "id": "em-dash-connect-related-items",
+              "label": "Use em dash for related ranges",
+              "examples": ["2011年2月3日—10日", "北京—上海特别旅客快车"],
+              "rule": "Use an em dash (—) to connect the start and end of related items (such as time, region, etc.). Examples: 2011年2月3日—10日；北京—上海特别旅客快车."
+            },
+            {
+              "id": "hyphen-connect-numbers-and-dates",
+              "label": "Use hyphen for numbers and Arabic dates",
+              "examples": ["联系电话：010-88833322", "2011-02-15"],
+              "rule": "Use a hyphen (-) to connect numbers (such as house numbers, phone numbers) and to represent dates in Arabic numerals. Examples: 联系电话：010-88833322；2011-02-15."
+            },
+            {
+              "id": "tilde-numeric-range",
+              "label": "Use tilde for numeric ranges",
+              "examples": ["25～30g", "第五～八课"],
+              "rule": "Use a tilde (～) to connect the start and end of a numerical range. Examples: 25～30g; 第五～八课."
+            }
+          ]
+        },
+        {
+          "id": "em-dashes",
+          "title": "Em dashes",
+          "rule": "Use a double em dash (——) to indicate the content of comments or supplementary explanations, parentheses, breaks or intervals in utterances, etc. Example: 这家餐厅的招牌菜——虽然价格不菲——绝对值得一试。"
+        },
+        {
+          "id": "em-dashes-and-parentheses",
+          "title": "Em dashes and parentheses",
+          "options": [
+            {
+              "id": "double-em-dash-important-explanatory-notes",
+              "label": "Use double em dash for important inline notes",
+              "examples": ["在今年——农历虎年，必须取得比去年更大的成绩。"],
+              "rule": "Use a double em dash (——) for important explanatory notes that are part of the main text and can be read in conjunction with the surrounding text. Example: 在今年——农历虎年，必须取得比去年更大的成绩。"
+            },
+            {
+              "id": "parentheses-general-annotations",
+              "label": "Use parentheses for general annotations",
+              "examples": ["哈雷在牛顿思想的启发下，终于认出了他所关注的彗星（该星后人称为哈雷彗星）。"],
+              "rule": "Use parentheses for general explanatory notes that serve as annotations rather than part of the main text and that don’t need to be read in conjunction with the surrounding text. Example: 哈雷在牛顿思想的启发下，终于认出了他所关注的彗星（该星后人称为哈雷彗星）。"
+            }
+          ]
+        },
+        {
+          "id": "chinese-commas-and-periods",
+          "title": "Chinese commas and periods",
+          "options": [
+            {
+              "id": "enumeration-comma-no-punctuation-before-deng",
+              "label": "No punctuation before 等 with 、",
+              "examples": ["书包里装着笔记本、铅笔、橡皮擦等学习用品。"],
+              "rule": "When using a Chinese comma (、), don’t add punctuation before the word “等” at the end of the list. Example: 书包里装着笔记本、铅笔、橡皮擦等学习用品。"
+            },
+            {
+              "id": "comma-before-deng-with-comma",
+              "label": "Add comma before 等 with commas",
+              "examples": ["她喜欢徒步穿越森林，观察鸟类，收集野生菌类，等。"],
+              "rule": "When using a comma (,), add a comma before the word “等” at the end of the list. Example: 她喜欢徒步穿越森林，观察鸟类，收集野生菌类，等。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "abbreviations",
+          "title": "Abbreviations",
+          "rule": "Use abbreviations according to the established Chinese writing conventions and the context in which they appear."
+        },
+        {
+          "id": "voices",
+          "title": "Voices",
+          "options": [
+            {
+              "id": "active-voice-prominent-subject",
+              "label": "Use active voice when the agent is clear",
+              "rule": "Use the active voice when the subject is prominent and the agent is clear."
+            },
+            {
+              "id": "passive-voice-unknown-agent",
+              "label": "Use passive voice when the agent is unknown or irrelevant",
+              "rule": "Use the passive voice when the agent is unknown or irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "loanwords",
+          "title": "Loanwords",
+          "options": [
+            {
+              "id": "prefer-authentic-chinese-expression",
+              "label": "Prefer established Chinese expressions",
+              "examples": ["Love me, love my dog（爱屋及乌）"],
+              "rule": "If a foreign term has a corresponding expression in Chinese, prioritize the authentic Chinese expression. Example: Love me, love my dog（爱屋及乌）."
+            },
+            {
+              "id": "use-foreign-abbreviations-or-full-names",
+              "label": "Use foreign abbreviations or full names for technical terms or brands",
+              "examples": ["WiFi"],
+              "rule": "Use the foreign abbreviations or full names for technical terms or brand names. Example: WiFi."
+            },
+            {
+              "id": "literal-translation-when-no-chinese-equivalent",
+              "label": "Use literal translation when no Chinese equivalent exists",
+              "examples": ["Artificial Intelligence（人工智能）"],
+              "rule": "If a foreign term does not have a corresponding expression in Chinese, translate it literally. Example: Artificial Intelligence（人工智能）."
+            },
+            {
+              "id": "use-localized-brand-names",
+              "label": "Use official localized brand names",
+              "examples": ["星巴克"],
+              "rule": "Use the localized names for brands with official Chinese translations. Example: 星巴克."
+            },
+            {
+              "id": "mix-transliteration-and-translation",
+              "label": "Mix transliteration and translation when needed",
+              "examples": ["Bitcoin（比特币）"],
+              "rule": "If a foreign term does not have a corresponding expression in Chinese, mix transliteration and translation. Example: Bitcoin（比特币）."
+            },
+            {
+              "id": "transliterate-when-no-chinese-equivalent",
+              "label": "Transliterate when no Chinese equivalent exists",
+              "examples": ["New York（纽约）"],
+              "rule": "Transliterate a foreign term if it does not have a corresponding expression in Chinese. Example: New York（纽约）."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "inclusive-language",
+          "title": "Inclusive language",
+          "rule": "Choose neutral pronouns to avoid emphasizing the gender of the person being referred to. Example: 每位员工都必须提交自己的报告。"
+        },
+        {
+          "id": "double-negatives",
+          "title": "Double negatives",
+          "options": [
+            {
+              "id": "avoid-double-negatives",
+              "label": "Avoid double negatives",
+              "examples": [
+                "没有人不觉得这个方案有问题。",
+                "大家都觉得这个方案有问题。"
+              ],
+              "rule": "Avoid double negatives to prevent ambiguity or misunderstanding, or when there is no need to strengthen the tone. Example: 没有人不觉得这个方案有问题。 The implied meaning is “大家都觉得有问题”, but it could be misunderstood as “没人觉得有问题”; it is better to change it to a direct expression: 大家都觉得这个方案有问题。"
+            },
+            {
+              "id": "use-double-negatives-for-subtle-affirmation",
+              "label": "Use double negatives for subtle emphasis",
+              "examples": ["他的建议并非没有道理，我们可以考虑一下。"],
+              "rule": "Use double negatives to strengthen tone or express polite or implicit affirmation. Example: 他的建议并非没有道理，我们可以考虑一下。 “并非没有道理” means “有一定道理”, but it is more subtle by avoiding direct affirmation."
+            }
+          ]
+        },
+        {
+          "id": "language-style",
+          "title": "Language style",
+          "options": [
+            {
+              "id": "casual-spoken-style",
+              "label": "Use a casual, spoken style",
+              "rule": "Use a casual, spoken style."
+            },
+            {
+              "id": "formal-written-style",
+              "label": "Use a formal, written style",
+              "rule": "Use a formal, written style."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

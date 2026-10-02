@@ -1,0 +1,489 @@
+{
+  "language": "nl",
+  "label": "Dutch",
+  "categories": [
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "writing-dates",
+          "title": "Writing dates",
+          "options": [
+            {
+              "id": "day-month-year-words",
+              "label": "Day first, month in words",
+              "examples": ["6 april 2009", "15 september 2024", "1 november 1990"],
+              "rule": "Write dates with the day first in numerals, the month in words, and the year in numerals. Examples: 6 april 2009; 15 september 2024; 1 november 1990."
+            },
+            {
+              "id": "day-month-year-hyphens",
+              "label": "DD-MM-YYYY",
+              "examples": ["06-04-2009", "15-09-2024", "01-11-1990"],
+              "rule": "Write dates in numeric form as DD-MM-YYYY, using leading zeros for single-digit days and months. Examples: 06-04-2009; 15-09-2024; 01-11-1990."
+            },
+            {
+              "id": "day-month-year-slashes",
+              "label": "DD/MM/YYYY",
+              "examples": ["06/04/2009", "15/09/2024", "01/11/1990"],
+              "rule": "Write dates in numeric form as DD/MM/YYYY, using leading zeros for single-digit days and months. Examples: 06/04/2009; 15/09/2024; 01/11/1990."
+            },
+            {
+              "id": "day-month-year-periods",
+              "label": "DD-MM-YYYY with periods",
+              "examples": ["06.04.2009", "15.09.2024", "01.11.1990"],
+              "rule": "Write dates in numeric form as DD.MM.YYYY, using leading zeros for single-digit days and months. Examples: 06.04.2009; 15.09.2024; 01.11.1990."
+            }
+          ]
+        },
+        {
+          "id": "writing-years",
+          "title": "Writing years",
+          "options": [
+            {
+              "id": "years-common-era",
+              "label": "Write years in full",
+              "examples": ["1989", "2025"],
+              "rule": "Write years in full. Examples: 1989; 2025."
+            },
+            {
+              "id": "years-abbreviated-apostrophe",
+              "label": "Abbreviate years with an apostrophe",
+              "examples": ["'89", "'25"],
+              "rule": "When an abbreviated year is acceptable, write only the last two digits and precede them with an apostrophe. Examples: '89; '25."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "Time format",
+          "options": [
+            {
+              "id": "time-24h-colon",
+              "label": "24-hour clock with colon",
+              "examples": ["08:30", "17:00", "22:15"],
+              "rule": "Use the 24-hour clock with a colon as separator. Examples: 08:30; 17:00; 22:15."
+            },
+            {
+              "id": "time-24h-uur",
+              "label": "24-hour clock with uur",
+              "examples": ["08.30 uur", "17.00 uur", "22.15 uur"],
+              "rule": "Use the 24-hour clock with a period as separator and add the word “uur”. Examples: 08.30 uur; 17.00 uur; 22.15 uur."
+            },
+            {
+              "id": "time-12h-words",
+              "label": "Write times in words",
+              "examples": ["halfnegen", "kwart over drie", "tien voor halfzes"],
+              "rule": "When the context is informal or idiomatic, write times in words using standard Dutch expressions. Examples: halfnegen; kwart over drie; tien voor halfzes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "currencies",
+          "title": "Currencies",
+          "options": [
+            {
+              "id": "currency-symbol-before-no-space",
+              "label": "Use the symbol before the amount, without a space",
+              "examples": ["€5", "$10"],
+              "rule": "Write currency amounts with the currency symbol before the amount, without a space. Examples: €5; $10."
+            },
+            {
+              "id": "currency-symbol-before-space",
+              "label": "Use the symbol before the amount, with a space",
+              "examples": ["€ 5", "$ 10"],
+              "rule": "Write currency amounts with the currency symbol before the amount, with a space. Examples: € 5; $ 10."
+            },
+            {
+              "id": "currency-code-before-space",
+              "label": "Use the ISO code before the amount",
+              "examples": ["EUR 5", "USD 10"],
+              "rule": "Write currency amounts with the ISO currency code before the amount, separated by a space. Examples: EUR 5; USD 10."
+            },
+            {
+              "id": "currency-name-after",
+              "label": "Write the currency name after the amount",
+              "examples": ["5 euro", "10 dollar"],
+              "rule": "Write the amount first and the currency name after it. Examples: 5 euro; 10 dollar."
+            }
+          ]
+        },
+        {
+          "id": "punctuation-in-numbers",
+          "title": "Punctuation in numbers",
+          "options": [
+            {
+              "id": "decimal-comma-thousands-period",
+              "label": "Use a decimal comma and periods for thousands",
+              "examples": ["5,90", "1.250", "15.870,33"],
+              "rule": "Use a comma as the decimal separator and periods as thousands separators. Examples: 5,90; 1.250; 15.870,33."
+            },
+            {
+              "id": "decimal-comma-thousands-space",
+              "label": "Use a decimal comma and spaces for thousands",
+              "examples": ["5,90", "1 250", "15 870,33"],
+              "rule": "Use a comma as the decimal separator and spaces as thousands separators. Examples: 5,90; 1 250; 15 870,33."
+            },
+            {
+              "id": "decimal-period-thousands-comma",
+              "label": "Use a decimal period and commas for thousands",
+              "examples": ["5.90", "1,250", "15,870.33"],
+              "rule": "Use a period as the decimal separator and commas as thousands separators. Examples: 5.90; 1,250; 15,870.33."
+            }
+          ]
+        },
+        {
+          "id": "percentages",
+          "title": "Percentages",
+          "options": [
+            {
+              "id": "percent-sign-no-space",
+              "label": "Use % without a space",
+              "examples": ["99%"],
+              "rule": "Write percentages with the percent sign directly after the number, without a space. Example: 99%."
+            },
+            {
+              "id": "percent-sign-space",
+              "label": "Use % with a space",
+              "examples": ["99 %"],
+              "rule": "Write percentages with a space between the number and the percent sign. Example: 99 %."
+            },
+            {
+              "id": "percent-word",
+              "label": "Write procent in words",
+              "examples": ["99 procent", "tien procent"],
+              "rule": "Write percentages with the word “procent”. Examples: 99 procent; tien procent."
+            }
+          ]
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units of measure",
+          "options": [
+            {
+              "id": "units-abbreviate-with-numeral",
+              "label": "Abbreviate with numerals, spell out without",
+              "examples": ["4 kg", "enkele kilo"],
+              "rule": "Abbreviate units when used with numerals, but spell them out when no numeral is used. Examples: 4 kg; enkele kilo."
+            },
+            {
+              "id": "units-always-abbreviate",
+              "label": "Always abbreviate",
+              "examples": ["4 kg", "enkele kg"],
+              "rule": "Always abbreviate units, whether or not a numeral is used. Examples: 4 kg; enkele kg."
+            },
+            {
+              "id": "units-always-spell-out",
+              "label": "Always spell out",
+              "examples": ["4 kilo", "enkele kilo"],
+              "rule": "Always spell out units, whether or not a numeral is used. Examples: 4 kilo; enkele kilo."
+            }
+          ]
+        },
+        {
+          "id": "unit-spacing",
+          "title": "Spacing for units of measure",
+          "options": [
+            {
+              "id": "unit-spacing-use",
+              "label": "Use a space between numeral and unit",
+              "examples": ["4 kg"],
+              "rule": "Use a space between a numeral and the unit. Example: 4 kg."
+            },
+            {
+              "id": "unit-spacing-none",
+              "label": "Do not use a space between numeral and unit",
+              "examples": ["4kg"],
+              "rule": "Do not use a space between a numeral and the unit. Example: 4kg."
+            }
+          ]
+        },
+        {
+          "id": "temperatures",
+          "title": "Temperatures",
+          "options": [
+            {
+              "id": "temperature-symbol-space",
+              "label": "Use the unit symbol with a space",
+              "examples": ["32 °C", "98 °F", "273 K"],
+              "rule": "Write temperatures with the unit symbol after the number and a space in between. Examples: 32 °C; 98 °F; 273 K."
+            },
+            {
+              "id": "temperature-symbol-no-space",
+              "label": "Use the unit symbol without a space",
+              "examples": ["32°C", "98°F", "273K"],
+              "rule": "Write temperatures with the unit symbol directly after the number, without a space. Examples: 32°C; 98°F; 273K."
+            },
+            {
+              "id": "temperature-words",
+              "label": "Write the unit in words",
+              "examples": ["32 graden Celsius", "98 graden Fahrenheit"],
+              "rule": "Write temperatures with the unit in words. Examples: 32 graden Celsius; 98 graden Fahrenheit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "quotation-marks",
+          "title": "Quotation marks",
+          "options": [
+            {
+              "id": "double-curly-quotes",
+              "label": "Use double curly quotation marks",
+              "examples": ["“Dat is goed nieuws”, zei ze."],
+              "rule": "Use double curly quotation marks for quotations. Example: “Dat is goed nieuws”, zei ze."
+            },
+            {
+              "id": "single-curly-quotes",
+              "label": "Use single curly quotation marks",
+              "examples": ["‘Dat is goed nieuws’, zei ze."],
+              "rule": "Use single curly quotation marks for quotations. Example: ‘Dat is goed nieuws’, zei ze."
+            },
+            {
+              "id": "double-straight-quotes",
+              "label": "Use double straight quotation marks",
+              "examples": ["\"Dat is goed nieuws\", zei ze."],
+              "rule": "Use double straight quotation marks for quotations. Example: \"Dat is goed nieuws\", zei ze."
+            }
+          ]
+        },
+        {
+          "id": "quotation-mark-hierarchy",
+          "title": "Quotation mark hierarchy",
+          "options": [
+            {
+              "id": "double-then-single",
+              "label": "Use double quotation marks first and single quotation marks for nested quotes",
+              "examples": ["“Hij zei: ‘Ik kom later.’”"],
+              "rule": "Use double quotation marks for primary quotations and single quotation marks for nested quotations. Example: “Hij zei: ‘Ik kom later.’”"
+            },
+            {
+              "id": "single-then-double",
+              "label": "Use single quotation marks first and double quotation marks for nested quotes",
+              "examples": ["‘Hij zei: “Ik kom later.”’"],
+              "rule": "Use single quotation marks for primary quotations and double quotation marks for nested quotations. Example: ‘Hij zei: “Ik kom later.”’"
+            }
+          ]
+        },
+        {
+          "id": "hyphens-and-dashes",
+          "title": "Hyphens and dashes",
+          "options": [
+            {
+              "id": "range-en-dash",
+              "label": "Use an en dash for ranges",
+              "examples": ["maandag–vrijdag", "2001–2003"],
+              "rule": "Use an en dash for ranges. Examples: maandag–vrijdag; 2001–2003."
+            },
+            {
+              "id": "range-hyphen",
+              "label": "Use a hyphen for ranges",
+              "examples": ["maandag-vrijdag", "2001-2003"],
+              "rule": "Use a hyphen for ranges. Examples: maandag-vrijdag; 2001-2003."
+            },
+            {
+              "id": "range-van-tot",
+              "label": "Use van ... tot",
+              "examples": ["van maandag tot vrijdag", "van 2001 tot 2003"],
+              "rule": "Write ranges using “van ... tot”. Examples: van maandag tot vrijdag; van 2001 tot 2003."
+            }
+          ]
+        },
+        {
+          "id": "apostrophes",
+          "title": "Apostrophes",
+          "options": [
+            {
+              "id": "apostrophe-curly",
+              "label": "Use curly apostrophes",
+              "examples": ["m’n", "’s avonds"],
+              "rule": "Use curly apostrophes. Examples: m’n; ’s avonds."
+            },
+            {
+              "id": "apostrophe-straight",
+              "label": "Use straight apostrophes",
+              "examples": ["m'n", "'s avonds"],
+              "rule": "Use straight apostrophes. Examples: m'n; 's avonds."
+            }
+          ]
+        },
+        {
+          "id": "ellipses",
+          "title": "Ellipses",
+          "options": [
+            {
+              "id": "ellipsis-character",
+              "label": "Use the ellipsis character",
+              "examples": ["Nog even wachten…"],
+              "rule": "Use the single ellipsis character. Example: Nog even wachten…."
+            },
+            {
+              "id": "three-periods",
+              "label": "Use three periods",
+              "examples": ["Nog even wachten..."],
+              "rule": "Use three periods for an ellipsis. Example: Nog even wachten...."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "abbreviations",
+          "title": "Abbreviations",
+          "options": [
+            {
+              "id": "abbreviations-limited",
+              "label": "Use abbreviations sparingly",
+              "examples": ["bijvoorbeeld in plaats van bv."],
+              "rule": "Use abbreviations sparingly and prefer fully written words when clarity benefits. Example: bijvoorbeeld in plaats van bv.."
+            },
+            {
+              "id": "abbreviations-allowed",
+              "label": "Use common abbreviations",
+              "examples": ["bv.", "m.a.w.", "ca."],
+              "rule": "Use common abbreviations where they are standard and unambiguous. Examples: bv.; m.a.w.; ca.."
+            }
+          ]
+        },
+        {
+          "id": "capitalization",
+          "title": "Capitalization",
+          "rule": "Avoid writing entire words or sentences in capitals, except for acronyms, initialisms, and official names."
+        },
+        {
+          "id": "passive-voice",
+          "title": "Passive voice",
+          "options": [
+            {
+              "id": "active-preferred",
+              "label": "Prefer active voice",
+              "rule": "Prefer active voice and use passive voice only when the agent is unknown, irrelevant, or intentionally omitted."
+            },
+            {
+              "id": "passive-allowed",
+              "label": "Allow passive voice where it improves focus",
+              "rule": "Use passive voice where it improves focus on the action or result rather than the actor."
+            }
+          ]
+        },
+        {
+          "id": "english-loanwords",
+          "title": "Loanwords",
+          "options": [
+            {
+              "id": "prefer-dutch-equivalents",
+              "label": "Prefer Dutch equivalents",
+              "examples": ["e-mailen in plaats van mailen wanneer formeel bedoeld", "bijlage in plaats van attachment"],
+              "rule": "Prefer established Dutch equivalents over English loanwords where a natural Dutch alternative exists. Examples: bijlage in plaats van attachment; gegevens in plaats van data when context permits."
+            },
+            {
+              "id": "allow-established-loanwords",
+              "label": "Allow established English loanwords",
+              "examples": ["update", "feedback", "deadline"],
+              "rule": "Use established English loanwords as they are when they are common and clear in Dutch usage. Examples: update; feedback; deadline."
+            }
+          ]
+        },
+        {
+          "id": "spelled-out-numbers",
+          "title": "Spelled-out numbers",
+          "options": [
+            {
+              "id": "spell-out-low-numbers",
+              "label": "Spell out low numbers",
+              "examples": ["twee deelnemers", "negen dagen"],
+              "rule": "Spell out low numbers in running text where this improves readability. Examples: twee deelnemers; negen dagen."
+            },
+            {
+              "id": "prefer-numerals",
+              "label": "Prefer numerals",
+              "examples": ["2 deelnemers", "9 dagen"],
+              "rule": "Prefer numerals for most numbers, including low numbers, for consistency and scannability. Examples: 2 deelnemers; 9 dagen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "formality",
+          "title": "Formality",
+          "options": [
+            {
+              "id": "formal-u",
+              "label": "Use u",
+              "rule": "Address the reader formally using “u”."
+            },
+            {
+              "id": "informal-je",
+              "label": "Use je",
+              "rule": "Address the reader informally using “je”."
+            }
+          ]
+        },
+        {
+          "id": "inclusive-language",
+          "title": "Inclusive language",
+          "options": [
+            {
+              "id": "neutral-job-titles",
+              "label": "Prefer neutral words and job titles",
+              "examples": ["voorzitter", "medewerker", "politieagent"],
+              "rule": "Prefer gender-neutral words and job titles where possible. Examples: voorzitter; medewerker; politieagent."
+            },
+            {
+              "id": "double-forms",
+              "label": "Use double forms for masculine and feminine references",
+              "examples": ["medewerkers en medewerksters", "lezers en lezeressen"],
+              "rule": "Use double forms where explicitly naming both masculine and feminine forms is preferred. Examples: medewerkers en medewerksters; lezers en lezeressen."
+            }
+          ]
+        },
+        {
+          "id": "tone",
+          "title": "Tone",
+          "options": [
+            {
+              "id": "direct-and-concise",
+              "label": "Use a direct and concise tone",
+              "rule": "Use a direct, concise, and practical tone."
+            },
+            {
+              "id": "warm-and-accessible",
+              "label": "Use a warm and accessible tone",
+              "rule": "Use a warm, friendly, and accessible tone."
+            },
+            {
+              "id": "formal-and-neutral",
+              "label": "Use a formal and neutral tone",
+              "rule": "Use a formal, neutral, and precise tone."
+            }
+          ]
+        },
+        {
+          "id": "anglicisms",
+          "title": "Anglicisms",
+          "rule": "Avoid unnecessary anglicisms when a natural and widely understood Dutch equivalent exists."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,665 @@
+{
+  "language": "de",
+  "label": "German",
+  "categories": [
+    {
+      "id": "abbreviations",
+      "title": "Abbreviations",
+      "rules": [
+        {
+          "id": "abbreviations",
+          "title": "Abbreviations",
+          "options": [
+            {
+              "id": "spell-out",
+              "label": "Spell out where possible",
+              "rule": "Do not use keyboard shortcuts, abbreviations, symbols or acronyms that can easily be spelled out."
+            },
+            {
+              "id": "use-abbreviations",
+              "label": "Use abbreviations and acronyms",
+              "rule": "Use keyboard shortcuts, abbreviations, symbols and acronyms."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dates-and-times",
+      "title": "Dates and times",
+      "rules": [
+        {
+          "id": "writing-dates",
+          "title": "Writing dates",
+          "options": [
+            {
+              "id": "mm-dd-yy",
+              "label": "MM/DD/YY",
+              "description": "Use leading zeros for single-digit days and months.",
+              "rule": "Format dates like this: MM/DD/YY, with leading zeros for single-digit days and months."
+            },
+            {
+              "id": "dd-mm-yyyy-dots",
+              "label": "DD.MM.YYYY",
+              "description": "Use leading zeros for single-digit days and months.",
+              "rule": "Format dates like this: DD.MM.YYYY, with leading zeros for single-digit days and months."
+            },
+            {
+              "id": "day-abbrev-month-short",
+              "label": "1. Jan. 2025 with short month abbreviations",
+              "description": "Abbreviate months as Jan., Feb., Mrz., Apr., Mai, Jun., Jul., Aug., Sep., Okt., Nov., Dez.",
+              "rule": "Format dates like this: 1. Jan. 2025. Abbreviate the months as follows: Jan., Feb., Mrz., Apr., Mai, Jun., Jul., Aug., Sep., Okt., Nov., Dez."
+            },
+            {
+              "id": "day-abbrev-month-long",
+              "label": "1. Jan. 2025 with extended month abbreviations",
+              "description": "Abbreviate months as Jan., Febr., März, Apr., Mai, Juni, Juli, Aug., Sept., Okt., Nov., Dez.",
+              "rule": "Format dates like this: 1. Jan. 2025. Abbreviate the months as follows: Jan., Febr., März, Apr., Mai, Juni, Juli, Aug., Sept., Okt., Nov., Dez."
+            },
+            {
+              "id": "day-full-month",
+              "label": "1. Januar 2025",
+              "rule": "Format dates like this: 1. Januar 2025."
+            }
+          ]
+        },
+        {
+          "id": "time-format",
+          "title": "When writing about times of the day",
+          "options": [
+            {
+              "id": "09-15-uhr",
+              "label": "09:15 Uhr with leading zeros",
+              "description": "Use the same format for full hours: 09:00 Uhr.",
+              "rule": "Use the following time format: 09:15 Uhr, with leading zeros for single-digit hours. Use the same format for full hours: 09:00 Uhr."
+            },
+            {
+              "id": "9-15-uhr",
+              "label": "9:15 Uhr without leading zeros",
+              "description": "Use the same format for full hours: 9:00 Uhr.",
+              "rule": "Use the following time format: 9:15 Uhr, without leading zeros for single-digit hours. Use the same format for full hours: 9:00 Uhr."
+            },
+            {
+              "id": "09-15-dot-uhr",
+              "label": "09.15 Uhr with leading zeros",
+              "description": "Use the same format for full hours: 09.00 Uhr.",
+              "rule": "Use the following time format: 09.15 Uhr, with leading zeros for single-digit hours. Use the same format for full hours: 09.00 Uhr."
+            },
+            {
+              "id": "9-15-dot-uhr",
+              "label": "9.15 Uhr without leading zeros",
+              "description": "Use the same format for full hours: 09.00 Uhr.",
+              "rule": "Use the following time format: 9.15 Uhr, without leading zeros for single-digit hours. Use the same format for full hours: 09.00 Uhr."
+            },
+            {
+              "id": "9-15-dot-uhr-full-hour-short",
+              "label": "9.15 Uhr and 9 Uhr for full hours",
+              "description": "Do not use leading zeros for single-digit hours.",
+              "rule": "Use the following time format: 9.15 Uhr, without leading zeros for single-digit hours. For full hours, only state the hour without leading zeros for single-digit hours: 9 Uhr."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formatting",
+      "title": "Formatting",
+      "rules": [
+        {
+          "id": "writing-email-addresses",
+          "title": "Writing email addresses",
+          "options": [
+            {
+              "id": "email-square-brackets-at",
+              "label": "Use [at] with spaces",
+              "examples": ["username [at] domain.com"],
+              "rule": "Do not use the @ symbol in email addresses. Replace it with 'at' in square brackets, using a space before and after. Example: username [at] domain.com."
+            },
+            {
+              "id": "email-parentheses-at",
+              "label": "Use (at) with spaces",
+              "examples": ["username (at) domain.com"],
+              "rule": "Do not use the @ symbol in email addresses. Replace it with 'at' in parentheses, using a space before and after. Example: username (at) domain.com."
+            },
+            {
+              "id": "email-at-with-spaces",
+              "label": "Use at with spaces",
+              "examples": ["username at domain.com"],
+              "rule": "Do not use the @ symbol in email addresses. Replace it with 'at', using a space before and after. Example: username at domain.com."
+            },
+            {
+              "id": "email-standard-format",
+              "label": "Use the standard format",
+              "examples": ["username@domain.com"],
+              "rule": "Use the standard email address format: username@domain.com."
+            }
+          ]
+        },
+        {
+          "id": "writing-phone-numbers",
+          "title": "When writing phone numbers that use the North American Numbering Plan (NANP)",
+          "options": [
+            {
+              "id": "phone-no-spaces-or-special-characters",
+              "label": "No spaces or special characters",
+              "examples": ["07111234567"],
+              "rule": "Do not use any spaces or special characters between the digits of a phone number. Example: 07111234567."
+            },
+            {
+              "id": "phone-area-code-parentheses",
+              "label": "Use parentheses around the area code",
+              "examples": ["(0711) 1234567"],
+              "rule": "For phone numbers, use parentheses around the area code. Example: (0711) 1234567."
+            },
+            {
+              "id": "phone-slash-separator",
+              "label": "Separate with a slash",
+              "examples": ["0711/1234567"],
+              "rule": "Separate the area code and phone number with a slash. Example: 0711/1234567."
+            },
+            {
+              "id": "phone-space-separator",
+              "label": "Separate with a space",
+              "examples": ["0711 1234567"],
+              "rule": "Separate the area code and phone number with a space. Example: 0711 1234567."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers-and-symbols",
+      "title": "Numbers and symbols",
+      "rules": [
+        {
+          "id": "decimal-numbers-below-one",
+          "title": "Decimal numbers below one",
+          "rule": "Decimal numbers below one should always start with '0,'."
+        },
+        {
+          "id": "two-dimensional-and-three-dimensional-measurements",
+          "title": "Two-dimensional and three-dimensional measurements",
+          "options": [
+            {
+              "id": "times-sign-with-spaces",
+              "label": "Use × with spaces",
+              "examples": ["92 × 192 × 55"],
+              "rule": "Use a space before and after the multiplication sign × between the numerals in dimensions. Example: 92 × 192 × 55."
+            },
+            {
+              "id": "times-sign-without-spaces",
+              "label": "Use × without spaces",
+              "examples": ["92×192×55"],
+              "rule": "Do not use a space before and after the multiplication sign × between the numerals in dimensions. Example: 92×192×55."
+            },
+            {
+              "id": "lowercase-x-with-spaces",
+              "label": "Use x with spaces",
+              "examples": ["92 x 192 x 55"],
+              "rule": "Use a space before and after a lowercase x between the numerals in dimensions. Example: 92 x 192 x 55."
+            },
+            {
+              "id": "lowercase-x-without-spaces",
+              "label": "Use x without spaces",
+              "examples": ["92x192x55"],
+              "rule": "Do not use a space before and after a lowercase x between the numerals in dimensions. Example: 92x192x55."
+            }
+          ]
+        },
+        {
+          "id": "numbering-equations-and-formulas",
+          "title": "Numbering equations and formulas",
+          "rule": "Always use Arabic numerals to number equations and formulas that are referenced in the text."
+        },
+        {
+          "id": "large-numbers",
+          "title": "Large numbers",
+          "options": [
+            {
+              "id": "spell-out-large-numbers",
+              "label": "Write out large numbers",
+              "rule": "Write out large numbers such as million, billion, trillion and quadrillion."
+            },
+            {
+              "id": "abbreviate-large-numbers",
+              "label": "Use Mio., Mrd., Bio., and Brd.",
+              "rule": "Abbreviate large numbers as follows: million as 'Mio.', billion as 'Mrd.', trillion as 'Bio.' and quadrillion as 'Brd.'."
+            }
+          ]
+        },
+        {
+          "id": "spaces-in-mathematical-expressions",
+          "title": "Spacing in mathematical expressions and equations",
+          "rule": "Use spaces between elements in mathematical expressions and equations for increased readability. Example: a + b = c."
+        },
+        {
+          "id": "units-of-measure",
+          "title": "Units of measure",
+          "options": [
+            {
+              "id": "abbreviate-with-numerals-spell-out-without",
+              "label": "Abbreviate with numerals, write out without",
+              "rule": "Abbreviate units of measure when used with numerals; write them out when used without numerals."
+            },
+            {
+              "id": "always-abbreviate-units",
+              "label": "Always abbreviate",
+              "rule": "Always abbreviate units of measure, regardless of whether they are used with or without numerals."
+            },
+            {
+              "id": "always-write-out-units",
+              "label": "Always write out",
+              "rule": "Always write out units of measure, regardless of whether they are used with or without numerals."
+            }
+          ]
+        },
+        {
+          "id": "thousands-separators",
+          "title": "Thousands separators",
+          "options": [
+            {
+              "id": "no-thousands-separator",
+              "label": "Do not use a thousands separator",
+              "rule": "Do not use a thousands separator."
+            },
+            {
+              "id": "period-thousands-separator",
+              "label": "Use a period",
+              "rule": "Use a period as the thousands separator."
+            },
+            {
+              "id": "space-thousands-separator",
+              "label": "Use a space",
+              "rule": "Use a space as the thousands separator."
+            },
+            {
+              "id": "apostrophe-thousands-separator",
+              "label": "Use a straight apostrophe",
+              "rule": "Use a straight apostrophe as the thousands separator."
+            }
+          ]
+        },
+        {
+          "id": "space-between-numbers-and-units",
+          "title": "Spacing between numbers and units of measure",
+          "rule": "Use a space between numbers and units of measure."
+        },
+        {
+          "id": "replace-ampersand",
+          "title": "Replacing ampersands",
+          "rule": "Replace '&' with 'and', except in company names, common abbreviations, titles, software codes and mathematical equations."
+        },
+        {
+          "id": "writing-currencies",
+          "title": "Writing currencies",
+          "options": [
+            {
+              "id": "currency-symbol-after-amount",
+              "label": "Symbol after the amount",
+              "rule": "For currencies, place the symbol after the amount. Use a space between the symbol and the number."
+            },
+            {
+              "id": "currency-iso-after-amount",
+              "label": "ISO code after the amount",
+              "rule": "For currencies, use the ISO code instead of a currency symbol. Place the ISO code after the amount. Use a space between the code and the number."
+            },
+            {
+              "id": "currency-name-after-amount",
+              "label": "Write out currency names",
+              "rule": "Write out currency names. Place the currency after the amount. Use a space between the number and the currency."
+            },
+            {
+              "id": "currency-symbol-before-amount",
+              "label": "Symbol before the amount",
+              "rule": "For currencies, place the symbol before the amount. Use a space between the symbol and the number."
+            },
+            {
+              "id": "currency-iso-before-amount",
+              "label": "ISO code before the amount",
+              "rule": "For currencies, use the ISO code instead of a currency symbol. Place the ISO code before the amount. Use a space between the code and the number."
+            }
+          ]
+        },
+        {
+          "id": "writing-percentages",
+          "title": "Writing percentages",
+          "options": [
+            {
+              "id": "percent-symbol-no-space",
+              "label": "Use % with no space",
+              "examples": ["99%"],
+              "rule": "When writing about percentages, use the % symbol with no space. Example: 99%."
+            },
+            {
+              "id": "write-out-prozent",
+              "label": "Write out Prozent",
+              "examples": ["99 Prozent"],
+              "rule": "When writing about percentages, write out 'Prozent'. Example: 99 Prozent."
+            },
+            {
+              "id": "percent-symbol-with-space",
+              "label": "Use % with a space",
+              "examples": ["99 %", "99%ig"],
+              "rule": "When writing about percentages, use the % symbol with a space, except when the percentage is stated using '-ig'. Example: 99 %, but: 99%ig."
+            }
+          ]
+        },
+        {
+          "id": "writing-temperatures",
+          "title": "Writing temperatures",
+          "options": [
+            {
+              "id": "write-out-grad-and-unit",
+              "label": "Write out Grad and the unit",
+              "examples": ["32 Grad Celsius", "98 Grad Fahrenheit"],
+              "rule": "For temperatures, use numerals, write out 'Grad' followed by the unit, and use a space. Examples: 32 Grad Celsius; 98 Grad Fahrenheit."
+            },
+            {
+              "id": "degree-symbol-with-space",
+              "label": "Use the degree symbol with a space",
+              "examples": ["32 °C", "98 °F", "273 K"],
+              "rule": "For temperatures, use numerals and include the degree symbol (°) followed by the unit (C, F, or K) with a space between numeral and degree symbol. For temperatures in Kelvin, do not use the degree symbol. Examples: 32 °C; 98 °F; 273 K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation",
+      "rules": [
+        {
+          "id": "decimal-separator",
+          "title": "Decimal separator",
+          "options": [
+            {
+              "id": "comma-decimal-separator",
+              "label": "Use a comma",
+              "rule": "Use a comma as the decimal separator."
+            },
+            {
+              "id": "period-decimal-separator",
+              "label": "Use a period",
+              "rule": "Use a period as the decimal separator."
+            }
+          ]
+        },
+        {
+          "id": "curly-apostrophes",
+          "title": "Apostrophes",
+          "rule": "Use curly apostrophes (’)."
+        },
+        {
+          "id": "quotation-mark-style",
+          "title": "Quotation mark style",
+          "options": [
+            {
+              "id": "german-double-single",
+              "label": "German quotation marks",
+              "examples": ["„Have you read ,The Tin Drum‘ by Günter Grass?“"],
+              "rule": "Use double German quotation marks for main quotations and single German quotation marks for nested quotations. Example: „Have you read ,The Tin Drum‘ by Günter Grass?“"
+            },
+            {
+              "id": "guillemets",
+              "label": "Guillemets",
+              "examples": ["«Have you read ‹The Tin Drum› by Günter Grass?»"],
+              "rule": "Use guillemets for main quotations and single guillemets for nested quotations. Example: «Have you read ‹The Tin Drum› by Günter Grass?»"
+            },
+            {
+              "id": "reversed-guillemets",
+              "label": "Reversed guillemets",
+              "examples": ["»Have you read ›The Tin Drum‹ by Günter Grass?«"],
+              "rule": "Use reversed guillemets for main quotations and single reversed guillemets for nested quotations. Example: »Have you read ›The Tin Drum‹ by Günter Grass?«"
+            }
+          ]
+        },
+        {
+          "id": "ellipsis",
+          "title": "Ellipsis",
+          "options": [
+            {
+              "id": "ellipsis-character",
+              "label": "Use the ellipsis character",
+              "rule": "For an ellipsis, use the ellipsis character."
+            },
+            {
+              "id": "three-periods-no-spaces",
+              "label": "Use three periods without spaces",
+              "rule": "For an ellipsis, use three periods without spaces."
+            }
+          ]
+        },
+        {
+          "id": "after-a-salutation",
+          "title": "After a salutation",
+          "options": [
+            {
+              "id": "no-comma-after-salutation",
+              "label": "Do not use a comma",
+              "examples": ["Dear Kim\nHow are you?"],
+              "rule": "Do not use a comma after a salutation. Capitalize the first word after the salutation. Example: Dear Kim\nHow are you?"
+            },
+            {
+              "id": "comma-after-salutation",
+              "label": "Use a comma",
+              "examples": ["Dear Kim,\nhow are you?"],
+              "rule": "Use a comma after a salutation. Example: Dear Kim,\nhow are you?"
+            },
+            {
+              "id": "exclamation-after-salutation",
+              "label": "Use an exclamation mark",
+              "examples": ["Dear Kim!\nHow are you?"],
+              "rule": "Use an exclamation mark after a salutation. Example: Dear Kim!\nHow are you?"
+            }
+          ]
+        },
+        {
+          "id": "slashes",
+          "title": "Slashes",
+          "options": [
+            {
+              "id": "slashes-no-spaces",
+              "label": "Do not use spaces",
+              "rule": "Do not use spaces before and after slashes."
+            },
+            {
+              "id": "slashes-with-spaces",
+              "label": "Use spaces",
+              "rule": "Use spaces before and after slashes."
+            },
+            {
+              "id": "slashes-mixed-spacing",
+              "label": "Spaces only for multi-word terms",
+              "examples": ["the author / the authors", "men/women"],
+              "rule": "Do not use spaces if there is only one word before and after the slash, but use spaces if there are several words. Examples: the author / the authors; men/women."
+            }
+          ]
+        },
+        {
+          "id": "ranges-of-numbers-or-dates",
+          "title": "When indicating a range of numbers or dates",
+          "options": [
+            {
+              "id": "en-dash-no-spaces",
+              "label": "Use an en dash without spaces",
+              "examples": ["Monday–Saturday", "2001–2003"],
+              "rule": "To indicate a range, use an en dash with no spaces on either side. Examples: Monday–Saturday; 2001–2003."
+            },
+            {
+              "id": "use-bis",
+              "label": "Use bis",
+              "examples": ["Montag bis Samstag", "2001 bis 2003"],
+              "rule": "To indicate a range, do not use an en dash. Instead, separate the terms with \"bis\". Examples: Montag bis Samstag; 2001 bis 2003."
+            }
+          ]
+        },
+        {
+          "id": "sentence-breaks-and-asides",
+          "title": "Sentence breaks and asides",
+          "rule": "To indicate a break in a sentence or to indicate asides, use an en dash with a space on both sides."
+        }
+      ]
+    },
+    {
+      "id": "spelling-and-grammar",
+      "title": "Spelling and grammar",
+      "rules": [
+        {
+          "id": "active-and-passive-voice",
+          "title": "Active and passive voice",
+          "rule": "As a general rule, the active voice is preferred to the passive voice. Use passive voice when the actor is unknown or irrelevant."
+        },
+        {
+          "id": "replace-ss-character",
+          "title": "Using ss instead of ß",
+          "rule": "Replace 'ß' with 'ss'."
+        },
+        {
+          "id": "quotations",
+          "title": "Quotations",
+          "options": [
+            {
+              "id": "do-not-adapt-quotes",
+              "label": "Do not adapt text in quotes",
+              "rule": "Do not adapt text in quotes."
+            },
+            {
+              "id": "adapt-quotes-to-style-guide",
+              "label": "Adapt text in quotes",
+              "rule": "Adapt text in quotes according to the style guide rules."
+            }
+          ]
+        },
+        {
+          "id": "replace-umlauts",
+          "title": "Replacing umlauts",
+          "rule": "Replace 'ä' with 'ae', 'ö' with 'oe' and 'ü' with 'ue'."
+        },
+        {
+          "id": "capitalization",
+          "title": "Capitalization",
+          "rule": "Do not use ALL CAPS unless writing out an acronym, initialism or a proper name."
+        }
+      ]
+    },
+    {
+      "id": "style-and-tone",
+      "title": "Style and tone",
+      "rules": [
+        {
+          "id": "introductory-phrases-referring-to-the-text",
+          "title": "Introductory phrases referring to the text itself",
+          "rule": "Avoid redundant introductory phrases referring to the text itself, such as 'zusammenfassend' or 'in diesem Bericht'."
+        },
+        {
+          "id": "qualifying-and-redundant-words",
+          "title": "Qualifying and redundant words",
+          "rule": "Eliminate qualifying and redundant words when appropriate."
+        },
+        {
+          "id": "directional-text-references",
+          "title": "Directional text references",
+          "rule": "Do not use directional text as the only reference to specific positions in the text. Instead of 'left' or 'right', write 'the first element in the following list'. This makes it easier for visually impaired readers to understand the text."
+        },
+        {
+          "id": "verbal-or-nominal-style",
+          "title": "Verbal/nominal style",
+          "options": [
+            {
+              "id": "use-nominalization",
+              "label": "Use nominalization where appropriate",
+              "rule": "Use nominalization where appropriate for a less personal tone."
+            },
+            {
+              "id": "use-verbal-style",
+              "label": "Use verbal style and avoid nominalization",
+              "rule": "Use verbal style and avoid nominalization to achieve a more direct and personal tone."
+            }
+          ]
+        },
+        {
+          "id": "inclusive-language-binary-gender",
+          "title": "Inclusive language",
+          "rule": "Avoid binary representations of gender when you can reword using gender-neutral language. Avoid: Hiring men and women of diverse backgrounds fosters a culture of innovation. Preferable: Hiring people of diverse backgrounds fosters a culture of innovation."
+        },
+        {
+          "id": "inclusive-language-compound-nouns",
+          "title": "Inclusive language for common compound nouns",
+          "rule": "For increased readability, it is not mandatory to use gender-neutral language for common compound nouns that include the generic masculine. The word 'Einwohnerzahl' does not need to be changed to 'Einwohner:innenzahl'. For new compound nouns, an individual decision needs to be made with readability in mind."
+        },
+        {
+          "id": "complex-sentences",
+          "title": "Sentence complexity",
+          "rule": "Avoid unnecessarily complex sentences."
+        },
+        {
+          "id": "instruction-style",
+          "title": "Instructions",
+          "options": [
+            {
+              "id": "imperative-instructions",
+              "label": "Use the imperative mood",
+              "examples": ["Geben Sie Ihren Namen ein."],
+              "rule": "Use the imperative mood for instructions. Example: Geben Sie Ihren Namen ein."
+            },
+            {
+              "id": "indicative-instructions",
+              "label": "Use the indicative mood",
+              "examples": ["Sie geben nun Ihren Namen ein."],
+              "rule": "Use the indicative mood for instructions. Example: Sie geben nun Ihren Namen ein."
+            },
+            {
+              "id": "infinitive-instructions",
+              "label": "Use the infinitive form",
+              "examples": ["Namen eingeben."],
+              "rule": "Use the infinitive form for instructions. Example: Namen eingeben."
+            },
+            {
+              "id": "modal-verb-instructions",
+              "label": "Use modal verbs",
+              "examples": ["Sie müssen nun Ihren Namen eingeben."],
+              "rule": "Use phrases with modal verbs for instructions. Example: Sie müssen nun Ihren Namen eingeben."
+            },
+            {
+              "id": "passive-instructions",
+              "label": "Use the passive voice",
+              "examples": ["Nun wird der Name eingegeben."],
+              "rule": "Use the passive voice for instructions. Example: Nun wird der Name eingegeben."
+            }
+          ]
+        },
+        {
+          "id": "avoid-modal-verbs",
+          "title": "Modal verbs",
+          "rule": "Avoid modal verbs (müssen, können, dürfen, sollen, etc.)."
+        },
+        {
+          "id": "personal-or-impersonal-tone",
+          "title": "Personal or impersonal tone",
+          "options": [
+            {
+              "id": "impersonal-tone",
+              "label": "Write impersonally",
+              "rule": "Avoid a personal writing style; write impersonally instead."
+            },
+            {
+              "id": "personal-tone",
+              "label": "Use a personal writing style",
+              "rule": "Use a personal instead of an impersonal writing style. Address the reader directly and use first and second person where appropriate."
+            }
+          ]
+        },
+        {
+          "id": "short-words",
+          "title": "Shorter words",
+          "rule": "Use short words instead of long words."
+        },
+        {
+          "id": "simple-words-and-sentences",
+          "title": "Simple words and sentences",
+          "rule": "Use simple words and sentences. Avoid words or figures of speech that are difficult to translate."
+        }
+      ]
+    }
+  ]
+}
