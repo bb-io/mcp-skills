@@ -20,7 +20,7 @@ A manual trigger is a safe starting point for a newly built Bird:
 }
 ```
 
-An event trigger needs the exact discovered event, a connected app account, and any event inputs required by its schema. Link-mode events can return a webhook URL after create or update.
+An event trigger needs the exact discovered event, a connected app account, and any event inputs required by its schema. Link-mode events can return a webhook URL after a publishing operation.
 
 ```json
 {

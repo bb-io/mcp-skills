@@ -74,8 +74,8 @@ Before changing a Bird, read [Build and manage Blackbird Birds](../build-birds/S
 
 - Read the complete definition with `get_bird_definition`.
 - Preserve stable IDs and every unrelated trigger, connection, input, route, and error setting.
-- Update the entire editable definition with `update_bird_definition`; never send the read-only Bird schema as the update.
-- Re-read the definition afterward. Register any returned webhook payload URLs with the external app because updates can rotate link-mode URLs.
+- Update the entire editable definition with `update_bird_definition`; never send the read-only Bird schema as the update. This saves a draft unless publication is requested.
+- Review the saved definition, then call `publish_bird_definition` before expecting the fix to affect the live Bird. Confirm it with `get_bird_definition` using `published: true`. Register webhook payload URLs only when returned by a publish; they rotate on every republish.
 
 Do not automatically make a wider or higher-risk change. Explain and ask for direction before changing a trigger, connection credentials, retry/skip policy, loop boundaries, an operator contract, event subscription, or any action that could repeat, omit, or mutate external data. For those cases, offer a rigorous change plan based on the user’s intended workflow.
 
